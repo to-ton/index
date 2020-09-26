@@ -7,97 +7,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <style>
-#more {display: none;}
+        #more {display: none;}
 
-ul.timeline {
-    list-style-type: none;
-    position: relative;
-}
-ul.timeline:before {
-    content: ' ';
-    background: #d4d9df;
-    display: inline-block;
-    position: absolute;
-    left: 29px;
-    width: 2px;
-    height: 100%;
-    z-index: 400;
-}
-ul.timeline > li {
-    margin: 20px 0;
-    padding-left: 20px;
-}
-ul.timeline > li:before {
-    content: ' ';
-    background: white;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid #22c0e8;
-    left: 20px;
-    width: 20px;
-    height: 20px;
-    z-index: 400;
-}
+        ul.timeline {
+            list-style-type: none;
+            position: relative;
+        }
+        ul.timeline:before {
+            content: ' ';
+            background: #d4d9df;
+            display: inline-block;
+            position: absolute;
+            left: 29px;
+            width: 2px;
+            height: 100%;
+            z-index: 400;
+        }
+        ul.timeline > li {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        ul.timeline > li:before {
+            content: ' ';
+            background: white;
+            display: inline-block;
+            position: absolute;
+            border-radius: 50%;
+            border: 3px solid #22c0e8;
+            left: 20px;
+            width: 20px;
+            height: 20px;
+            z-index: 400;
+        }
 
 
-      .blinking-cursor {
-  font-weight: 100;
-  font-size: 30px;
-  color: #2E3D48;
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
-}
+              .blinking-cursor {
+          font-weight: 100;
+          font-size: 30px;
+          color: #2E3D48;
+          -webkit-animation: 1s blink step-end infinite;
+          -moz-animation: 1s blink step-end infinite;
+          -ms-animation: 1s blink step-end infinite;
+          -o-animation: 1s blink step-end infinite;
+          animation: 1s blink step-end infinite;
+        }
 
-@keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: black;
-  }
-}
+        @keyframes "blink" {
+          from, to {
+            color: transparent;
+          }
+          50% {
+            color: black;
+          }
+        }
 
-@-moz-keyframes blink {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: black;
-  }
-}
+        @-moz-keyframes blink {
+          from, to {
+            color: transparent;
+          }
+          50% {
+            color: black;
+          }
+        }
 
-@-webkit-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: black;
-  }
-}
+        @-webkit-keyframes "blink" {
+          from, to {
+            color: transparent;
+          }
+          50% {
+            color: black;
+          }
+        }
 
-@-ms-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: black;
-  }
-}
+        @-ms-keyframes "blink" {
+          from, to {
+            color: transparent;
+          }
+          50% {
+            color: black;
+          }
+        }
 
-@-o-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: black;
-  }
-}
+        @-o-keyframes "blink" {
+          from, to {
+            color: transparent;
+          }
+          50% {
+            color: black;
+          }
+        }
     </style>
     <title>Hello, world!</title>
   </head>
@@ -108,10 +109,9 @@ ul.timeline > li:before {
       <img src="https://instagram.fmnl3-1.fna.fbcdn.net/v/t51.2885-19/s150x150/52789843_1964881716955379_3847587112853438464_n.jpg?_nc_ht=instagram.fmnl3-1.fna.fbcdn.net&_nc_ohc=ibZR2yHCvDoAX_EyhsN&oh=1983a75e505c438da6a4c5794455dfb1&oe=5F9741E3" class="rounded-circle float-center" width="170ox" height="170px">
       <div class="card border-0" style="width: 170px" style="">
         <h3 class="card-title" style="font-family: 'Slabo', serif;">Dan Lyton</h3>
-         <p class="card-text">@0x718 (fb)</p>
-      </div>         
-
-      
+        <p class="typewrite" data-period="2000" data-type='[ "@0x718 (fb)", "danlyt74@gmail.com" ]'>
+          <span class="wrap"></span>
+        </p>  
     </center>
       <div class="container" >
         <h4>whoami<span class="blinking-cursor">_</span></h4>
@@ -140,7 +140,7 @@ ul.timeline > li:before {
           <li class="badge badge-info">SQL</li>
           <li class="badge badge-info">Javascript</li>
         </ul>
-        <p>vernacular languages: Filipino, English, Waray</p> 
+        <p>vernacular: Filipino, English, Waray</p> 
       </div>
 
       <!--Achievements-->
@@ -240,12 +240,10 @@ ul.timeline > li:before {
       </div>
 
       <!---Achievements-->
-     
 
       <div class="container">
         <br><h4>Writeups</span></h4>
         <p>Coming Soon!</p>
-
         <b>>_<dan/b>
       </div>
 
@@ -254,15 +252,68 @@ ul.timeline > li:before {
       <pre></pre>
 
 
-</footer>
-<!-- Footer -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script>
+          //credits: vipul mirajkar thevipulm.appspot.com
+          var TxtType = function(el, toRotate, period) {
+                  this.toRotate = toRotate;
+                  this.el = el;
+                  this.loopNum = 0;
+                  this.period = parseInt(period, 10) || 2000;
+                  this.txt = '';
+                  this.tick();
+                  this.isDeleting = false;
+              };
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+              TxtType.prototype.tick = function() {
+                  var i = this.loopNum % this.toRotate.length;
+                  var fullTxt = this.toRotate[i];
 
+                  if (this.isDeleting) {
+                  this.txt = fullTxt.substring(0, this.txt.length - 1);
+                  } else {
+                  this.txt = fullTxt.substring(0, this.txt.length + 1);
+                  }
+
+                  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+                  var that = this;
+                  var delta = 200 - Math.random() * 100;
+
+                  if (this.isDeleting) { delta /= 2; }
+
+                  if (!this.isDeleting && this.txt === fullTxt) {
+                  delta = this.period;
+                  this.isDeleting = true;
+                  } else if (this.isDeleting && this.txt === '') {
+                  this.isDeleting = false;
+                  this.loopNum++;
+                  delta = 500;
+                  }
+
+                  setTimeout(function() {
+                  that.tick();
+                  }, delta);
+              };
+
+              window.onload = function() {
+                  var elements = document.getElementsByClassName('typewrite');
+                  for (var i=0; i<elements.length; i++) {
+                      var toRotate = elements[i].getAttribute('data-type');
+                      var period = elements[i].getAttribute('data-period');
+                      if (toRotate) {
+                        new TxtType(elements[i], JSON.parse(toRotate), period);
+                      }
+                  }
+
+                  var css = document.createElement("style");
+                  css.type = "text/css";
+                  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+                  document.body.appendChild(css);
+              };
+        </script>
   </center>
   </body>
 </html>
