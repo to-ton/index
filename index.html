@@ -250,7 +250,9 @@ gmail: danlyt74@gmail.com
           }
         }
 
-
+        .modal-open .container-fluid, .modal-open  .container {
+    -webkit-filter: blur(5px) grayscale(80%);
+}
     </style>
     <title>Dan Lyton | About Me</title>
   </head>
@@ -261,7 +263,9 @@ gmail: danlyt74@gmail.com
         <div class="container">
         <h3 class="card-title" style="font-family: 'Slabo', serif;">Dan Lyton</h3>
         <div class="container"></div>
-        <p class="typewrite" data-period="2000" data-type='[ "@0x718 (fb)", "danlyt74@gmail.com" ]'><span class="wrap">&thinsp;</span></p>  
+        <p class="typewrite" data-period="2000" data-type='[ "@0x718 (fb)", "danlyt74@gmail.com" ]'><span class="wrap">        <div class="spinner-border spinner-border-sm float-center" id="overlay" role="status">
+          <span class="sr-only spinner">Loading...</span>
+        </div></span></p>  
     </center>
       
     <div class="container" >
@@ -475,6 +479,7 @@ gmail: danlyt74@gmail.com
           </div>
         </div>
 
+
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
@@ -553,6 +558,13 @@ gmail: danlyt74@gmail.com
               moreText.style.display = "inline";
             }
           }
+        </script>
+        <script>
+          var overlay = document.getElementById("overlay");
+
+          window.addEventListener('load', function(){
+            overlay.style.display = 'none';
+          })
         </script>
   </center>
   </body>
