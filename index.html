@@ -94,6 +94,7 @@ gmail: danlyt74@gmail.com
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>       
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179135104-1"></script>
     <script>
@@ -249,6 +250,9 @@ gmail: danlyt74@gmail.com
             color: black;
           }
         }
+        .container{
+          display:none;
+        }
 
     </style>
     <title>Dan Lyton | About Me</title>
@@ -257,12 +261,12 @@ gmail: danlyt74@gmail.com
     <center>
         <pre></pre>
         <img src="https://instagram.fmnl3-1.fna.fbcdn.net/v/t51.2885-19/s150x150/52789843_1964881716955379_3847587112853438464_n.jpg?_nc_ht=instagram.fmnl3-1.fna.fbcdn.net&_nc_ohc=ibZR2yHCvDoAX_EyhsN&oh=1983a75e505c438da6a4c5794455dfb1&oe=5F9741E3" class="rounded-circle float-center" width="170ox" height="170px">
-        <div class="container">
         <h3 class="card-title" style="font-family: 'Slabo', serif;">Dan Lyton</h3>
         <div class="container"></div>
-        <p class="typewrite" data-period="2000" data-type='[ "@0x718 (fb)", "danlyt74@gmail.com" ]'><span class="wrap">        <div class="spinner-border spinner-border-sm float-center" id="overlay" role="status">
+        <p class="typewrite" data-period="2000" data-type='[ "@0x718 (fb)", "danlyt74@gmail.com" ]'><span class="wrap">        
+          <div class="spinner-border spinner-border-sm float-center" id="overlay" role="status">
           <span class="sr-only spinner">Loading...</span>
-        </div></span></p>  
+          </p></div>
     </center>
       
     <div class="container" >
@@ -556,13 +560,12 @@ gmail: danlyt74@gmail.com
             }
           }
         </script>
-        <script>
-          var overlay = document.getElementById("overlay");
-
-          window.addEventListener('load', function(){
-            overlay.style.display = 'none';
-          })
-        </script>
+                <script>       
+                 window.addEventListener('load', function(){
+                   overlay.style.display = 'none';
+                   $(".container").css("display","block");
+                 })
+               </script>
   </center>
   </body>
 </html>
