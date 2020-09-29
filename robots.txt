@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /index.html
+Allow: /poc/
+
+User-agent: Googlebot
+Allow: /index.html
+Allow: /poc/
