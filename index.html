@@ -297,7 +297,7 @@ gmail: danlyt74@gmail.com
     </div>
 
     <div class="container">
-        <h4>Education<span class="iconify" data-icon="noto:light-bulb" data-inline="false alt="&#x1F4A1;"></span></b></h4>
+        <h4>Education/Certs<span class="iconify" data-icon="noto:light-bulb" data-inline="false alt="&#x1F4A1;"></span></b></h4>
          <span id="dots"></span>
          <span id="more">
               <ul class="timeline">
@@ -485,9 +485,28 @@ gmail: danlyt74@gmail.com
                 <div class="row d-flex justify-content-center align-items-center">
                   <div>
                     <h4>Page visits<span class="iconify" data-icon="noto:direct-hit" data-inline="false" alt="&#x1F3AF;"></span></h4>
-                    <h2 id="visits" style="color:red"><b> <div class="spinner-border" role="status">
+                    <h2 id="visits"><b><div class="spinner-grow text-primary" role="status">
+                      <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-secondary" role="status">
+                      <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-success" role="status">
                       <span class="sr-only">Loading...</span>
                     </div></b></h2> total page views
+                  </div>
+                </div>
+                <div class="preloader-wrapper big active">
+                  <div class="spinner-layer spinner-red-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -587,7 +606,6 @@ gmail: danlyt74@gmail.com
                </script>
           <script>
             const counter = document.getElementById('visits');
-            
             visits();
 
             function visits(){
