@@ -1,3 +1,4 @@
+
 <!doctype html>
 <!--
   .-"""""-.
@@ -350,12 +351,18 @@ gmail: danlyt74@gmail.com
       <h4>Achievements<span class="iconify" data-icon="noto:trophy" data-inline="false" alt="&#x1F3C6;"></span></h4>
       <a data-toggle="modal" data-target=".bd-example-modal-lg" href="#achievements">view achievements..<span class="iconify" data-icon="noto:glowing-star" data-inline="false" alt="&#x1F31F;"></span></a><pre></pre>
 
-      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="achievements" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
           <div class="modal-content">
+            <div class="modal-body">
             <div class="container mt-5 mb-5">
               <div class="row">
-                <div class="col-md-6 offset-md-3">
+                <div class="col-md-10 offset-md-1">
+        
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span class="iconify" data-icon="noto:link" data-inline="false"></span>
+                    </button>
+      
                   <h4 style="position: absolute;">Achievements/Ack.<span class="iconify" data-icon="noto:trophy" data-inline="false" alt="&#x1F3C6;"></span></h4>
                   <br>
                   <br>
@@ -432,11 +439,13 @@ gmail: danlyt74@gmail.com
                       <p>Found a security issue on Globe Telecom— A leading Philippine Telco.</p>
                     </li>
                   </ul>
+                  </div>
                 </div>
               </div>
             </div>
             
-            <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: blue">Close</button>          </div>
+          
+            </div>
         </div>
       </div>
       </div>
@@ -450,7 +459,7 @@ gmail: danlyt74@gmail.com
           <br>
           <a href="https://facebook.com/0x718" class="facebook" ><i class="fa fa-facebook"></i></a> 
           <a href="https://github.com/to-ton" class="github"><i class="fa fa-github"></i></a> 
-          <a href="mailto: danlyt74@gmail.com" class="google"><i class="fa fa-google"></i></a> 
+          <a href="/cdn-cgi/l/email-protection#fede9a9f9092878ac9cabe99939f9792d09d9193" class="google"><i class="fa fa-google"></i></a> 
           <a href="https://www.linkedin.com/in/dan-nicole-lyton-fonte-40aa551b0/" class="linkedin"><i class="fa fa-linkedin"></i></a>
           <a href="https://hackerone.com/kra-t0s" class="hackerone" role="button" style="padding: 12px 15px 12px 15px;"><img src="HackerOne - short.png" width="10px" height="17px"></img></a> 
         </div>
@@ -475,18 +484,13 @@ gmail: danlyt74@gmail.com
               <div class="modal-body">
                 <div class="row d-flex justify-content-center align-items-center">
                   <div>
-                    <h4>Total /page visits<span class="iconify" data-icon="noto:direct-hit" data-inline="false" alt="&#x1F3AF;"></span></h4>
-                     <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=5eccf4a3a2eb1bd97f15ed422aef360e39223739'></script>
-                    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/750214/t/0"></script>
+                    <h4>Page visits<span class="iconify" data-icon="noto:direct-hit" data-inline="false" alt="&#x1F3AF;"></span></h4>
+                    <h2 id="visits" style="color:red"><b>loading..</b></h2> total page views
                   </div>
                 </div>
               </div>
             </div>
             <br>
-            <div class="spinner-grow spinner-grow-sm" role="status">
-              <span class="sr-only">Loading...</span></div>
-              <div class="spinner-grow spinner-grow-sm" role="status">
-              <span class="sr-only">Loading...</span></div>
             </div>
           </div>
         </div>
@@ -495,7 +499,9 @@ gmail: danlyt74@gmail.com
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-        <script>
+      
+      <!--.js scripts-->  
+      <script>
           //credits: vipul mirajkar thevipulm.appspot.com
           var TxtType = function(el, toRotate, period) {
                   this.toRotate = toRotate;
@@ -577,6 +583,21 @@ gmail: danlyt74@gmail.com
                    $(".container").css("display","block");
                  })
                </script>
+          <script>
+            const counter = document.getElementById('visits');
+            
+            visits();
+
+            function visits(){
+
+                fetch('https://api.countapi.xyz/update/danicfonte.cf/root/?amount=1')
+                .then(res => res.json())
+                .then(res => {
+                    counter.innerHTML = res.value;
+                });
+            }
+          </script>
+      <!--.js scripts-->  
   </center>
   </body>
 </html>
