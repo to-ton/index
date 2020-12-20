@@ -1,9 +1,3 @@
-<?php
-if($_POST["vibe"] == "adventure")
-    {
-        echo "adventure";
-    }
-?>
 <!DOCTYPE html>
 <html>
     <head>
