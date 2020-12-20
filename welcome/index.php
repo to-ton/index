@@ -75,7 +75,7 @@
 	<body>
 		<center>
 			<div id="page-wrap">
-				<span> </span>
+				<pre> </pre>
 				<h1><b>Bucket List Batangas!</b></h1>
 				<br>
 				<p>This is an intuitive tool to generate your own bucket list of destinations to explore here in Batangas, Philippines! – its natural attractions, religious sites, sports and recreation destinations, places for various gastronomic adventures, and historical and cultural sites.</p>
