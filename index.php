@@ -89,7 +89,7 @@ h1{
 <h1><b>Choose Your Language:</b></h1>
 <br>
 <br>
-<button class="button" onclick="window.location.href='welcome.html'"><span>English </span></button>
+<button class="button" onclick="window.location.href='/welcome'"><span>English </span></button>
 <span> </span>
 <button class="button"><span>Tagalog </span></button>
 </div>
