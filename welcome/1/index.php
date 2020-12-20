@@ -5,7 +5,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Full Page Background Image | Progressive</title>
+        <title>Bucket List Batangas!</title>
         <style>
 
             @import url('https://fonts.googleapis.com/css2?family=K2D&display=swap');
