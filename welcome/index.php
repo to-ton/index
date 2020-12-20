@@ -76,14 +76,14 @@
 	<body>
 		<center>
 			<div id="page-wrap">
-				<h1><b>Travel Guide: Batangas!</b></h1>
+				<h1><b>Bucket List Batangas!</b></h1>
 				<br>
-				<p>Batangas is among the country’s foremost tourist destinations because, just like what the Provincial Tourism tagline says, “It’s all here, it’s so near!”. </p>
-				<p>One can get the joy of exploring the many facets of Batangas – its natural attractions, religious sites, sports and recreation destinations, places for various gastronomic adventures, and historical and cultural sites.</p>
+				<p>This is an intuitive tool to create your own bucket list to explore here in Batangas – its natural attractions, religious sites, sports and recreation destinations, places for various gastronomic adventures, and historical and cultural sites.</p>
 				<br>
-				<p>Prepare for a meaningful journey and explore the beauty of Batangas. May you be guided accordingly to your safe travels. —Tavel Guide: Batangas</p>
+				<p>Prepare for a meaningful journey and explore the beauty of Batangas. May you be guided accordingly to your safe travels.</p>
 				<br><br>
 				<button class="button" style="vertical-align:middle" onclick="window.location.href='/welcome/1'"><span>Continue </span></button>
+				<i>In partial fulfillment in Philippine History - SY2020-1T</i>
 			</div>
 		</center>
 	</body>
