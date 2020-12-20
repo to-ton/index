@@ -3,8 +3,8 @@
 
 <!DOCTYPE html>
 <html>
-	<meta charset="utf-8">
 	<head>
+		<meta charset="utf-8">
 		<title>Bucket List Batangas!</title>
 		<style>
 
