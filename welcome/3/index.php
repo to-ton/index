@@ -87,7 +87,7 @@
                     <h1><b>Setting.</b></h1>
                     <input type="hidden" name="vibe" value="<?php echo $_POST['vibe'];?>">
                     <input type="hidden" name="taste" value="<?php echo $_POST['taste'];?>">
-                    <input type="radio" id="romantic" name="taste" value="romantic">
+                    <input type="radio" id="romantic" name="setting" value="romantic">
                     <label>Romantic</label><br>
                     <input type="radio" id="fun" name="setting" value="fun">
                     <label>Fun</label><br>
