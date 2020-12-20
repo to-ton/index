@@ -83,8 +83,7 @@
 				<br><br>
 				<button class="button" style="vertical-align:middle" onclick="window.location.href='/welcome/1'"><span>Continue </span></button>
 				<br>
-				<a>about</a>
-				<br>
+				<a>about</a>	
 			</div>
 		</center>
    	</body>
