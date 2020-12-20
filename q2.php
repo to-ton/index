@@ -88,7 +88,6 @@ if($_POST["vibe"] == "adventure")
     </head>
     <body>
         <center>
-            <div id="page-wrap">
                 <form action="/action_page.php">
                     <h1><b>Select your taste:</b></h1>
                     <input type="radio" id="beaches" name="vibe" value="male">
@@ -102,6 +101,5 @@ if($_POST["vibe"] == "adventure")
                     </span>
                     </form>
             </div>
-        </center>
     </body>
 </html>
