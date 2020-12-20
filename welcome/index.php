@@ -5,7 +5,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Full Page Background Image | Progressive</title>
+		<title>Bucket List Batangas!</title>
 		<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 		<style>
 	
