@@ -90,6 +90,7 @@ if($_POST["vibe"] == "adventure")
         <div id="page-wrap">
                 <form action="/welcome/3/index.php" method="POST">
                     <h1><b>Select your taste:</b></h1>
+                    <input type="hidden" name="vibe" value='<?php $_POST["vibe"];?>'>
                     <input type="radio" id="beaches" name="taste" value="beaches">
                     <label>Beaches</label><br>
                     <input type="radio" id="mountains" name="taste" value="mountains">
@@ -99,7 +100,6 @@ if($_POST["vibe"] == "adventure")
                     <span style="display:flex; justify-content:flex-end; width:100%; padding:0;">
                         <button class="button" style="    justify-content: right;"><span>Next </span></button>
                     </span>
-                    <input type="hidden" name="vibe" value='<?php $_POST["vibe"];?>'>
                     </form>
             <i>please shade your answer</i>
         </div>
