@@ -75,9 +75,6 @@
 	<body>
 		<center>
 			<div id="page-wrap">
-				<span style="display:flex; justify-content:flex-end; width:100%; padding:0;">
-					<img src="about.png" width="25px" height="25px">
-				</span>
 				<h1><b>Bucket List Batangas!</b></h1>
 				<br>
 				<p>This is an intuitive tool to generate your own bucket list of destinations to explore here in Batangas, Philippines! – its natural attractions, religious sites, sports and recreation destinations, places for various gastronomic adventures, and historical and cultural sites.</p>
@@ -85,6 +82,7 @@
 				<p>"We travel Not to escape Life<br>But for Life Not to escape us" —Anonymous</p>
 				<br><br>
 				<button class="button" style="vertical-align:middle" onclick="window.location.href='/welcome/1'"><span>Continue </span></button>
+				<a>about</a>
 				<br>
 			</div>
 		</center>
