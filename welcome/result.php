@@ -89,17 +89,18 @@
         <div id="page-wrap">
           <h1><b>here's your bucket destination:</b></h1>
           <br>
+          <i>most mountains are soothing for every situations and absolutely swak sa budget! have a blessful day.
           <br>
           <?php
             if($_POST["vibe"] == "adventure" || $_POST["taste"] == "mountains" || $_POST["setting"] == "romantic" ||isset($_POST["budget"])){
 
-            echo "Mt. Gulugod Baboy";
-            echo "Mt. Batulao";
-            echo "Mt. Talamitam";
-            echo "Mt. Manabu";
-            echo "Mt. Daguldol"; 
-            echo "Mt. Banoi";
-            echo "Mt. Matoco";
+            echo "Mt. Gulugod Baboy<br>";
+            echo "Mt. Batulao<br>";
+            echo "Mt. Talamitam<br>";
+            echo "Mt. Manabu<br>";
+            echo "Mt. Daguldol<br>"; 
+            echo "Mt. Banoi<br>";
+            echo "Mt. Matoco<br>";
 
             }
 
