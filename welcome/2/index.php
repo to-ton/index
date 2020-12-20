@@ -89,6 +89,12 @@ if($_POST["vibe"] == "adventure")
     <body>
         <div id="page-wrap">
                 <form action="/welcome/3" method="POST">
+                <?php
+                if(isset($_POST["vibe"]))
+                    {
+                       $_POST["vibe"] = $_POST["vibe"];
+                    }
+                ?>
                     <h1><b>Select your taste:</b></h1>
                     <input type="radio" id="beaches" name="vibe" value="beaches">
                     <label>Beaches</label><br>
