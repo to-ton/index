@@ -91,7 +91,7 @@
           <br>
           <br>
           <?php
-            if(isset($_POST["vibe"]) == "adventure" || $_POST["taste"]) == "mountains" ||$_POST["setting"]) == "romantic" ||$_POST["budget"])){
+            if($_POST["vibe"] == "adventure" || $_POST["taste"] == "mountains" || $_POST["setting"] == "romantic" ||isset($_POST["budget"])){
 
             echo "Mt. Gulugod Baboy";
             echo "Mt. Batulao";
