@@ -82,6 +82,7 @@
 				<p>"We travel Not to escape Life<br>But for Life Not to escape us" —Anonymous</p>
 				<br><br>
 				<button class="button" style="vertical-align:middle" onclick="window.location.href='/welcome/1'"><span>Continue </span></button>
+				<br>
 				<a>about</a>
 				<br>
 			</div>
