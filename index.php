@@ -64,15 +64,6 @@ h1{
   transition: 0.5s;
 }
 
-.button span:after {
-  content: '\1F5F8';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
 .button:hover span {
   padding-right: 25px;
 }
