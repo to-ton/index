@@ -24,7 +24,7 @@
 				background-size: cover;
 			}
 		
-			#page-wrap { width: 410px; margin: 50px auto; padding: 20px; background: white; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; }
+			#page-wrap { width: 400px; margin: 50px auto; padding: 20px; background: white; -moz-box-shadow: 0 0 20px black; -webkit-box-shadow: 0 0 20px black; box-shadow: 0 0 20px black; }
 			p { font: 15px/2 Georgia, Serif; margin: 0 0 30px 0; text-indent: 40px; }
 
 			.button {
@@ -69,9 +69,7 @@
 				<h1><b>Choose Your Language:</b></h1>
 				<br>
 				<br>
-				<button class="button" onclick="window.location.href='/welcome'"><span>English </span></button>
-				<span> </span>
-				<button class="button"><span>Tagalog </span></button>
+				<button class="button" onclick="window.location.href='/welcome'"><span>English </span></button><button class="button"><span>Tagalog </span></button>
 			</div>
 		</center>
 	</body>
