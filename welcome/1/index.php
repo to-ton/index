@@ -85,7 +85,7 @@
     </head>
     <body>
             <div id="page-wrap">
-                <form action="/welcome/2/index.php" method="POST">
+                <form action="/welcome/2/index.php" method="POST" required="required">
                     <h1><b>Choose your vibe:</b></h1>
                     <input type="radio" id="adventure" name="vibe" value="adventure">
                     <label>Adventure</label><br>
