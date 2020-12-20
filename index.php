@@ -5,7 +5,7 @@
 <html>
   <head>
     <meta charset="UTF-8">  
-    <title>Full Page Background Image | Progressive</title>
+    <title>Bucket List Batanags!</title>
     <style>
 
       @import url('https://fonts.googleapis.com/css2?family=K2D&display=swap');
@@ -64,22 +64,8 @@
         transition: 0.5s;
       }
 
-      .button span:after {
-        content: '\1F5F8';
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        right: -20px;
-        transition: 0.5s;
-      }
-
       .button:hover span {
         padding-right: 25px;
-      }
-
-      .button:hover span:after {
-        opacity: 1;
-        right: 0;
       }
     </style>
   </head>
