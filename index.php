@@ -36,7 +36,7 @@
 				text-align: center;
 				font-size: 28px;
 				padding: 20px;
-				width: 120px;
+				width: 150px;
 				transition: all 0.5s;
 				cursor: pointer;
 				margin: 5px;
@@ -64,13 +64,11 @@
 		</style>
 	</head>
 	<body>
-		<center>
 			<div id="page-wrap">
 				<h1><b>Choose Your Language:</b></h1>
 				<br>
 				<br>
 				<button class="button" onclick="window.location.href='/welcome'"><span>English </span></button><span> </span><button class="button"><span>Tagalog </span></button>
 			</div>
-		</center>
 	</body>
 </html>
