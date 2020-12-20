@@ -56,17 +56,6 @@
         cursor: pointer;
         margin: 5px;
       }
-
-      .button span {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.5s;
-      }
-
-      .button:hover span {
-        padding-right: 25px;
-      }
     </style>
   </head>
   <body>
@@ -75,7 +64,7 @@
           <h1><b>Choose Your Language:</b></h1>
           <br>
           <br>
-          <button class="button" onclick="window.location.href='welcome.html'"><span>English </span></button>
+          <button class="button" onclick="window.location.href='/welcome'"><span>English </span></button>
           <span> </span>
           <button class="button"><span>Tagalog </span></button>
       </div>
