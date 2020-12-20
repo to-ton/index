@@ -91,9 +91,9 @@ adventure<!DOCTYPE html>
                     <input type="radio" id="fun" name="setting" value="fun">
                     <label>Fun</label><br>
                     <input type="radio" id="nature" name="setting" value="nature">
-                    <labelo>Nature</label><br>
-                   <input type="radio" id="culture_and_history" name="setting" value="culture_and_history">
-                    <labelo>Culture & History</label><br>
+                    <label>Nature</label><br>
+                    <input type="radio" id="culture_and_history" name="setting" value="culture_and_history">
+                    <label>Culture & History</label><br>
                     <span style="display:flex; justify-content:flex-end; width:100%; padding:0;">
                         <button class="button" style="    justify-content: right;"><span>Next </span></button>
                     </span>
