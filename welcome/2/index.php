@@ -91,7 +91,7 @@ if($_POST["vibe"] == "adventure")
                 <form action="/action_page.php">
                     <h1><b>Select your taste:</b></h1>
                     <input type="radio" id="beaches" name="vibe" value="beaches">
-                    <label">Beaches</label><br>
+                    <label>Beaches</label><br>
                     <input type="radio" id="mountains" name="vibe" value="mountains">
                     <label>Mountains</label><br>
                     <input type="radio" id="tourist_spots" name="vibe" value="tourist_spots">
