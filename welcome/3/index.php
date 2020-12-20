@@ -86,6 +86,7 @@ adventure<!DOCTYPE html>
                 <form action="/welcome/4/index.php" method="POST">
                     <h1><b>Setting.</b></h1>
                     <input type="hidden" name="setting" value="romantic">
+                    <input type="hidden" name="taste" value="<?php echo $_POST['taste'];?>">
                     <input type="radio" id="romantic" name="taste" value="romantic">
                     <label>Romantic</label><br>
                     <input type="radio" id="fun" name="setting" value="fun">
