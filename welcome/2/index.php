@@ -1,6 +1,9 @@
-
-
-
+<?php
+if($_POST["vibe"] == "adventure")
+    {
+        echo "adventure";
+    }
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -85,18 +88,14 @@
     </head>
     <body>
         <div id="page-wrap">
-                <form action="/welcome/3" method="POST">
-                    <h1><b>Choose your vibe:</b></h1>
-                    <input type="radio" id="adventure" name="vibe" value="adventure">
-                    <label>Adventure</label><br>
-                    <input type="radio" id="pass_time" name="vibe" value="for_past_time">
-                    <label>For Pass-Time</label><br>
-                    <input type="radio" id="chill" name="vibe" value="chill">
-                    <label>Chill</label><br>
-                    <input type="radio" id="hangout" name="vibe" value="hangout">
-                    <label>Hangout</label><br>
-                    <input type="radio" id="party" name="vibe" value="party">
-                    <label>Party</label><br>
+                <form action="/action_page.php">
+                    <h1><b>Select your taste:</b></h1>
+                    <input type="radio" id="beaches" name="vibe" value="beaches">
+                    <label">Beaches</label><br>
+                    <input type="radio" id="mountains" name="vibe" value="mountains">
+                    <label>Mountains</label><br>
+                    <input type="radio" id="tourist_spots" name="vibe" value="tourist_spots">
+                    <label>Tourist Spots</label><br>
                     <span style="display:flex; justify-content:flex-end; width:100%; padding:0;">
                         <button class="button" style="    justify-content: right;"><span>Next </span></button>
                     </span>
