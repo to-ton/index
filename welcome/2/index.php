@@ -100,6 +100,7 @@ if($_POST["vibe"] == "adventure")
                         <button class="button" style="    justify-content: right;"><span>Next </span></button>
                     </span>
                     </form>
+            <i>please shade your answer</i>
         </div>
     </body>
 </html>
