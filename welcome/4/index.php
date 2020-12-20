@@ -85,7 +85,9 @@ adventure<!DOCTYPE html>
         <div id="page-wrap">
                 <form action="/welcome/result/index.php" method="POST">
                     <h1><b>Turn on budget mode?</b></h1>
-                    <input type="hidden" name="setting" value="romantic">
+                    <input type="hidden" name="vibe" value="<?php echo $_POST['vibe'];?>">
+                    <input type="hidden" name="taste" value="<?php echo $_POST['taste'];?>">
+                    <input type="hidden" name="setting" value="<?php echo $_POST['setting'];?>">
                     <input type="radio" id="yes" name="budget" value="yes">
                     <label>Yes.</label><br>
                     <input type="radio" id="no" name="budget" value="no">
