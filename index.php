@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Full Page Background Image | Progressive</title>
+<title>Bucket List Batangas!</title>
 <style>
 
 @import url('https://fonts.googleapis.com/css2?family=K2D&display=swap');
@@ -55,17 +55,6 @@ h1{
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
 }
 
 .button:hover span:after {
