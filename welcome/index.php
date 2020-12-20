@@ -6,14 +6,12 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Bucket List Batangas!</title>
-		<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
 		<style>
-	
+				@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 				@import url('https://fonts.googleapis.com/css2?family=K2D&display=swap');
 
 				h1{
-									font-family: 'K2D', sans-serif;
-
+					font-family: 'Allura', cursive;
 					color: green;
 				}
 
@@ -85,7 +83,6 @@
 				<br><br>
 				<button class="button" style="vertical-align:middle" onclick="window.location.href='/welcome/1'"><span>Continue </span></button>
 				<br>
-				<i>In partial fulfillment in Philippine History - SY2020-1T</i>
 			</div>
 		</center>
 	</body>
