@@ -36,7 +36,7 @@
 				text-align: center;
 				font-size: 28px;
 				padding: 20px;
-				width: 150px;
+				width: 120px;
 				transition: all 0.5s;
 				cursor: pointer;
 				margin: 5px;
