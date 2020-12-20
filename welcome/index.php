@@ -12,7 +12,8 @@
 				@import url('https://fonts.googleapis.com/css2?family=K2D&display=swap');
 
 				h1{
-					font-family: 'Allura', cursive;
+									font-family: 'K2D', sans-serif;
+
 					color: green;
 				}
 
@@ -78,9 +79,9 @@
 			<div id="page-wrap">
 				<h1><b>Bucket List Batangas!</b></h1>
 				<br>
-				<p>This is an intuitive tool to create your own bucket list of destinations to explore here in Batangas – its natural attractions, religious sites, sports and recreation destinations, places for various gastronomic adventures, and historical and cultural sites.</p>
+				<p>This is an intuitive tool to generate your own bucket list of destinations to explore here in Batangas, Philippines! – its natural attractions, religious sites, sports and recreation destinations, places for various gastronomic adventures, and historical and cultural sites.</p>
 				<br>
-				<p>Prepare for a meaningful journey and explore the beauty of Batangas. May you be guided accordingly for your safe travels.</p>
+				<p>We travel Not to escape Life<br>But for Life Not to escape us/ —Anonymous</p>
 				<br><br>
 				<button class="button" style="vertical-align:middle" onclick="window.location.href='/welcome/1'"><span>Continue </span></button>
 				<br>
