@@ -78,11 +78,12 @@
 			<div id="page-wrap">
 				<h1><b>Bucket List Batangas!</b></h1>
 				<br>
-				<p>This is an intuitive tool to create your own bucket list to explore here in Batangas – its natural attractions, religious sites, sports and recreation destinations, places for various gastronomic adventures, and historical and cultural sites.</p>
+				<p>This is an intuitive tool to create your own bucket list of destinations to explore here in Batangas – its natural attractions, religious sites, sports and recreation destinations, places for various gastronomic adventures, and historical and cultural sites.</p>
 				<br>
-				<p>Prepare for a meaningful journey and explore the beauty of Batangas. May you be guided accordingly to your safe travels.</p>
+				<p>Prepare for a meaningful journey and explore the beauty of Batangas. May you be guided accordingly for your safe travels.</p>
 				<br><br>
 				<button class="button" style="vertical-align:middle" onclick="window.location.href='/welcome/1'"><span>Continue </span></button>
+				<br>
 				<i>In partial fulfillment in Philippine History - SY2020-1T</i>
 			</div>
 		</center>
