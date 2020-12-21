@@ -104,7 +104,7 @@
             }elseif($_POST["vibe"] == "party" && $_POST["taste"] == "mountains" && isset($_POST["setting"]) &&isset($_POST["budget"])){
              
              echo "<i>details: Please observe safety and cleanliness during your travels.</i><br><br><b><font color='red'>Parties are restricted on mountains</font>.</b>";
-            }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "beaches" $_POST["setting"] == "nature" && $_POST["budget"] == "yes"){
+            }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "beaches" && $_POST["setting"] == "nature" && $_POST["budget"] == "yes"){
              
               echo "<i>details: here are the list of budget beaches available.</i><br><br>";
               echo "<b>Anilao<br>";
