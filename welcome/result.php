@@ -89,7 +89,7 @@
         <div id="page-wrap">
           <h1><b>here's your bucket destination:</b></h1>
           <br>
-          <i>mountains are soothing in most every situation and absolutely swak sa budget! hope you have a good day :)</i>
+          <i>details: mountains suites in most every situation and absolutely swak sa budget! hope you have a good day :)</i>
           <br>
           <?php
             if($_POST["vibe"] == "adventure" || $_POST["taste"] == "mountains" || $_POST["setting"] == "romantic" ||isset($_POST["budget"])){
@@ -102,6 +102,9 @@
             echo "Mt. Banoi<br>";
             echo "Mt. Matoco<br></b>";
 
+            }else if$_POST["vibe"] == "party" || $_POST["taste"] == "mountains" || $_POST["setting"] == "romantic" ||isset($_POST["budget"]){
+             
+             echo "Parties are restricted on mountains.<br> Please observe safety and clealiness during your travels."
             }
 
             ?>
