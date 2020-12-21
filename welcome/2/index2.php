@@ -90,7 +90,7 @@
                     <input type="radio" id="mountains" name="taste" value="mountains">
                     <label>Kabundukan</label><br>
                     <input type="radio" id="tourist_spots" name="taste" value="tourist_spots">
-                    <label>Dayuhang Lugar</label><br>
+                    <label>Pandayuhang Lugar</label><br>
                     <span style="display:flex; justify-content:flex-end; width:100%; padding:0;">
                         <button class="button" style="    justify-content: right;"><span>Sumunod </span></button>
                     </span>
