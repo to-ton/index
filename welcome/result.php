@@ -87,14 +87,12 @@
   <body>
       <center></center>
         <div id="page-wrap">
-          <h1><b>here's your bucket destination:</b></h1>
-          <br>
-          <i>details: mountains suites in most every situation and absolutely swak sa budget! hope you have a good day :)</i>
-          <br>
+          <h1><b>here's your bucket destination:</b></h1
           <br>
           <?php
             if($_POST["vibe"] == "adventure" && $_POST["taste"] == "mountains" &&  isset($_POST["setting"]) && isset($_POST["budget"])){
 
+            echo "<i>details: mountains suites in most every situation and absolutely swak sa budget! hope you have a good day :)</i>"
             echo "<b>Mt. Gulugod Baboy<br>";
             echo "Mt. Batulao<br>";
             echo "Mt. Talamitam<br>";
@@ -105,7 +103,7 @@
 
             }elseif($_POST["vibe"] == "party" && $_POST["taste"] == "mountains" && isset($_POST["setting"]) &&isset($_POST["budget"])){
              
-             echo "<b>Parties are restricted on mountains.<br> Please observe safety and clealiness during your travels.</b>";
+             echo "<i>Please observe safety and clealiness during your travels.</i><br><b><font color='red'>Parties are restricted on mountains</font>.</b>";
             }else
                     echo "error";
                     ?>
