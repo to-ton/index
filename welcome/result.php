@@ -109,7 +109,7 @@
              echo "<i>details: Please observe safety and cleanliness during your travels.</i><br><br><b><font color='red'>Parties are restricted on mountains</font>.</b>";
              echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Again </span></button></span>
 ";
-            }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "beaches" && $_POST["setting"] && isset($_POST["budget"] == "yes"){
+            }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "beaches" && isset($_POST["setting"]) && isset($_POST["budget"] == "yes"){
              
               echo "<i>details: here are the list of budget beaches available.</i><br><br>";
               echo "<b>Anilao<br>";
@@ -121,7 +121,7 @@
               echo "Mabini<br>";    
               echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Again </span></button></span>
 ";
-            }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "beaches" && $_POST["setting"] == "romantic" && $_POST["budget"] == "no"){
+            }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "beaches" && isset($_POST["setting"]) == "romantic" && $_POST["budget"] == "no"){
              
               echo "<b>Aquaria Water Park<br>";
               echo "Sepoc Beach<br>";
@@ -138,7 +138,6 @@
               echo "Kapusod Threehouse";
               echo "Cape Santiago Lighthouse"<br>";
               echo "Malabrigo Lighthouse<br>";
-              
               echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Again </span></button></span>
 ";
             }else{
