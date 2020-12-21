@@ -78,7 +78,7 @@
 				<pre> </pre>
 				<h1><b>Bucket List Batangas!</b></h1>
 				<br>
-				<p>This is an intuitive tool to generate your own bucket list of destinations out of scratch! – featuing Batangas and its natural attractions, religious sites, sports and recreation destinations, places for various gastronomic adventures, and historical and cultural sites.</p>
+				<p>This is an intuitive tool to generate your own bucket list of destinations out of scratch! – featuring Batangas and its natural attractions, religious sites, sports and recreation destinations, places for various gastronomic adventures, and historical and cultural sites.</p>
 				<br>
 				<p>"We travel Not to escape Life<br>But for Life Not to escape us" <br> —Anonymous</p>
 				<br><br>
