@@ -32,7 +32,7 @@
         display: inline-block;
         border-radius: 4px;
         color: #FFFFFF;
-        background-color: #339966;
+        background-color: green;
         border: none;
         text-align: center;
         font-size: 28px;
@@ -105,6 +105,9 @@
             }
 
             ?>
+           <span style="display:flex; justify-content:flex-end; width:100%; padding:0;">
+                        <button class="button" style="    justify-content: right;"><span>Again </span></button>
+                    </span>
       </div>
       </center>
   </body>
