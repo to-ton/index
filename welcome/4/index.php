@@ -83,20 +83,20 @@
     </head>
     <body>
         <div id="page-wrap">
-                <form action="/welcome/result2.php" method="POST">
-                    <h1><b>Badyet ba hanap mo?</b></h1>
+                <form action="/welcome/result.php" method="POST">
+                    <h1><b>Turn on budget mode?</b></h1>
                     <input type="hidden" name="vibe" value="<?php echo $_POST['vibe'];?>">
                     <input type="hidden" name="taste" value="<?php echo $_POST['taste'];?>">
                     <input type="hidden" name="setting" value="<?php echo $_POST['setting'];?>">
                     <input type="radio" id="yes" name="budget" value="yes">
-                    <label>Oo.</label><br>
+                    <label>Yes.</label><br>
                     <input type="radio" id="no" name="budget" value="no">
-                    <label>Hindi.</label><br>
+                    <label>No.</label><br>
                     <span style="display:flex; justify-content:flex-end; width:100%; padding:0;">
-                        <button class="button" style="    justify-content: right;"><span>Sumunod </span></button>
+                        <button class="button" style="    justify-content: right;"><span>Next </span></button>
                     </span>
                     </form>
-            <i>Itiman ang bilugan para sa iyong sagot</i>
+            <i>please shade your answer</i>
         </div>   
     </body>
 </html>
