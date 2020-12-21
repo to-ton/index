@@ -93,14 +93,14 @@
               echo "Mabini<br>";
               echo "Isla Verde<br>";
               echo "Calatagan<br>"; 
-              echo "Mabini<br>";    
+              echo "Mabini<br></b>";    
               echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Again </span></button></span>
 ";
             }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "beaches" && $_POST["setting"] == "romantic" && $_POST["budget"] == "no"){
              
               echo "<b>Aquaria Water Park<br>";
               echo "Sepoc Beach<br>";
-              echo "Lemery Resorts<br>";
+              echo "Lemery Resorts<br></b>";
               echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Again </span></button></span>
 ";
             }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "tourist_spots" && isset($_POST["setting"]) && isset($_POST["budget"])){
@@ -112,7 +112,7 @@
               echo "Taal Heritage Town<br>";
               echo "Kapusod Threehouse";
               echo "Cape Santiago Lighthouse<br>";
-              echo "Malabrigo Lighthouse<br>";
+              echo "Malabrigo Lighthouse<br></b>";
               echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Again </span></button></span>
 ";
             }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "tourist_spots" && isset($_POST["setting"]) && isset($_POST["budget"])){
@@ -124,12 +124,12 @@
               echo "Taal Heritage Town<br>";
               echo "Kapusod Threehouse";
               echo "Cape Santiago Lighthouse<br>";
-              echo "Malabrigo Lighthouse<br>";
+              echo "Malabrigo Lighthouse<br></b>";
               echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Again </span></button></span>
 ";
             }
           else{
-                    echo "we run into an error. please try again and don't skip per questions. ";             
+                    echo "<b>we run into an error. please try again and don't skip per questions.</b>";             
                     echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Again </span></button></span>
 ";}
                     ?>
