@@ -87,7 +87,7 @@
 				<br><br>
 				<button class="button" style="vertical-align:middle" onclick="if (!window.__cfRLUnblockHandlers) return false; window.location.href='/welcome/1/index2.php'" data-cf-modified-e0383149bc7156ebe97587b8-=""><span>MAGPATULOY </span></button>
 				<br><br>
-				<div class="footer-copyright text-center py-3" style="font-size:8px;">PROYEKTO SA READINGS IN PHILIPPINE HISTORY (PRE-FINALS) <br> <b>HINDI ITO OPISYAL NA PANGGAMIT.</b></div>
+				<div class="footer-copyright text-center py-3" style="font-size:8px;">PROYEKTO SA READINGS IN PHILIPPINE HISTORY (PRE-FINALS) <br> <b>HINDI ITO OPISYAL.</b></div>
 
 			</div>
 		</center>
