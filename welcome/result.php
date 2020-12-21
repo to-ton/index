@@ -106,7 +106,9 @@
             }elseif($_POST["vibe"] == "party" || $_POST["taste"] == "mountains" || $_POST["setting"] == "romantic" ||isset($_POST["budget"]){
              
              echo "<b>Parties are restricted on mountains.<br> Please observe safety and clealiness during your travels.</b>";
-            }
+            }else
+                    echo "error";
+                    ?>
 
             ?>
            <span style="display:flex; justify-content:flex-end; width:100%; padding:0;">
