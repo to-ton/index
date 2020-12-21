@@ -100,10 +100,12 @@
               echo "Mt. Daguldol<br>"; 
               echo "Mt. Banoi<br>";
               echo "Mt. Matoco<br></b>";
+              echo "<span style="display:flex; justify-content:flex-end; width:100%; padding:0;"><button class="button" style="justify-content: right;" onclick="window.location.href='/welcome'><span>Again </span></button></span>";
 
             }elseif($_POST["vibe"] == "party" && $_POST["taste"] == "mountains" && isset($_POST["setting"]) &&isset($_POST["budget"])){
              
              echo "<i>details: Please observe safety and cleanliness during your travels.</i><br><br><b><font color='red'>Parties are restricted on mountains</font>.</b>";
+             echo "<span style="display:flex; justify-content:flex-end; width:100%; padding:0;"><button class="button" style="justify-content: right;" onclick="window.location.href='/welcome'><span>Again </span></button></span>";
             }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "beaches" && $_POST["setting"] == "nature" && $_POST["budget"] == "yes"){
              
               echo "<i>details: here are the list of budget beaches available.</i><br><br>";
@@ -113,16 +115,16 @@
               echo "Isla Verde<br>";
               echo "Calatagan<br>"; 
               echo "Mabini<br>";
+              echo "<span style="display:flex; justify-content:flex-end; width:100%; padding:0;"><button class="button" style="justify-content: right;" onclick="window.location.href='/welcome'><span>Again </span></button></span>";
+              
 
             }else
                     echo "we run into an error. please try again and don't leave one blank. ";
+                    echo "<span style="display:flex; justify-content:flex-end; width:100%; padding:0;"><button class="button" style="justify-content: right;" onclick="window.location.href='/welcome'><span>Again </span></button></span>";
+                    
                     ?>
 
           
-           <span style="display:flex; justify-content:flex-end; width:100%; padding:0;">
-                        <button class="button" style="justify-content: right;" onclick="window.location.href='/welcome'><span>Again </span></button>
-             
-                    </span>
       </div>
       </center>
   </body>
