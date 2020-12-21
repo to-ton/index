@@ -100,23 +100,51 @@
               echo "Mt. Daguldol<br>"; 
               echo "Mt. Banoi<br>";
               echo "Mt. Matoco<br></b>";
+              echo "Fortune Island<br>";
               echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Again </span></button></span>
 ";
 
             }elseif($_POST["vibe"] == "party" && $_POST["taste"] == "mountains" && isset($_POST["setting"]) &&isset($_POST["budget"])){
              
              echo "<i>details: Please observe safety and cleanliness during your travels.</i><br><br><b><font color='red'>Parties are restricted on mountains</font>.</b>";
-            }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "beaches" && $_POST["setting"] == "nature" && $_POST["budget"] == "yes"){
+             echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Again </span></button></span>
+";
+            }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "beaches" && $_POST["setting"] && $_POST["budget"] == "yes"){
              
               echo "<i>details: here are the list of budget beaches available.</i><br><br>";
               echo "<b>Anilao<br>";
               echo "laiya<br>";
+              echo "Masasa Beach, Tingloy<br>";
               echo "Mabini<br>";
               echo "Isla Verde<br>";
               echo "Calatagan<br>"; 
-              echo "Mabini<br>";            
+              echo "Mabini<br>";    
+              echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Again </span></button></span>
+";
+            }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "beaches" && $_POST["setting"] == "romantic" && $_POST["budget"] == "no"){
+             
+              echo "<b>Aquaria Water Park<br>";
+              echo "Sepoc Beach<br>";
+              echo "Lemery Resorts<br>";
+              echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Again </span></button></span>
+";
+            }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "tourist_spots" && $_POST["setting"] && $_POST["budget"]){
+              echo "<i>details: enjoy the rest of batangas with the following top tourist spots. All deals under your budget!</i><br><br>";
+              echo "<b>Fantasy World, Batangas<br>";
+              echo "Taal, Volcano<br>";
+              echo "San Nicolas Ecotour<br>";
+              echo "Saint Padre Pio Shrine<br>";
+              echo "Taal Heritage Town<br>";
+              echo "Kapusod Threehouse";
+              echo "Cape Santiago Lighthouse"<br>";
+              echo "Malabrigo Lighthouse<br>";
+              
+              echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Again </span></button></span>
+";
             }else
-                    echo "we run into an error. please try again and don't leave one blank. ";                    
+                    echo "we run into an error. please try again and don't skip per questions. ";             
+                    echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Again </span></button></span>
+";
                     ?>
           
           <span style="display:flex; justify-content:flex-end; width:100%; padding:0;"><button class="button" style="justify-content: right;" onclick="window.location.href='/welcome'><span>Again </span></button></span>
