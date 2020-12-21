@@ -6,7 +6,7 @@
 <html>
   <head>
     <meta charset="UTF-8">  
-    <title>Your Result is Ready.</title>
+    <title>Ang Iyong Resulta.</title>
     <style>
 
       @import url('https://fonts.googleapis.com/css2?family=K2D&display=swap');
@@ -86,7 +86,7 @@
 ";
             }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "beaches" && isset($_POST["setting"]) && $_POST["budget"] == "yes"){
              
-              echo "<i>detalye: ang mga sumusunod ay iyong resulta.</i><br><br>";
+              echo "<i>detalye: ang mga sumusunod ay ang iyong resulta.</i><br><br>";
               echo "<b>Anilao<br>";
               echo "laiya<br>";
               echo "Masasa Beach, Tingloy<br>";
