@@ -11,7 +11,7 @@
 
       @import url('https://fonts.googleapis.com/css2?family=K2D&display=swap');
 
-      h1{
+      h1,b{
         font-family: 'K2D', sans-serif;
       }
     
@@ -94,7 +94,7 @@
           <?php
             if($_POST["vibe"] == "adventure" || $_POST["taste"] == "mountains" || $_POST["setting"] == "romantic" ||isset($_POST["budget"])){
 
-            echo "<b>Mt. Gulugod Baboy<br>";
+            echo "<b><br>Mt. Gulugod Baboy<br>";
             echo "Mt. Batulao<br>";
             echo "Mt. Talamitam<br>";
             echo "Mt. Manabu<br>";
