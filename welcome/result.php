@@ -87,7 +87,7 @@
   <body>
       <center></center>
         <div id="page-wrap">
-          <h1><b>here's your bucket destination:</b></h1
+          <h1><b>here's your bucket destination:</b></h1>
           <br>
           <?php
             if($_POST["vibe"] == "adventure" && $_POST["taste"] == "mountains" &&  isset($_POST["setting"]) && isset($_POST["budget"])){
