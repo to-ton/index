@@ -83,7 +83,7 @@
     </head>
     <body>
         <div id="page-wrap">
-                <form action="/welcome/4/index.php" method="POST">
+                <form action="/welcome/4/index2.php" method="POST">
                     <h1><b>Setting.</b></h1>
                     <input type="hidden" name="vibe" value="<?php echo $_POST['vibe'];?>">
                     <input type="hidden" name="taste" value="<?php echo $_POST['taste'];?>">
