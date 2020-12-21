@@ -99,7 +99,7 @@
                         <button class="button" style="    justify-content: right;"><span>Sumunod </span></button>
                     </span>
                     </form>
-            <i>please shade your answer</i>
+            <i>Itiman ang bilugan para sa iyong sagot</i>
         </div>
     </body>
 </html>
