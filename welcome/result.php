@@ -66,7 +66,7 @@
       }
 
       .button span:after {
-        content: '\29C1';
+        content: '\22B3';
         position: absolute;
         opacity: 0;
         top: 0;
