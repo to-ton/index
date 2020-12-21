@@ -91,10 +91,11 @@
           <br>
           <i>details: mountains suites in most every situation and absolutely swak sa budget! hope you have a good day :)</i>
           <br>
+          <br>
           <?php
             if($_POST["vibe"] == "adventure" || $_POST["taste"] == "mountains" || $_POST["setting"] == "romantic" ||isset($_POST["budget"])){
 
-            echo "<b><br>Mt. Gulugod Baboy<br>";
+            echo "<b>Mt. Gulugod Baboy<br>";
             echo "Mt. Batulao<br>";
             echo "Mt. Talamitam<br>";
             echo "Mt. Manabu<br>";
@@ -104,7 +105,7 @@
 
             }else if$_POST["vibe"] == "party" || $_POST["taste"] == "mountains" || $_POST["setting"] == "romantic" ||isset($_POST["budget"]){
              
-             echo "Parties are restricted on mountains.<br> Please observe safety and clealiness during your travels."
+             echo "<b>Parties are restricted on mountains.<br> Please observe safety and clealiness during your travels.</b>"
             }
 
             ?>
