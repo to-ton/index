@@ -81,7 +81,7 @@
 
             }elseif($_POST["vibe"] == "party" && $_POST["taste"] == "mountains" && isset($_POST["setting"]) && isset($_POST["budget"])){
              
-             echo "<i>detalye: Pansatilihing ligtas at malinis na kapaligiran sa iyong paglalakbay.</i><br><br><b><font color='red'>Ang pagsasalo-salo ang mahigpit na ipinag babawal sa kabundukan.</font>.</b>";
+             echo "<i>detalye: Pansatilihing ligtas at malinis na kapaligiran sa iyong paglalakbay.</i><br><br><b><font color='red'>Ang pagsasalo-salo ay mahigpit na ipinag babawal sa kabundukan.</font>.</b>";
              echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome/index2.php'\"><span>Umulit </span></button></span>
 ";
             }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "beaches" && isset($_POST["setting"]) && $_POST["budget"] == "yes"){
