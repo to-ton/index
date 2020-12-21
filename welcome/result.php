@@ -100,6 +100,8 @@
               echo "Mt. Daguldol<br>"; 
               echo "Mt. Banoi<br>";
               echo "Mt. Matoco<br></b>";
+              echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=window.location.href=/welcome><span>Again </span></button></span>
+";
 
             }elseif($_POST["vibe"] == "party" && $_POST["taste"] == "mountains" && isset($_POST["setting"]) &&isset($_POST["budget"])){
              
