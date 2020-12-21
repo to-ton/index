@@ -76,13 +76,13 @@
               echo "Mt. Banoi<br>";
               echo "Mt. Matoco<br>";
               echo "Fortune Island<br></b>";
-              echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Umulit </span></button></span>
+              echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome/index2.php'\"><span>Umulit </span></button></span>
 ";
 
             }elseif($_POST["vibe"] == "party" && $_POST["taste"] == "mountains" && isset($_POST["setting"]) && isset($_POST["budget"])){
              
              echo "<i>detalye: Pansatilihing ligtas at malinis na kapaligiran sa iyong paglalakbay.</i><br><br><b><font color='red'>Ang pagsasalo-salo ang mahigpit na ipinag babawal sa kabundukan.</font>.</b>";
-             echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Umulit </span></button></span>
+             echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome/index2.php'\"><span>Umulit </span></button></span>
 ";
             }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "beaches" && isset($_POST["setting"]) && $_POST["budget"] == "yes"){
              
@@ -94,14 +94,14 @@
               echo "Isla Verde<br>";
               echo "Calatagan<br>"; 
               echo "Mabini<br></b>";    
-              echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Umulit </span></button></span>
+              echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome/index2.php'\"><span>Umulit </span></button></span>
 ";
             }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "beaches" && $_POST["setting"] == "romantic" && $_POST["budget"] == "no"){
              
               echo "<b>Aquaria Water Park<br>";
               echo "Sepoc Beach<br>";
               echo "Lemery Resorts<br></b>";
-              echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Again </span></button></span>
+              echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome/index2.php'\"><span>Again </span></button></span>
 ";
             }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "tourist_spots" && isset($_POST["setting"]) && isset($_POST["budget"])){
               echo "<i>detalye: Sulitin ang Batangas sa mga sumusunod na pinakaka-dayuhan ng marami.</i><br><br>";
@@ -113,7 +113,7 @@
               echo "Kapusod Threehouse";
               echo "Cape Santiago Lighthouse<br>";
               echo "Malabrigo Lighthouse<br></b>";
-              echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Umulit </span></button></span>
+              echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome/index2.php'\"><span>Umulit </span></button></span>
 ";
             }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "tourist_spots" && isset($_POST["setting"]) && isset($_POST["budget"])){
               echo "<i>detalye: Lahat ng destinasyon sa Batangas ay swak sa badyet mo! :)</i><br><br>";
@@ -125,12 +125,12 @@
               echo "Kapusod Threehouse";
               echo "Cape Santiago Lighthouse<br>";
               echo "Malabrigo Lighthouse<br></b>";
-              echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Umulit </span></button></span>
+              echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome/index2.php'\"><span>Umulit </span></button></span>
 ";
             }
           else{
                     echo "<b>Nagkaroon ng problema. Pakisagutan muli.</b>";             
-                    echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Umulit </span></button></span>
+                    echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome/index2.php'\"><span>Umulit </span></button></span>
 ";}
                     ?>
           
