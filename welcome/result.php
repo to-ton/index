@@ -141,14 +141,12 @@
               
               echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Again </span></button></span>
 ";
-            }else
+            }else{
                     echo "we run into an error. please try again and don't skip per questions. ";             
                     echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Again </span></button></span>
-";
+";}
                     ?>
           
-          <span style="display:flex; justify-content:flex-end; width:100%; padding:0;"><button class="button" style="justify-content: right;" onclick="window.location.href='/welcome'><span>Again </span></button></span>
-
           
       </div>
       </center>
