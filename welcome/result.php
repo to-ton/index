@@ -136,7 +136,7 @@
               echo "Saint Padre Pio Shrine<br>";
               echo "Taal Heritage Town<br>";
               echo "Kapusod Threehouse";
-              echo "Cape Santiago Lighthouse"<br>";
+              echo "Cape Santiago Lighthouse<br>";
               echo "Malabrigo Lighthouse<br>";
               echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Again </span></button></span>
 ";
