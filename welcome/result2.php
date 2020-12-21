@@ -101,7 +101,7 @@
               echo "<b>Aquaria Water Park<br>";
               echo "Sepoc Beach<br>";
               echo "Lemery Resorts<br></b>";
-              echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome/index2.php'\"><span>Again </span></button></span>
+              echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome/index2.php'\"><span>Umulit </span></button></span>
 ";
             }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "tourist_spots" && isset($_POST["setting"]) && isset($_POST["budget"])){
               echo "<i>detalye: Sulitin ang Batangas sa mga sumusunod na pinakaka-dayuhan ng marami.</i><br><br>";
