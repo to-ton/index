@@ -66,7 +66,7 @@
       }
 
       .button span:after {
-        content: '\1F5F8';
+        content: '\29C1';
         position: absolute;
         opacity: 0;
         top: 0;
@@ -140,7 +140,20 @@
               echo "Malabrigo Lighthouse<br>";
               echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Again </span></button></span>
 ";
-            }else{
+            }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "tourist_spots" && isset($_POST["setting"]) && isset($_POST["budget"])){
+              echo "<i>details: Honestly, everything under the hood in Batangas is just under your budget :)</i><br><br>";
+              echo "<b>Fantasy World, Batangas<br>";
+              echo "Taal, Volcano<br>";
+              echo "San Nicolas Ecotour<br>";
+              echo "Saint Padre Pio Shrine<br>";
+              echo "Taal Heritage Town<br>";
+              echo "Kapusod Threehouse";
+              echo "Cape Santiago Lighthouse<br>";
+              echo "Malabrigo Lighthouse<br>";
+              echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Again </span></button></span>
+";
+            }
+          else{
                     echo "we run into an error. please try again and don't skip per questions. ";             
                     echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Again </span></button></span>
 ";}
