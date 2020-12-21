@@ -1,6 +1,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html>
 	<meta charset="utf-8">
@@ -13,10 +14,12 @@
 				h1{
 					font-family: 'Allura', cursive;
 					color: green;
+					font-size: 37px;
 				}
 
 				p{
 				font-family: 'K2D', sans-serif;
+				font-size: 17px;
 				}
 
 				* { margin: 0; padding: 0; }
@@ -82,8 +85,11 @@
 				<br>
 				<p>"We travel Not to escape Life<br>But for Life Not to escape us" <br> —Anonymous</p>
 				<br><br>
-				<button class="button" style="vertical-align:middle" onclick="window.location.href='/welcome/1'"><span>Continue </span></button>
+				<button class="button" style="vertical-align:middle" onclick="if (!window.__cfRLUnblockHandlers) return false; window.location.href='/welcome/1'" data-cf-modified-e0383149bc7156ebe97587b8-=""><span>Continue </span></button>
+				<br><br>
+				<div class="footer-copyright text-center py-3" style="font-size:8px;">IN PARTIAL FULLFILLMENT OF READINGS IN PHILIPPINE HISTORY (PRE-FINALS) <br> <b>NOT FOR COMMERCIAL USE.</b></div>
+
 			</div>
 		</center>
-   	</body>
+   	<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="e0383149bc7156ebe97587b8-|49" defer=""></script></body>
 </html>
