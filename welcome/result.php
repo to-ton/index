@@ -74,8 +74,8 @@
               echo "Mt. Manabu<br>";
               echo "Mt. Daguldol<br>"; 
               echo "Mt. Banoi<br>";
-              echo "Mt. Matoco<br></b>";
-              echo "Fortune Island<br>";
+              echo "Mt. Matoco<br>";
+              echo "Fortune Island<br></b>";
               echo " <span style='display:flex; justify-content:flex-end; width:100%; padding:0;'><button class='button' style='justify-content: right;' onclick=\"window.location.href='/welcome'\"><span>Again </span></button></span>
 ";
 
