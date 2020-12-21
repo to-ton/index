@@ -92,7 +92,7 @@
           <?php
             if($_POST["vibe"] == "adventure" && $_POST["taste"] == "mountains" &&  isset($_POST["setting"]) && isset($_POST["budget"])){
 
-            echo "<i>details: mountains suites in most every situation and absolutely swak sa budget! hope you have a good day :)</i>";
+            echo "<i>details: mountains suites in most every situation and absolutely swak sa budget! hope you have a good day :)</i><br><br>";
             echo "<b>Mt. Gulugod Baboy<br>";
             echo "Mt. Batulao<br>";
             echo "Mt. Talamitam<br>";
@@ -103,7 +103,7 @@
 
             }elseif($_POST["vibe"] == "party" && $_POST["taste"] == "mountains" && isset($_POST["setting"]) &&isset($_POST["budget"])){
              
-             echo "<i>Please observe safety and clealiness during your travels.</i><br><b><font color='red'>Parties are restricted on mountains</font>.</b>";
+             echo "<i>Please observe safety and clealiness during your travels.</i><br><br><b><font color='red'>Parties are restricted on mountains</font>.</b>";
             }else
                     echo "we run into an error. please try again and don't leave one blank. ";
                     ?>
