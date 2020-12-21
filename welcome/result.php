@@ -92,18 +92,28 @@
           <?php
             if($_POST["vibe"] == "adventure" && $_POST["taste"] == "mountains" &&  isset($_POST["setting"]) && isset($_POST["budget"])){
 
-            echo "<i>details: mountains suites in most every situation and absolutely swak sa budget! hope you have a good day :)</i><br><br>";
-            echo "<b>Mt. Gulugod Baboy<br>";
-            echo "Mt. Batulao<br>";
-            echo "Mt. Talamitam<br>";
-            echo "Mt. Manabu<br>";
-            echo "Mt. Daguldol<br>"; 
-            echo "Mt. Banoi<br>";
-            echo "Mt. Matoco<br></b>";
+              echo "<i>details: mountains suites in most every situation and absolutely swak sa budget! hope you have a good day :)</i><br><br>";
+              echo "<b>Mt. Gulugod Baboy<br>";
+              echo "Mt. Batulao<br>";
+              echo "Mt. Talamitam<br>";
+              echo "Mt. Manabu<br>";
+              echo "Mt. Daguldol<br>"; 
+              echo "Mt. Banoi<br>";
+              echo "Mt. Matoco<br></b>";
 
             }elseif($_POST["vibe"] == "party" && $_POST["taste"] == "mountains" && isset($_POST["setting"]) &&isset($_POST["budget"])){
              
-             echo "<i>Please observe safety and clealiness during your travels.</i><br><br><b><font color='red'>Parties are restricted on mountains</font>.</b>";
+             echo "<i>details: Please observe safety and cleanliness during your travels.</i><br><br><b><font color='red'>Parties are restricted on mountains</font>.</b>";
+            }elseif(isset($_POST["vibe"]) && $_POST["taste"] == "beaches" $_POST["setting"] == "nature" && $_POST["budget"] == "yes"){
+             
+              echo "<i>details: here are the list of budget beaches available.</i><br><br>";
+              echo "<b>Anilao<br>";
+              echo "laiya<br>";
+              echo "Mabini<br>";
+              echo "Isla Verde<br>";
+              echo "Calatagan<br>"; 
+              echo "Mabini<br>";
+
             }else
                     echo "we run into an error. please try again and don't leave one blank. ";
                     ?>
