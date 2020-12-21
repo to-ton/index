@@ -66,7 +66,7 @@
           <br>
           <button class="button" onclick="window.location.href='/welcome'"><span>English </span></button>
           <span> </span>
-          <button class="button"><span>Tagalog </span></button>
+          <button class="button" onclick="window.location.href='/welcome/index2.php'"><span>Tagalog </span></button>
       </div>
       </center>
   </body>
