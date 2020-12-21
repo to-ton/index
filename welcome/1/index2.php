@@ -98,7 +98,7 @@
                     <input type="radio" id="party" name="vibe" value="party">
                     <label>Salo-Salo</label><br>
                     <span style="display:flex; justify-content:flex-end; width:100%; padding:0;">
-                        <button class="button" style="    justify-content: right;"><span>Next </span></button>
+                        <button class="button" style="    justify-content: right;"><span>Sumunod </span></button>
                     </span>
                     </form>
                 <i>Itiman ang bilugan para sa iyong sagot</i>
