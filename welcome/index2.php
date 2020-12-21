@@ -81,7 +81,7 @@
 				<pre> </pre>
 				<h1><b>Bucket List Batangas!</b></h1>
 				<br>
-				<p>Ito ay isang madaling instrumento upang makabuo ng iyong sariling listahan ng iyomg mga patutunguhan - tampok ang Batangas at mga likas na atraksyon, mga site ng relihiyon, mga patutunguhan sa palakasan at libangan, mga lugar para sa iba't ibang mga pakikipagsapalaran sa gastronomic, at mga makasaysayang at kultural na mga site.</p>
+				<p>Ito ay isang madaling instrumento upang makabuo ng iyong sariling listahan ng iyong mga patutunguhan - tampok ang Batangas at mga likas na atraksyon, mga site ng relihiyon, mga patutunguhan sa palakasan at libangan, mga lugar para sa iba't ibang mga pakikipagsapalaran sa gastronomic, at mga makasaysayang at kultural na mga site.</p>
 				<br>
 				<p>"Naglalakbay tayo Hindi para makatakas sa Buhay Ngunit para ang Buhay ay hindi makatakas sa atin."<br> —Anonymous</p>
 				<br><br>
