@@ -93,7 +93,7 @@
           <br>
           <br>
           <?php
-            if($_POST["vibe"] == "adventure" && $_POST["taste"] == "mountains" ||  isset($_POST["setting"]) ||isset($_POST["budget"])){
+            if($_POST["vibe"] == "adventure" && $_POST["taste"] == "mountains" &&  isset($_POST["setting"]) && isset($_POST["budget"])){
 
             echo "<b>Mt. Gulugod Baboy<br>";
             echo "Mt. Batulao<br>";
@@ -103,7 +103,7 @@
             echo "Mt. Banoi<br>";
             echo "Mt. Matoco<br></b>";
 
-            }elseif($_POST["vibe"] == "party" && $_POST["taste"] == "mountains" || isset($_POST["setting"]) ||isset($_POST["budget"])){
+            }elseif($_POST["vibe"] == "party" && $_POST["taste"] == "mountains" && isset($_POST["setting"]) &&isset($_POST["budget"])){
              
              echo "<b>Parties are restricted on mountains.<br> Please observe safety and clealiness during your travels.</b>";
             }else
