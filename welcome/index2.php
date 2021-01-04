@@ -81,13 +81,13 @@
 				<pre> </pre>
 				<h1><b>Bucket List Batangas!</b></h1>
 				<br>
-				<p>Ito ay isang madaling instrumento upang makabuo ng iyong sariling listahan ng iyong mga patutunguhan - tampok ang Batangas at mga likas na atraksyon, mga site ng relihiyon, mga patutunguhan sa palakasan at libangan, mga lugar para sa iba't ibang mga pakikipagsapalaran sa gastronomic, at mga makasaysayang at kultural na mga site.</p>
+				<p>Ito ay isang instrumento upang makabuo ng iyong sariling listahan ng mga patutunguhan - tampok ang Batangas at mga likas na atraksyon, mga site ng relihiyon, at mga lugar para sa iba't ibang aktibidad, at mga makasaysayan at kultural na mga site.</p>
 				<br>
 				<p>"Naglalakbay tayo Hindi para makatakas sa Buhay Ngunit para ang Buhay ay hindi makatakas sa atin."<br> —Anonymous</p>
 				<br><br>
 				<button class="button" style="vertical-align:middle" onclick="if (!window.__cfRLUnblockHandlers) return false; window.location.href='/welcome/1/index2.php'" data-cf-modified-e0383149bc7156ebe97587b8-=""><span>MAGPATULOY </span></button>
 				<br><br>
-				<div class="footer-copyright text-center py-3" style="font-size:8px;">PROYEKTO SA READINGS IN PHILIPPINE HISTORY (PRE-FINALS) <br> <b>HINDI ITO OPISYAL.</b></div>
+				<div class="footer-copyright text-center py-3" style="font-size:8px;">PROYEKTO SA READINGS IN PHILIPPINE HISTORY (PRE-FINALS) <br> <b>HINDI ITO PANG KOMERSYAL.</b></div>
 
 			</div>
 		</center>
