@@ -86,7 +86,7 @@
     <body>
             <div id="page-wrap">
                 <form action="/welcome/2/index2.php" method="POST" required="required">
-                    <h1><b>Pumile ng iyong pinaka nanais:</b></h1>
+                    <h1><b>Pumili ng iyong pinaka nanais:</b></h1>
                     <input type="radio" id="adventure" name="vibe" value="adventure">
                     <label>Maglakbay</label><br>
                     <input type="radio" id="pass_time" name="vibe" value="for_past_time">
