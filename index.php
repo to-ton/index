@@ -188,12 +188,10 @@ function Pota(){
           if(target === ""){
             document.getElementById('error-message').style.color = "white";
             document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
-            wait(2000);
             window.open("https://"+domain+"/student_dropbox_assignment/comments_given/"+act, '_blank');
               }else{
                 document.getElementById('error-message').style.color = "white";
                 document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
-                wait(2000);
                 window.open("https://"+domain+"/student_dropbox_assignment/leave_comment/"+act+"?student="+target.replace(/[^0-9]/g, ''), '_blank');
               }
           }else if(x.includes("quiz")){
