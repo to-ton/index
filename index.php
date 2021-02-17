@@ -131,6 +131,7 @@ function http_digest_parse($txt)
   <br>
   <br>
   <h2 style="color:white">Welcome to Project #NeO</h2>
+  <br>
   <iframe width="320" height="280" src="https://www.youtube.com/embed/-rokG9XS37w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <br>
   <code>"Knowledge seas power."</code>
@@ -153,7 +154,14 @@ function http_digest_parse($txt)
   </center>
 
     <script>
-        
+
+var delay = ( function() {
+    var timer = 0;
+    return function(callback, ms) {
+        clearTimeout (timer);
+        timer = setTimeout(callback, ms);
+    };
+})();  
       
 function Pota(){
   x = document.getElementById('url').value;
@@ -167,32 +175,37 @@ function Pota(){
         if(x.includes("freeform")){
           target = prompt("Enter Target URL: ");
               if(target === ""){
-                document.getElementById('error-message').style.color = "yellow";
-                document.getElementById('error-message').innerHTML = "generating class submissions uri..";
+                document.getElementById('error-message').style.color = "white";
+                document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
+                wait(2000);
                 window.open("https://"+domain+"/student_freeform_assignment/comments_given/"+act, '_blank');
               }else{
-                document.getElementById('error-message').style.color = "yellow";
-                document.getElementById('error-message').innerHTML = "generating target submission uri..";
+                document.getElementById('error-message').style.color = "white";
+                document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
+                wait(2000);
                 window.open("https://"+domain+"/student_freeform_assignment/leave_comment/"+act+"?student="+target.replace(/[^0-9]/g, ''), '_blank');
               }
         }else if(x.includes("dropbox")){
           target = prompt("Enter Target URL: ");
           if(target === ""){
-            document.getElementById('error-message').style.color = "yellow";
-            document.getElementById('error-message').innerHTML = "generating class submissions uri..";
+            document.getElementById('error-message').style.color = "white";
+            document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
+            wait(2000);
             window.open("https://"+domain+"/student_dropbox_assignment/comments_given/"+act, '_blank');
               }else{
-                document.getElementById('error-message').style.color = "yellow";
-                document.getElementById('error-message').innerHTML = "generating target submission uri..";
+                document.getElementById('error-message').style.color = "white";
+                document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
+                wait(2000);
                 window.open("https://"+domain+"/student_dropbox_assignment/leave_comment/"+act+"?student="+target.replace(/[^0-9]/g, ''), '_blank');
               }
           }else if(x.includes("quiz")){
             //result_id
             quiz = new URL(x);
             var result = quiz.searchParams.get("results");
-            document.getElementById('error-message').style.color = "yellow";
-             document.getElementById('error-message').innerHTML = "generating answer key..";
-             window.open("https://"+domain+"/student_quiz_assignment/submission/"+act+"?results="+result, '_blank');
+             document.getElementById('error-message').style.color = "white";
+             document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
+              window.open("https://"+domain+"/student_quiz_assignment/submission/"+act+"?results="+result, '_blank');
+            
             }else if(x.includes("student_lesson")){
               document.getElementById('error-message').innerHTML = "visit /tutorial for more details.";
             }else{
