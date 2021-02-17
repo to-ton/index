@@ -167,28 +167,32 @@ function Pota(){
         if(x.includes("freeform")){
           target = prompt("Enter Target URL: ");
               if(target === ""){
-                 document.getElementById('error-message').innerHTML = "invalid target.";
+                document.getElementById('error-message').innerHTML = "generating class submissions uri..";
+                window.open("https://"+domain+"/student_freeform_assignment/comments_given/"+act, '_blank');
               }else{
-            window.open("https://"+domain+"/student_freeform_assignment/leave_comment/"+act+"?student="+target.replace(/[^0-9]/g, ''), '_blank');
+                document.getElementById('error-message').innerHTML = "generating target submission uri..";
+                window.open("https://"+domain+"/student_freeform_assignment/leave_comment/"+act+"?student="+target.replace(/[^0-9]/g, ''), '_blank');
               }
         }else if(x.includes("dropbox")){
           target = prompt("Enter Target URL: ");
           if(target === ""){
-                 document.getElementById('error-message').innerHTML = "invalid target.";
+            document.getElementById('error-message').innerHTML = "generating class submissions uri..";
+            window.open("https://"+domain+"/student_dropbox_assignment/comments_given/"+act, '_blank');
               }else{
-          window.open("https://"+domain+"/student_dropbox_assignment/leave_comment/"+act+"?student="+target.replace(/[^0-9]/g, ''), '_blank');
+                document.getElementById('error-message').innerHTML = "generating target submission uri..";
+                window.open("https://"+domain+"/student_dropbox_assignment/leave_comment/"+act+"?student="+target.replace(/[^0-9]/g, ''), '_blank');
               }
           }else if(x.includes("quiz")){
             //result_id
             quiz = new URL(x);
             var result = quiz.searchParams.get("results");
             
-            //act_id
-            const segments = new URL(x).pathname.split('/');
-             const act = segments.pop() || segments.pop();
-            
+             document.getElementById('error-message').innerHTML = "generating answer key..";
              window.open("https://"+domain+"/student_quiz_assignment/submission/"+act+"?results="+result, '_blank');
+            }else if(x.includes("student_lesson")){
+              document.getElementById('error-message').innerHTML = "visit /tutorial for more details.";
             }else{
+
           document.getElementById('error-message').innerHTML = "invalid activity.";
           }
         
