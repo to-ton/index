@@ -160,7 +160,8 @@ function Pota(){
    try{
       
       const domain = (new URL(x)).hostname.replace('www.','');
-
+      const segments = new URL(x).pathname.split('/');
+      const act = segments.pop() || segments.pop();
     
 
         if(x.includes("freeform")){
@@ -168,14 +169,14 @@ function Pota(){
               if(target === ""){
                  document.getElementById('error-message').innerHTML = "invalid target.";
               }else{
-            window.open("https://"+domain+"/student_freeform_assignment/leave_comment/"+x.replace(/[^0-9]/g, '')+"?student="+target.replace(/[^0-9]/g, ''), '_blank');
+            window.open("https://"+domain+"/student_freeform_assignment/leave_comment/"+act+"?student="+target.replace(/[^0-9]/g, ''), '_blank');
               }
         }else if(x.includes("dropbox")){
           target = prompt("Enter Target URL: ");
           if(target === ""){
                  document.getElementById('error-message').innerHTML = "invalid target.";
               }else{
-          window.open("https://"+domain+"/student_dropbox_assignment/leave_comment/"+x.replace(/[^0-9]/g, '')+"?student="+target.replace(/[^0-9]/g, ''), '_blank');
+          window.open("https://"+domain+"/student_dropbox_assignment/leave_comment/"+act+"?student="+target.replace(/[^0-9]/g, ''), '_blank');
               }
           }else if(x.includes("quiz")){
             //result_id
