@@ -149,7 +149,7 @@ function http_digest_parse($txt)
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" id="cclose" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" id="cclose" class="btn btn-secondary" data-dismiss="modal" onclick=empp()>Close</button>
         <button type="button" class="btn btn-primary" style="background-color:black; border-color:white;color:white;" onclick=atis()>Generate</button>
       </div>
     </div>
@@ -194,7 +194,10 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 
     <script>
 
-    $(window).scrollTop($("*:contains('invalid url.").offset().top);
+  function empp(){
+    document.getElementById('error-message').innerHTML = "";
+  }
+
 function Pota(){
   x = document.getElementById('url').value;
    try{
