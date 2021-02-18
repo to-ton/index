@@ -149,7 +149,7 @@ function http_digest_parse($txt)
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" id="cclose" class="btn btn-secondary" data-dismiss="modal" onfocusout=empp()>Close</button>
+        <button type="button" id="cclose" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary" style="background-color:black; border-color:white;color:white;" onclick=atis()>Generate</button>
       </div>
     </div>
@@ -179,7 +179,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   <div class="container h-100">
       <div class="d-flex justify-content-center h-100">
         <div class="searchbar">
-          <input class="search_input" type="text" id="url" placeholder="Paste Target URI">
+          <input class="search_input" type="text" id="url" placeholder="Paste Target URI" onclick=empp()>
           <a type=Submit id="subm" class="search_icon" onclick=Pota()><i class="fas fa-search"></i></a>
           <br><br>
           <p id="error-message" style="color:red;"></p>
