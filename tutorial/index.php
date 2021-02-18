@@ -80,7 +80,8 @@ color: white;}
 2. Randomly answer the questions<br>
 3. at the submit page, copy the URL<br>
 4. Paste it on http://neo.danicfonte.cf/<br>
-5. A new window should open provided with answer key, this should be your answer key. <br>browse back to your oginial tab and edit your answers.<br>
+5. A new window should open provided with answer key, this should be your answer key. <br>
+6. browse back to your original tab and edit your answers.<br>
 </p>
 <br><br>
 <h2>ESSAYS/DROPBOX:</h2>
