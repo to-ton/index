@@ -185,7 +185,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
           <input class="search_input" type="text" id="url" placeholder="Paste Target URI">
           <a type=Submit id="subm" class="search_icon" onclick=Pota()><i class="fas fa-search"></i></a>
           <br><br>
-          <p id="error-message"></p>
+          <p id="error-message" style="color:white;"></p>
           <br><br>
         </div>
       </div>
