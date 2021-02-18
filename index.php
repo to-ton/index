@@ -127,9 +127,6 @@ function http_digest_parse($txt)
     color:white;
     text-decoration:none;
     }
-    #error-meesage{
-        coloe: white;
-        }
     </style>
   </head>
   <body>
@@ -185,8 +182,8 @@ $('#exampleModal').on('show.bs.modal', function (event) {
           <input class="search_input" type="text" id="url" placeholder="Paste Target URI">
           <a type=Submit id="subm" class="search_icon" onclick=Pota()><i class="fas fa-search"></i></a>
           <br><br>
-          <p id="error-message" style="color:white;"></p>
-          <br><br>
+          <p id="error-message" style="color:red;"></p>
+          <br>
         </div>
       </div>
     </div>
@@ -242,16 +239,16 @@ function Pota(){
             }else if(x.includes("student_lesson")){
               document.getElementById('error-message').innerHTML = "visit /tutorial for more details.";
             }else{
-          document.getElementById("cclose").click();
           document.getElementById('error-message').innerHTML = "activity not found.";
+          document.getElementById("cclose").click();
           var elmnt = document.getElementById("error-message");
           elmnt.scrollIntoView();
           }
         
 
    }catch(error){
-    document.getElementById("cclose").click();
     document.getElementById('error-message').innerHTML = "invalid url.";
+    document.getElementById("cclose").click();
     var elmnt = document.getElementById("error-message");
     elmnt.scrollIntoView();
    }
@@ -305,16 +302,16 @@ function Pota(){
             }else if(x.includes("student_lesson")){
               document.getElementById('error-message').innerHTML = "visit /tutorial for more details.";
             }else{
-          document.getElementById("cclose").click();
           document.getElementById('error-message').innerHTML = "activity not found.";
+          document.getElementById("cclose").click();
           var elmnt = document.getElementById("error-message");
           elmnt.scrollIntoView();
           }
         
 
    }catch(error){
-       document.getElementById("cclose").click();
         document.getElementById('error-message').innerHTML = "invalid url.";
+        document.getElementById("cclose").click();
         var elmnt = document.getElementById("error-message");
         elmnt.scrollIntoView();
 
