@@ -127,6 +127,9 @@ function http_digest_parse($txt)
     color:white;
     text-decoration:none;
     }
+    #error-message{
+      color:red;
+    }
     </style>
   </head>
   <body>
@@ -174,7 +177,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   <br>
   <iframe width="320" height="280" src="https://www.youtube.com/embed/-rokG9XS37w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <br>
-  <code>"from Knowledge sea power."</code>
+  <code>"Knowledge seas power."</code>
   <br>
   <br>
   <br>
@@ -184,7 +187,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
           <input class="search_input" type="text" id="url" placeholder="Paste Target URI">
           <a type=Submit id="subm" class="search_icon" onclick=Pota()><i class="fas fa-search"></i></a>
           <br><br>
-          <p id="error-message" style="color:red"><b></b></p>
+          <p id="error-message"><b></b></p>
         </div>
       </div>
     </div>
@@ -253,45 +256,49 @@ function Pota(){
   }
 
   function atis(){
-    xx = document.getElementById('url').value;
+    x = document.getElementById('url').value;
     y = document.getElementById('target-text').value;
    try{
       
-      const domain = (new URL(xx)).hostname.replace('www.','');
-      const segments = new URL(xx).pathname.split('/');
+      const domain = (new URL(x)).hostname.replace('www.','');
+      const segments = new URL(x).pathname.split('/');
       const act = segments.pop() || segments.pop();
     
 
-        if(xx.includes("freeform")){
+        if(x.includes("freeform")){
           
               if(document.getElementById('target-text').value === ""){
                 document.getElementById('error-message').style.color = "white";
                 document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
+                document.getElementById("cclose").click();
                 window.open("https://"+domain+"/student_freeform_assignment/comments_given/"+act, '_blank');
               }else{
                 document.getElementById('error-message').style.color = "white";
                 document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
+                document.getElementById("cclose").click();
                 window.open("https://"+domain+"/student_freeform_assignment/leave_comment/"+act+"?student="+y.replace(/[^0-9]/g, ''), '_blank');
               }
-        }else if(xx.includes("dropbox")){
+        }else if(x.includes("dropbox")){
           
 
-          if(document.getElementById('taget-text').value == ""){
+          if(document.getElementById('target-text').value == ""){
             document.getElementById('error-message').style.color = "white";
             document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
+            document.getElementById("cclose").click();
             window.open("https://"+domain+"/student_dropbox_assignment/comments_given/"+act, '_blank');
               }else{
-                document.getElementById('error-message').style.color = "white";
-                document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
-                window.open("https://"+domain+"/student_dropbox_assignment/leave_comment/"+act+"?student="+y.replace(/[^0-9]/g, ''), '_blank');
+               document.getElementById('error-message').style.color = "white";
+               document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
+               document.getElementById("cclose").click();
+               window.open("https://"+domain+"/student_dropbox_assignment/leave_comment/"+act+"?student="+y.replace(/[^0-9]/g, ''), '_blank');
               }
           }else if(x.includes("quiz")){
             //result_id
-            quiz = new URL(xx);
+            quiz = new URL(x);
             var result = quiz.searchParams.get("results");
              document.getElementById('error-message').style.color = "white";
              document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
-              window.open("https://"+domain+"/student_quiz_assignment/submission/"+act+"?results="+result, '_blank');
+            window.open("https://"+domain+"/student_quiz_assignment/submission/"+act+"?results="+result, '_blank');
             
             }else if(x.includes("student_lesson")){
               document.getElementById('error-message').innerHTML = "visit /tutorial for more details.";
