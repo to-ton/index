@@ -52,7 +52,7 @@ function http_digest_parse($txt)
 ?>
 <!DOCTYPE html>
     <!-- CREDITS TO THE INTERNET!! -->
-    <!-- Project Xploit by DAN -->
+    <!-- Neo Exploit Project by DAN -->
 <html lang="en">
   <head>
     <meta charset="utf-8">
