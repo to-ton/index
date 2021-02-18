@@ -62,6 +62,9 @@ function http_digest_parse($txt)
    <style>
 div{
 padding: 50px;}
+body{
+background-color: black;
+color: white;}
    </style>
     </script>
     <title>Tutorial</title>
