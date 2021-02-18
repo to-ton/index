@@ -130,25 +130,6 @@ function http_digest_parse($txt)
     #error-message{
       color:red;
     }
-    h1 {
-  /* Extra small devices (phones, less than 768px) */
-  font-size: 10px;
-
-  /* Small devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
-    font-size: 12px;
-  }
-
-  /* Medium devices (desktops, 992px and up) */
-  @media (min-width: 992px) {
-    font-size: 16px;
-  }
-
-  /* Large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {
-    font-size: 18px;
-  }
-}
     </style>
   </head>
   <body>
