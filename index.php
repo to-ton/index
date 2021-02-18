@@ -206,6 +206,9 @@ function Pota(){
 
         if(x.includes("freeform")){
 
+          document.getElementById('error-message').style.color = "white";
+          document.getElementById('error-message').innerHTML = "attempting..";
+
           var attr = document.createAttribute('data-toggle');
           attr.value="modal";
           document.getElementById("subm").setAttributeNode(attr);
@@ -217,6 +220,9 @@ function Pota(){
           
              
         }else if(x.includes("dropbox")){
+
+          document.getElementById('error-message').style.color = "white";
+          document.getElementById('error-message').innerHTML = "attempting..";
           
           
           var attr = document.createAttribute('data-toggle');
@@ -266,6 +272,9 @@ function Pota(){
 
         if(x.includes("freeform")){
           
+          document.getElementById('error-message').style.color = "white";
+          document.getElementById('error-message').innerHTML = "attempting..";
+
               if(document.getElementById('target-text').value === ""){
                 document.getElementById('error-message').style.color = "white";
                 document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
@@ -279,6 +288,8 @@ function Pota(){
               }
         }else if(x.includes("dropbox")){
           
+          document.getElementById('error-message').style.color = "white";
+          document.getElementById('error-message').innerHTML = "attempting..";
 
           if(document.getElementById('target-text').value == ""){
             document.getElementById('error-message').style.color = "white";
