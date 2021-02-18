@@ -174,7 +174,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   <br>
   <iframe width="320" height="280" src="https://www.youtube.com/embed/-rokG9XS37w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <br>
-  <code>"Knowledge seas power."</code>
+  <code>"from Knowledge sea power."</code>
   <br>
   <br>
   <br>
