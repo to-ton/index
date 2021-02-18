@@ -134,7 +134,7 @@ function http_digest_parse($txt)
   <br>
   <iframe width="320" height="280" src="https://www.youtube.com/embed/-rokG9XS37w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <br>
-  <code>"From knowledge, sea power."</code>
+  <code>"from knowledge, sea power."</code>
   <br>
   <br>
   <br>
