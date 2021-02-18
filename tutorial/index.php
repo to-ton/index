@@ -80,7 +80,7 @@ color: white;}
 2. Randomly answer the questions<br>
 3. at the submit page, copy the URL<br>
 4. Paste it on http://neo.danicfonte.cf/<br>
-5. A new window should open provided with answer key, this should be your answer key. <br>head back now and edit your answers at your original url.<br>
+5. A new window should open provided with answer key, this should be your answer key. <br>browse back to your oginial tab and edit your answers.<br>
 </p>
 <br><br>
 <h2>ESSAYS/DROPBOX:</h2>
@@ -89,7 +89,7 @@ Unlike quiz. essays and dropbox forms don't have answer key. teachers should be 
 1. Click Prepare answer now<br>
 2. Copy the URL<br>
 3. and Paste it on http://neo.danicfonte.cf/<br>
-4. In the "Target URI", paste one of your classmate's profile address like below that you wish to view:<br>
+4. In the "Target URI", paste one of your classmate's profile address that you wish to view, example:<br>
 "https://sample.com/user/show/123"<br>
 <i>or leave it blank and the program will generate your class list uri along with their submissions.</i><br>
 5. you should be able to view their essay/dropbox submissions. :))<br>
