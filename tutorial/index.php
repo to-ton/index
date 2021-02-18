@@ -95,7 +95,7 @@ Unlike quiz. essays and dropbox forms don't have answer key. teachers should be 
 </p>
 <br><br>
 <hr>
-If you think you understand now, Click <a href=neo.danicfonte.cf>Home</a>
+If you think you understand now, Click <a href="https://neo.danicfonte.cf">Home</a>
 </div>
 
     <!-- Optional JavaScript -->
