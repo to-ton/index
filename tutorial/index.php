@@ -83,7 +83,7 @@ color: white;}
 5. A new window should open provided with answer keys, this should be your answer key. <br>head back now and edit your answers at your original url.<br>
 </p>
 <br><br>
-<h2>ESSAYS/DROPOX:</h2>
+<h2>ESSAYS/DROPBOX:</h2>
 <p>
 Unlike quiz. essays and dropbox forms don't have answer key. teachers should be manually grading this. <br>
 1. Click Prepare answer now<br>
