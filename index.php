@@ -130,6 +130,25 @@ function http_digest_parse($txt)
     #error-message{
       color:red;
     }
+    h1 {
+  /* Extra small devices (phones, less than 768px) */
+  font-size: 10px;
+
+  /* Small devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    font-size: 12px;
+  }
+
+  /* Medium devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    font-size: 16px;
+  }
+
+  /* Large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    font-size: 18px;
+  }
+}
     </style>
   </head>
   <body>
@@ -172,13 +191,11 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 </script>
 <center>
   <br>
-  <br>
-  <h2 style="color:white">Welcome to Project #NeO</h2>
+  <h1 style="color:white">Welcome to Project #NeO</h1>
   <br>
   <iframe width="320" height="280" src="https://www.youtube.com/embed/-rokG9XS37w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <br>
   <code>"from Knowledge sea power."</code>
-  <br>
   <br>
   <br>
   <div class="container h-100">
@@ -187,18 +204,19 @@ $('#exampleModal').on('show.bs.modal', function (event) {
           <input class="search_input" type="text" id="url" placeholder="Paste Target URI">
           <a type=Submit id="subm" class="search_icon" onclick=Pota()><i class="fas fa-search"></i></a>
           <br><br>
-          <p id="error-message"><b></b></p>
+          <p id="error-message"></p>
+          <br><br>
         </div>
       </div>
     </div>
     <br>
-    <br>
+
    
   </center>
 
     <script>
 
-      
+    $(window).scrollTop($("*:contains('invalid url.").offset().top);
 function Pota(){
   x = document.getElementById('url').value;
    try{
@@ -246,12 +264,16 @@ function Pota(){
 
           document.getElementById('error-message').innerHTML = "activity not found.";
           document.getElementById("cclose").click();
+          var elmnt = document.getElementById("error-message");
+          elmnt.scrollIntoView();
           }
         
 
    }catch(error){
     document.getElementById('error-message').innerHTML = "invalid url.";
     document.getElementById("cclose").click();
+    var elmnt = document.getElementById("error-message");
+    elmnt.scrollIntoView();
    }
   }
 
@@ -306,12 +328,16 @@ function Pota(){
 
           document.getElementById('error-message').innerHTML = "activity not found.";
           document.getElementById("cclose").click();
+          var elmnt = document.getElementById("error-message");
+          elmnt.scrollIntoView();
           }
         
 
    }catch(error){
         document.getElementById('error-message').innerHTML = "invalid url.";
         document.getElementById("cclose").click();
+        var elmnt = document.getElementById("error-message");
+        elmnt.scrollIntoView();
 
    }
   }
