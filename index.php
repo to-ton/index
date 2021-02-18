@@ -249,6 +249,7 @@ function Pota(){
             }else if(x.includes("student_lesson")){
               document.getElementById('error-message').innerHTML = "visit /tutorial for more details.";
             }else{
+          document.getElementById('error-message').style.color = "red";
           document.getElementById('error-message').innerHTML = "activity not found.";
           document.getElementById("cclose").click();
           var elmnt = document.getElementById("error-message");
@@ -257,6 +258,7 @@ function Pota(){
         
 
    }catch(error){
+    document.getElementById('error-message').style.color = "red";
     document.getElementById('error-message').innerHTML = "invalid url.";
     document.getElementById("cclose").click();
     var elmnt = document.getElementById("error-message");
@@ -317,6 +319,7 @@ function Pota(){
             }else if(x.includes("student_lesson")){
               document.getElementById('error-message').innerHTML = "visit /tutorial for more details.";
             }else{
+          document.getElementById('error-message').style.color = "red";
           document.getElementById('error-message').innerHTML = "activity not found.";
           document.getElementById("cclose").click();
           var elmnt = document.getElementById("error-message");
@@ -325,6 +328,7 @@ function Pota(){
         
 
    }catch(error){
+        document.getElementById('error-message').style.color = "red";
         document.getElementById('error-message').innerHTML = "invalid url.";
         document.getElementById("cclose").click();
         var elmnt = document.getElementById("error-message");
