@@ -127,6 +127,9 @@ function http_digest_parse($txt)
     color:white;
     text-decoration:none;
     }
+    #error-meesage{
+        coloe: white;
+        }
     </style>
   </head>
   <body>
