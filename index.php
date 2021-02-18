@@ -315,7 +315,6 @@ function Pota(){
             window.open("https://"+domain+"/student_quiz_assignment/submission/"+act+"?results="+result, '_blank');
             
             }else if(x.includes("student_lesson")){
-              document.getElementById('error-message').style.color = "white";
               document.getElementById('error-message').innerHTML = "visit /tutorial for more details.";
             }else{
           document.getElementById('error-message').innerHTML = "activity not found.";
