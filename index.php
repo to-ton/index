@@ -185,6 +185,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   <u><code style="color:gray;cursor: crosshair;" onclick="history();">recent targets</code></u> 
   <br><br>
   <div id="history">
+    this will be empty duuring server refresh.
   <code id="log">
 <?php
 $file = file("targets.txt");
