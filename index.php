@@ -229,7 +229,7 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
 
         function history() {  
             var x = document.getElementById("history");
-        if (x.style.display === "none") {
+        if (x.style.display == "none") {
             x.style.display = "block";
         } else {
             x.style.display = "none";
