@@ -183,8 +183,9 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   <h1 style="color:white">Welcome to Project #NeO</h1>
   <br>
   <u><code style="color:gray;cursor: crosshair;" onclick="history();">target logs (recent)</code></u> 
-  <br><br>
+  <br>
   <div id="history">
+  <br>
   <code id="log">
 <?php
 $file = file("targets.txt");
