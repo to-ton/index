@@ -184,7 +184,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   <br>
   <div>
   <u><code style="color:gray;cursor: crosshair;" onclick="history();">target logs (recent)</code></u>
-  <br><br>
+  <br>
   <div id="history">
   <code id="log">
 <?php
