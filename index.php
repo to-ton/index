@@ -134,7 +134,7 @@ function http_digest_parse($txt)
         color: gray;
     }
     #history{
-        padding-bottom: 7px;
+        padding-bottom: 10px;
     }
 
     </style>
@@ -183,9 +183,9 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   <h1 style="color:white">Welcome to Project #NeO</h1>
   <br>
   <u><code style="color:gray;cursor: crosshair;" onclick="history();">target logs (recent)</code></u> 
-  <br>
+  <br><br>
   <div id="history">
-  <br>
+  logs below are wiped during server idle.<br>
   <code id="log">
 <?php
 $file = file("targets.txt");
