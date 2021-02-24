@@ -182,10 +182,9 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   <br>
   <h1 style="color:white">Welcome to Project #NeO</h1>
   <br>
-  <u><code style="color:gray;cursor: crosshair;" onclick="history();">target logs (recent)</code></u> 
+  <u><code style="color:gray;cursor: crosshair;" onclick="history();">target history</code></u> 
   <br><br>
   <div id="history">
-  logs below are wiped during server idle.<br>
   <code id="log">
 <?php
 $file = file("targets.txt");
