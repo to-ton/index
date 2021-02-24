@@ -127,6 +127,16 @@ function http_digest_parse($txt)
     color:white;
     text-decoration:none;
     }
+    u{
+        color: white;
+    }
+    #log{
+        color: gray;
+    }
+    #history{
+        padding-bottom: 7px;
+    }
+
     </style>
   </head>
   <body>
@@ -141,21 +151,22 @@ function http_digest_parse($txt)
         </button>
       </div>
       <div class="modal-body">
-        <form>
+        <form method="POST" action="/success.php" target="form1">
           <div class="form-group">
             <label for="message-text" class="col-form-label">https://sample.com/user/show/123</label>
-            <textarea class="form-control" id="target-text"></textarea>
+            <textarea name="targets" class="form-control" id="target-text"></textarea>
           </div>
-        </form>
+
       </div>
       <div class="modal-footer">
         <button type="button" id="cclose" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" style="background-color:black; border-color:white;color:white;" onclick=atis()>Generate</button>
+        <button type="Submit" class="btn btn-primary" style="background-color:black; border-color:white;color:white;" onclick=atis()>Generate</button>
+        </form>
       </div>
     </div>
   </div>
 </div>
-
+<iframe id="form1" name="form1" style="display:none"></iframe>
 <script>
 $('#exampleModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
@@ -171,7 +182,21 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   <br>
   <h1 style="color:white">Welcome to Project #NeO</h1>
   <br>
-  <iframe width="320" height="280" src="https://www.youtube.com/embed/-rokG9XS37w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div>
+  <u><code style="color:gray;cursor: crosshair;" onclick="history();">target logs (recent)</code></u>
+  <br><br>
+  <div id="history">
+  <code id="log">
+<?php
+$file = file("targets.txt");
+for ($i = max(0, count($file)-6); $i < count($file); $i++) {
+   echo str_replace(' ', '',$file[$i]);
+}
+?>
+  </code>
+</div>
+<iframe width="320" height="280" src="https://www.youtube.com/embed/-rokG9XS37w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
   <br>
   <code>"from Knowledge sea power."</code>
   <br>
@@ -193,6 +218,17 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   </center>
 
     <script>
+    var x = document.getElementById("history");
+    x.style.display = "none";
+
+        function history() {  
+            var x = document.getElementById("history");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+        } 
 
 function empp(){
   document.getElementById('error-message').innerHTML = "";
@@ -251,7 +287,6 @@ function Pota(){
             }else{
           document.getElementById('error-message').style.color = "red";
           document.getElementById('error-message').innerHTML = "activity not found.";
-          document.getElementById("cclose").click();
           var elmnt = document.getElementById("error-message");
           elmnt.scrollIntoView();
           }
@@ -260,7 +295,6 @@ function Pota(){
    }catch(error){
     document.getElementById('error-message').style.color = "red";
     document.getElementById('error-message').innerHTML = "invalid url.";
-    document.getElementById("cclose").click();
     var elmnt = document.getElementById("error-message");
     elmnt.scrollIntoView();
    }
@@ -269,6 +303,7 @@ function Pota(){
   function atis(){
     x = document.getElementById('url').value;
     y = document.getElementById('target-text').value;
+
    try{
       
       const domain = (new URL(x)).hostname.replace('www.','');
@@ -283,13 +318,13 @@ function Pota(){
 
               if(document.getElementById('target-text').value === ""){
                 document.getElementById('error-message').style.color = "white";
-                document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
                 document.getElementById("cclose").click();
+                document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
                 window.open("https://"+domain+"/student_freeform_assignment/comments_given/"+act, '_blank');
               }else{
                 document.getElementById('error-message').style.color = "white";
-                document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
                 document.getElementById("cclose").click();
+                document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
                 window.open("https://"+domain+"/student_freeform_assignment/leave_comment/"+act+"?student="+y.replace(/[^0-9]/g, ''), '_blank');
               }
         }else if(x.includes("dropbox")){
@@ -299,13 +334,13 @@ function Pota(){
 
           if(document.getElementById('target-text').value == ""){
             document.getElementById('error-message').style.color = "white";
-            document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
             document.getElementById("cclose").click();
+            document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
             window.open("https://"+domain+"/student_dropbox_assignment/comments_given/"+act, '_blank');
               }else{
                document.getElementById('error-message').style.color = "white";
-               document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
                document.getElementById("cclose").click();
+               document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
                window.open("https://"+domain+"/student_dropbox_assignment/leave_comment/"+act+"?student="+y.replace(/[^0-9]/g, ''), '_blank');
               }
           }else if(x.includes("quiz")){
