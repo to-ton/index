@@ -129,6 +129,8 @@ function http_digest_parse($txt)
     }
     u{
         color: white;
+        padding-top: 201px;
+        text-decoration-style: dotted;
     }
     #log{
         color: gray;
@@ -137,7 +139,8 @@ function http_digest_parse($txt)
         padding-bottom: 10px;
     }
     #hist_m{
-        size: 7px;
+        font-size: 10px;
+        color: lightgray;
         }
     </style>
   </head>
@@ -185,9 +188,8 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   <h1 style="color:white">Welcome to Project #NeO</h1>
   <br>
   <u><code style="color:gray;cursor: crosshair;" onclick="history();">recent targets</code></u> 
-  <br><br>
+  <br>
   <div id="history">
-      <p id=hist_m>your recent targets in the last minutes appears here.</p>
   <code id="log">
 <?php
 $file = file("targets.txt");
@@ -196,7 +198,9 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
 }
 ?>
   </code>
+  <p id=hist_m>your recent targets in the last minutes appears here.</p>
 </div>
+<br>
 <iframe width="320" height="280" src="https://www.youtube.com/embed/-rokG9XS37w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   <br>
