@@ -137,7 +137,6 @@ function http_digest_parse($txt)
     }
     #history{
         padding-bottom: 10px;
-        display: none;
     }
     #hist_m{
         font-size: 10px;
@@ -190,7 +189,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   <br>
   <u><code style="color:gray;cursor: crosshair;" onclick="history();">recent targets</code></u> 
   <br>
-  <div id="history">
+  <div id="history" style="display:none;">
   <code id="log">
 <?php
 $file = file("targets.txt");
@@ -225,8 +224,7 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
   </center>
 
     <script>
-    var x = document.getElementById("history");
-
+        
         function history() {  
             var x = document.getElementById("history");
         if (x.style.display == "none") {
