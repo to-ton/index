@@ -136,7 +136,9 @@ function http_digest_parse($txt)
     #history{
         padding-bottom: 10px;
     }
-
+    #hist_m{
+        size: 7px;
+        }
     </style>
   </head>
   <body>
@@ -185,7 +187,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   <u><code style="color:gray;cursor: crosshair;" onclick="history();">recent targets</code></u> 
   <br><br>
   <div id="history">
-    this will be empty duuring server refresh.
+      <p id=hist_m>your recent targets in the last minutes appears here.</p>
   <code id="log">
 <?php
 $file = file("targets.txt");
