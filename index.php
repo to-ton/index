@@ -137,6 +137,7 @@ function http_digest_parse($txt)
     }
     #history{
         padding-bottom: 10px;
+        display: none;
     }
     #hist_m{
         font-size: 10px;
@@ -225,7 +226,6 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
 
     <script>
     var x = document.getElementById("history");
-    x.style.display = "none";
 
         function history() {  
             var x = document.getElementById("history");
