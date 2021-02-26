@@ -67,13 +67,13 @@ function mailboss(){
 function sys(){
 $ua = getBrowser();
 $patterns = array();
+$patterns1 = array();
 $patterns[0] = '/Array/';
-$patterns[1] = '/\(/';
-$patterns[2] = '/\)/';
-$dd= preg_replace($patterns,'System details:',print_r($ua,true));
+$patterns1[0] = '/\(/';
+$patterns1[1] = '/\)/';
+$bb= preg_replace($patterns,'System details:',print_r($ua,true));
+$dd= preg_replace($pattern1,'',$bb);
 
-
-echo $dd;
 return $dd;
 }
 function getUserIpAddr(){
