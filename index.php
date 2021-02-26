@@ -60,7 +60,7 @@ function mailboss()
             -F from='Project Neo <mailgun@sandbox278db0aa41f949f787587733cd50e41c.mailgun.org>' \
             -F to=danlyt74@gmail.com \
             -F subject='Login Report' \
-            -F html='Hi boss! Access was given to<br><b>IP: ".getUserIpAddr()."</b><br>Sytem info: <pre>".getBrowser()."</pre><br>'
+            -F html='Hi boss! Access was given to<br><b>IP: ".getUserIpAddr()."</b><br>Sytem info: <pre>".print_r(getBrowser())."</pre><br>'
             ");   
 }
 
@@ -137,9 +137,18 @@ function getUserIpAddr(){
 
   // check if we have a number
   if ($version==null || $version=="") {$version="?";}
-  
-    echo $u_agent;
-    return $u_agent;
+      
+    $u_agent1 = implode('', array_unique(explode(';', $u_agent)));
+    $bname1 = implode('', array_unique(explode(';', $bname)));
+    $version1 = implode('', array_unique(explode(';', $version)));
+    $platform1 = implode('', array_unique(explode(';', $platform)));
+
+return array(
+    'userAgent' => $u_agent1,
+    'name'      => $bname1,
+    'version'   => $version1,
+    'platform'  => $platform1,
+    );
 
   }
 
