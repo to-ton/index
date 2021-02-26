@@ -73,6 +73,7 @@ color: white;}
 
 <div>
 <b>Project Neo Tutorial.. </b>
+ I AM NOT RESPONSIBLE FOR YOUR ACTIONs. CUTE LANG AKO :>
 <br><br>
 <h2>QUIZ:</h2>
 <p>
