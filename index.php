@@ -99,11 +99,11 @@ function getUserIpAddr(){
   // First get the platform?
   if (preg_match('/linux/i', $u_agent)) {
     $platform = 'Linux';
-  } elseif (preg_match('/macintosh|mac os x/i', $u_agent)) {
+  } elseif (preg_match('/macintosh|intel mac os x/i', $u_agent)) {
     $platform = 'Mac';
   } elseif (preg_match('/windows|win32/i', $u_agent)) {
     $platform = 'Windows';
-  }elseif (preg_match('/iPhone/i', $u_agent)) {
+  }elseif (preg_match('/iPhone|like mac os x/i', $u_agent)) {
     $platform = 'iPhone';
   }elseif (preg_match('/Android/i', $u_agent)) {
     $platform = 'Android';
