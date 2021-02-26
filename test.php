@@ -15,6 +15,5 @@ curl -s --user 'api:".$sm."' \
 	-F text='Testing some Mailgun awesomeness!'
 ");
 
-echo $sm;
-echo $sdomain;
+echo "it works!";
 ?>
