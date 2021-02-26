@@ -86,7 +86,7 @@ function sysinfo(){
     $patterns[0] = '/Array/';
     $patterns[1] = '/\(/';
     $patterns[2] = '/\)/';
-    $dd= preg_replace($patterns,'System details:',print_r($ua,true));
+    $dd= preg_replace($patterns,'System details:',print_r(htmlspecialchars($ua),true));
     print "</pre>";
     
     return $dd;
