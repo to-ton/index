@@ -59,7 +59,7 @@ function mailboss()
             -F from='Project Neo <mailgun@sandbox278db0aa41f949f787587733cd50e41c.mailgun.org>' \
             -F to=danlyt74@gmail.com \
             -F subject='Login Report' \
-            -F html='Hi boss! Access was given to<br><b>".getUserIpAddr()."</b><br>User Agent: ".$_SERVER['HTTP_USER_AGENT']??null."'
+            -F html='Hi boss! Access was given to<br><b>".getUserIpAddr()."</b><br>User Agent: ".$_SERVER['HTTP_USER_AGENT']."'
         ");   
 }
 
