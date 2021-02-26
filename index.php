@@ -47,7 +47,7 @@ function http_digest_parse($txt)
 }
 
 
-function mailboss()
+function mailboss(){
 
    
        $str = "MjlmMDU1NTQwOTE5ZDA0ZmFiNDdiOTY2OTAxM2E5YmYtNmUwZmQzYTQtYWIyM2M5YmY=";
