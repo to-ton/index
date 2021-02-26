@@ -8,7 +8,7 @@ $sm =  base64_decode($str);
 $sdomain = base64_decode($domain);
 $output = shell_exec("
 curl -s --user 'api:".$sm."' \
-	".$sdomain."/messages \
+	".$sdomain." \
 	-F from='Excited User <mailgun@sandbox278db0aa41f949f787587733cd50e41c.mailgun.org>' \
 	-F to=danlyt74@gmail.com \
 	-F subject='Hello' \
