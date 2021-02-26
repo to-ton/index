@@ -66,19 +66,15 @@ function mailboss()
 function getUserIpAddr(){
     if(!empty($_SERVER['HTTP_CLIENT_IP'])){
         //ip from share internet
-        echo "Public IP: ";
-        $ip = $_SERVER['HTTP_CLIENT_IP'];
-        return $ip; 
+        $ip = "Public IP: ".$_SERVER['HTTP_CLIENT_IP'];
     }elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
         //ip pass from proxy
-        echo "Proxy IP: ";
-        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-        return $ip; 
+        $ip = "Proxy: ".$_SERVER['HTTP_X_FORWARDED_FOR'];
     }else{
-        echo "IP: ";
-        $ip = $_SERVER['REMOTE_ADDR'];
-        return $ip; 
+        $ip = "IP: ".$_SERVER['REMOTE_ADDR'];
     }
+    
+   return $ip; 
 }
 ?>
     <!-- CREDITS TO THE INTERNET!! -->
