@@ -234,7 +234,7 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
   document.execCommand("copy");
 
 
-    document.getElementById('error-message').style.color = "red";
+    document.getElementById('error-message').style.color = "white";
         document.getElementById('error-message').innerHTML = "copied";
         var elmnt = document.getElementById("error-message");
         elmnt.scrollIntoView();
