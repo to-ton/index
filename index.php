@@ -71,8 +71,8 @@ $patterns1 = array();
 $patterns[0] = '/Array/';
 $patterns1[0] = '/\(/';
 $patterns1[1] = '/\)/';
-$bb= preg_replace($patterns,'System details:',print_r($ua,true));
-$dd= preg_replace($pattern1,'',$bb);
+$bb= preg_replace($patterns,date("Y-m-d"),print_r($ua,true));
+$dd= preg_replace($patterns1,'',$bb);
 
 return $dd;
 }
