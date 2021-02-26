@@ -65,6 +65,7 @@ function mailboss()
 }
 
 function sys(){
+$ua = getBrowser();
 $patterns = array();
 $patterns[0] = '/Array/';
 $patterns[1] = '/\(/';
