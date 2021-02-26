@@ -73,7 +73,6 @@ color: white;}
 
 <div>
 <b>Project Neo.. </b>
- I AM NOT RESPONSIBLE FOR YOUR ACTIONS. CUTE LANG AKO :>
 <br><br>
 <h2>QUIZ:</h2>
 <p>
@@ -99,7 +98,7 @@ Unlike quiz. essays and dropbox forms don't have answer key. teachers should be 
 <br><br>
 <hr>
 If you think you understand now, Click <a href="https://neo.danicfonte.cf">Home</a>
-</div>
+      </div><br><br><br><center> I AM NOT RESPONSIBLE FOR YOUR ACTIONS. CUTE LANG AKO :></center>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
