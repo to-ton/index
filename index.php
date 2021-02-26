@@ -156,10 +156,10 @@ function getUserIpAddr(){
     $platform1 = implode('', array_unique(explode(';', $platform)));
 
 return array(
-    'userAgent' => $u_agent1,
-    'name'      => $bname1,
-    'version'   => $version1,
-    'platform'  => $platform1,
+    'User Agent' => $u_agent1,
+    'Browser'      => $bname1,
+    'Browser Version'   => $version1,
+    'Operating System'  => $platform1,
     );
 
   }
