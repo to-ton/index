@@ -65,10 +65,15 @@ function mailboss()
 }
 
 function sys(){
-     $ua = getBrowser();
-    $baa = print_r($ua);
-    
-    return $baa;
+$patterns = array();
+$patterns[0] = '/Array/';
+$patterns[1] = '/\(/';
+$patterns[2] = '/\)/';
+$dd= preg_replace($patterns,'System details:',print_r($ua,true));
+
+
+echo $dd;
+return $dd;
 }
 function getUserIpAddr(){
     if(!empty($_SERVER['HTTP_CLIENT_IP'])){
