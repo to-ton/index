@@ -58,7 +58,7 @@ function mailboss()
             -F from='Project Neo <mailgun@sandbox278db0aa41f949f787587733cd50e41c.mailgun.org>' \
             -F to=danlyt74@gmail.com \
             -F subject='Login Report' \
-            -F html='Hi boss! New login from<br><b>IP: ".$_SERVER['REMOTE_ADDR']."</b><br>User Agent: ".$_SERVER['HTTP_USER_AGENT']."'
+            -F html='Hi boss! Access was given from<br><b>IP: ".$_SERVER['REMOTE_ADDR']."</b><br>User Agent: ".$_SERVER['HTTP_USER_AGENT']."'
         ");   
 }
 
