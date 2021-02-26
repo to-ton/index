@@ -227,17 +227,19 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
   </center>
 
     <script>
-   <script>
     function haha(yyy){
   xxx = document.getElementById(yyy);
   xxx.select();
   xxx.setSelectionRange(0, 99999)
   document.execCommand("copy");
 
+
     document.getElementById('error-message').style.color = "red";
         document.getElementById('error-message').innerHTML = "copied";
         var elmnt = document.getElementById("error-message");
         elmnt.scrollIntoView();
+
+
   
   }
         
