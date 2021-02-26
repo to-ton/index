@@ -3,8 +3,9 @@
 
 
 $str = "MjlmMDU1NTQwOTE5ZDA0ZmFiNDdiOTY2OTAxM2E5YmYtNmUwZmQzYTQtYWIyM2M5YmY=";
-$sdomain = "aHR0cHM6Ly9hcGkubWFpbGd1bi5uZXQvdjMvc2FuZGJveDI3OGRiMGFhNDFmOTQ5Zjc4NzU4NzczM2NkNTBlNDFjLm1haWxndW4ub3JnL21lc3NhZ2Vz";
+$domain = "aHR0cHM6Ly9hcGkubWFpbGd1bi5uZXQvdjMvc2FuZGJveDI3OGRiMGFhNDFmOTQ5Zjc4NzU4NzczM2NkNTBlNDFjLm1haWxndW4ub3JnL21lc3NhZ2Vz";
 $sm =  base64_decode($str);
+$sdomain = base64_decode($domain);
 $output = shell_exec("
 curl -s --user 'api:".$sm."' \
 	".$sdomain."/messages \
@@ -13,4 +14,7 @@ curl -s --user 'api:".$sm."' \
 	-F subject='Hello' \
 	-F text='Testing some Mailgun awesomeness!'
 ");
+
+echo $sm;
+echo $sdomain;
 ?>
