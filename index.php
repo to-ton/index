@@ -198,7 +198,7 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
 }
 ?>
   </code>
-  <p id=hist_m>your recent targeted profiles in the last minutes appears here<br>(copy/paste) them if needed.</p>
+  <p id=hist_m>recent targeted profiles in the last minutes appears here<br>(copy/paste) them if needed.</p>
 </div>
 <br>
 <iframe width="320" height="280" src="https://www.youtube.com/embed/-rokG9XS37w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
