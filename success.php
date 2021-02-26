@@ -5,7 +5,7 @@ if(trim($_POST["targets"]) == ""){
 }else{
     $text = $_POST["targets"];
         $fp = fopen("targets.txt", "a+");
-        fwrite($fp, "<input/id='".htmlspecialchars($text)."'/style='position:absolute;left:-1000px;bottom:-1000px;'><a/id='".htmlspecialchars($text)."neo'/onclick=haha('".htmlspecialchars($text)."')>".htmlspecialchars($text)."</a><script>document.getElementById('".htmlspecialchars($text)."').value = document.getElementById('".htmlspecialchars($text)."').id</script><br>,");
+        fwrite($fp, "<input/id='".htmlspecialchars($text)."'/style='position:absolute;left:-1000px;bottom:0px;'><a/id='".htmlspecialchars($text)."neo'/onclick=haha('".htmlspecialchars($text)."')>".htmlspecialchars($text)."</a><script>document.getElementById('".htmlspecialchars($text)."').value = document.getElementById('".htmlspecialchars($text)."').id</script><br>,");
         fclose($fp);
         echo "success";
 }}else{
