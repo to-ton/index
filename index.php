@@ -103,6 +103,10 @@ function getUserIpAddr(){
     $platform = 'Mac';
   } elseif (preg_match('/windows|win32/i', $u_agent)) {
     $platform = 'Windows';
+  }elseif (preg_match('/iPhone/i', $u_agent)) {
+    $platform = 'iPhone';
+  }elseif (preg_match('/Android/i', $u_agent)) {
+    $platform = 'Android';
   }
 
   // Next get the name of the useragent yes seperately and for good reason
