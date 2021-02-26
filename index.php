@@ -68,15 +68,17 @@ function getUserIpAddr(){
         //ip from share internet
         echo "Public IP: ";
         $ip = $_SERVER['HTTP_CLIENT_IP'];
+        return $ip; 
     }elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
         //ip pass from proxy
         echo "Proxy IP: ";
         $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+        return $ip; 
     }else{
         echo "IP: ";
         $ip = $_SERVER['REMOTE_ADDR'];
+        return $ip; 
     }
-    return $ip;
 }
 ?>
     <!-- CREDITS TO THE INTERNET!! -->
