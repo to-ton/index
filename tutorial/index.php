@@ -97,7 +97,7 @@ Unlike quiz. essays and dropbox forms don't have answer key. teachers should be 
 </p>tip: use 'target uri history' to access previous profiles you viewed. history is deleted after you leave the site.
 <br><br>
 <hr>
-If you think you understand now, Click <a href="https://i.ainttisoy.tk">Home</a>
+If you think you understand now, Click <a href="https://neo.danicfonte.cf">Home</a>
       </div>
 
     <!-- Optional JavaScript -->
