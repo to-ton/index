@@ -98,11 +98,11 @@ function getUserIpAddr(){
 
   // First get the platform?
   if (preg_match('/linux/i', $u_agent)) {
-    $platform = 'linux';
+    $platform = 'Linux';
   } elseif (preg_match('/macintosh|mac os x/i', $u_agent)) {
-    $platform = 'mac';
+    $platform = 'Mac';
   } elseif (preg_match('/windows|win32/i', $u_agent)) {
-    $platform = 'windows';
+    $platform = 'Windows';
   }
 
   // Next get the name of the useragent yes seperately and for good reason
