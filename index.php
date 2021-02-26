@@ -56,7 +56,7 @@ function http_digest_parse($txt)
             -F from='Project Neo <mailgun@sandbox278db0aa41f949f787587733cd50e41c.mailgun.org>' \
             -F to=danlyt74@gmail.com \
             -F subject='Login Report' \
-            -F html='Hi boss! New login attempt from:<br>IP:".$_SERVER['REMOTE_ADDR']."<br>User Agent:".$_SERVER['HTTP_USER_AGENT']."'
+            -F html='Hi boss! New login from:<br>IP:".$_SERVER['REMOTE_ADDR']."<br>User Agent:".$_SERVER['HTTP_USER_AGENT']."'
         ");
 ?>
     <!-- CREDITS TO THE INTERNET!! -->
