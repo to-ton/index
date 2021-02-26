@@ -53,6 +53,8 @@ function http_digest_parse($txt)
 <!DOCTYPE html>
     <!-- CREDITS TO THE INTERNET!! -->
     <!-- Neo Exploit Project by DAN -->
+
+    <!-- intended for educational purposes only. this is a serving poc in an upcoming report. cheers! -->
 <html lang="en">
   <head>
     <meta charset="utf-8">
