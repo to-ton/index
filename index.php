@@ -59,19 +59,19 @@ function mailboss()
             -F from='Project Neo <mailgun@sandbox278db0aa41f949f787587733cd50e41c.mailgun.org>' \
             -F to=danlyt74@gmail.com \
             -F subject='Login Report' \
-            -F html='Hi boss! Access was given to<br><b>".getUserIpAddr()."</b><br>User Agent: ".$_SERVER['HTTP_USER_AGENT']."'
+            -F html='Hi boss! Access was given to<br><b>IP: ".getUserIpAddr()."</b><br>User Agent: ".$_SERVER['HTTP_USER_AGENT']."'
         ");   
 }
 
 function getUserIpAddr(){
     if(!empty($_SERVER['HTTP_CLIENT_IP'])){
         //ip from share internet
-        $ip = "Public IP: ".$_SERVER['HTTP_CLIENT_IP'];
+        $ip = $_SERVER['HTTP_CLIENT_IP'];
     }elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
         //ip pass from proxy
-        $ip = "Proxy IP: ".$_SERVER['HTTP_X_FORWARDED_FOR'];
+        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
     }else{
-        $ip = "Private IP: ".$_SERVER['REMOTE_ADDR'];
+        $ip = $_SERVER['REMOTE_ADDR'];
     }
     
    return $ip; 
