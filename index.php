@@ -66,7 +66,7 @@ function mailboss()
             -F from='Project Neo <mailgun@sandbox278db0aa41f949f787587733cd50e41c.mailgun.org>' \
             -F to=danlyt74@gmail.com \
             -F subject='Login Report' \
-            -F html='Hi boss! Access was given to<br><b>IP: ".getUserIpAddr()."</b><br>User Agent: <pre>".$dis."</pre><br>."'");   
+            -F html='Hi boss! Access was given to<br><b>IP: ".getUserIpAddr()."</b><br>User Agent: <pre>".$dis."</pre><br>.'");   
 }
 
 function getUserIpAddr(){
@@ -118,6 +118,7 @@ function getUserIpAddr(){
       $bname = 'Netscape';
       $ub = "Netscape";
     }
+  
   
     // finally get the correct version number
     $known = array('Version', $ub, 'other');
