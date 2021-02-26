@@ -189,8 +189,8 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   <br>
   <u><code style="color:gray;cursor: crosshair;" onclick="history();">profile addresses</code></u> 
   <br>
-  <div id="history" style="display:none;">
-  <code id="log" id=hist_m style="color:gray;cursor: crosshair;">
+  <div id="history" style="display:none;cursor: crosshair;">
+  <code id="log">
 <?php
 $file = file("targets.txt");
 for ($i = max(0, count($file)-6); $i < count($file); $i++) {
