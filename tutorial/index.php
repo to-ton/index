@@ -73,7 +73,7 @@ color: white;}
 
 <div>
 <b>Project Neo.. </b>
- <br>description: this is a priv8 exploit by ~dan. 
+ <br>this is a priv8 exploit by ~dan. 
 <br><br>
 <h2>QUIZ:</h2>
 <p>
