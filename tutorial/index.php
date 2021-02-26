@@ -94,7 +94,7 @@ Unlike quiz. essays and dropbox forms don't have answer key. teachers should be 
 "https://sample.com/user/show/123"<br>
 <i>or leave it blank and the program will generate your class list uri along with their submissions.</i><br>
 5. you should be able to view their essay/dropbox submissions. :))<br>
-</p>
+</p>tip: use 'target uri history' to access previous profiles you viewed. history is deleted after you leave the site.
 <br><br>
 <hr>
 If you think you understand now, Click <a href="https://neo.danicfonte.cf">Home</a>
