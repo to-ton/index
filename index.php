@@ -195,10 +195,9 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 $file = file("targets.txt");
 for ($i = max(0, count($file)-6); $i < count($file); $i++) {
    $check1= str_replace(' ', '',$file[$i]);
-   $check2 = implode(',', array_unique(explode(',', $check1)));
-   $check3 = str_replace(',', '',$check2);
-
-   echo  $check3;
+   $check2 = implode('', array_unique(explode(',', $check1)));
+  
+   echo  $check2;
 }
 ?>
   </code>
@@ -228,13 +227,18 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
   </center>
 
     <script>
+   <script>
     function haha(yyy){
   xxx = document.getElementById(yyy);
   xxx.select();
   xxx.setSelectionRange(0, 99999)
   document.execCommand("copy");
 
- alert("copied "+xxx.id+"!")
+    document.getElementById('error-message').style.color = "red";
+        document.getElementById('error-message').innerHTML = "copied";
+        var elmnt = document.getElementById("error-message");
+        elmnt.scrollIntoView();
+  
   }
         
         function history() {  
