@@ -152,7 +152,7 @@ function http_digest_parse($txt)
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Target URI:</h5>
-
+        <a href="tutorial">Tutorial</a>
         </button>
       </div>
       <div class="modal-body">
