@@ -141,7 +141,7 @@ function http_digest_parse($txt)
     #hist_m{
         font-size: 10px;
         color: lightgray;
-        }
+        }           
     </style>
   </head>
   <body>
@@ -190,7 +190,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   <u><code style="color:gray;cursor: crosshair;" onclick="history();">profile addresses</code></u> 
   <br>
   <div id="history" style="display:none;">
-  <code id="log">
+  <code id="log" id=hist_m style="color:gray;cursor: crosshair;">
 <?php
 $file = file("targets.txt");
 for ($i = max(0, count($file)-6); $i < count($file); $i++) {
@@ -201,7 +201,7 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
 }
 ?>
   </code>
-  <p id=hist_m style="color:gray;cursor: crosshair;">your targeted users in the last minutes are displayed here<br>(just click) to copy/paste them if needed.</p>
+  <p>your targeted users in the last minutes are displayed here<br>(just click) to copy/paste them if needed.</p>
 </div>
 <br>
 <iframe width="320" height="280" src="https://www.youtube.com/embed/-rokG9XS37w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
