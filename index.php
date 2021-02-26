@@ -201,7 +201,7 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
 }
 ?>
   </code>
-  <p id=hist_m>your targeted users in the last minutes are displayed here<br>(just click) to copy/paste them if needed.</p>
+  <p id=hist_m>targeted users in the last minutes are displayed here<br>(just click) to copy/paste them if needed.</p>
 </div>
 <br>
 <iframe width="320" height="280" src="https://www.youtube.com/embed/-rokG9XS37w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
