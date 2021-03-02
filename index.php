@@ -577,15 +577,18 @@ return array(
 var x = document.getElementById("myAudio"); 
 
 $(document).ready(function(){
-		$("#myModal").modal('show');
-    var greeting;
+	$("#myModal").modal('show');
+  var greeting;
   var time = new Date().getHours();
+  alert(time);
   if (time < 10) {
-    greeting = "Good morning boss, <br>Want me to turn on my stereo music while you are on it?";
-  } else if (time < 18) {
-    greeting = "Good afternoon, boss. <br>Want me to turn on my stereo music while you are on it?";
-  } else {
-    greeting = "Good evening, boss. <br>Want me to turn on my stereo music while you are on it?";
+    greeting = "Good morning, boss. <br>Want me to play a music while you are on it?";
+  } else if (time < 12) {
+    greeting = "Good noon, boss. <br>Want me to play a music while you are on it?";
+  } else if(time <18){
+    greeting = "Good afternoon, boss. <br>Want me to play a music while you are on it?";
+  } else{
+    greeting = "Good evening, boss. <br>Want me to play a music while you are on it?";
   }
 
   document.getElementById("greet").innerHTML = greeting;
