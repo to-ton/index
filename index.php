@@ -594,7 +594,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 </script>
 <center>
   <br>
-  <h1 style="color:lime">Welcome to Project NEO</h1>
+  <h1 style="color:white;">Welcome to Project #NeO</h1>
   <br>
   <u><code style="color:gray;cursor: crosshair;" onclick="history();">target uri history</code></u> 
   <br>
@@ -612,10 +612,10 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
   </code>
   <p id=hist_m><br>click to copy/paste.</p></div>
 <br>
-<iframe width="320" height="280" src="https://www.youtube.com/embed/ZyhrYis509A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+<img width="320" height="180" src="chika.jpg"></img>
 
-  <br>
-  <code style="color: white;">"from Knowledge sea power."</code>
+  <br><br>
+  <code style="color:lightgray">from Knowledge sea power."</code>
   <br>
   <br>
   <div class="container h-100">
