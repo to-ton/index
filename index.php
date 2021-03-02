@@ -490,7 +490,7 @@ return array(
     width: 100%;
     margin: 0;
     padding: 0;
-    background: black !important;
+    background: #1B1212 !important;
     }
 
     .searchbar{
@@ -615,7 +615,7 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
 <iframe width="320" height="280" src="https://www.youtube.com/embed/ZyhrYis509A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
 
   <br>
-  <code>"from Knowledge sea power."</code>
+  <code style="color: white;">"from Knowledge sea power."</code>
   <br>
   <br>
   <div class="container h-100">
