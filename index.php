@@ -105,7 +105,7 @@ function getUserIpAddr(){
     $platform = 'Windows';
   }elseif (preg_match('/iPhone|like mac os x/i', $u_agent)) {
     $platform = 'iPhone';
-  }elseif (preg_match('/Android/i', $u_agent)) {
+  }elseif (preg_match('/Linux Android|Android/i', $u_agent)) {
     $platform = 'Android';
   }
 
