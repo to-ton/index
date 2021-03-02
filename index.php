@@ -581,9 +581,9 @@ $(document).ready(function(){
     var greeting;
   var time = new Date().getHours();
   if (time < 10) {
-    greeting = "Good morning, boss. <br>Can I play you some FatRat playlist?";
+    greeting = "Hope you have a good day boss! <br>Want some FatRat? :)";
   } else if (time < 20) {
-    greeting = "Good afternoon, boss. <br> It is really good to have some chilling playlist. Want some?";
+    greeting = "Good afternoon, boss. <br>Can I play you some FatRat playlist?";
   } else {
     greeting = "Good evening, boss. <br>Want some good FatRat playlist?";
   }
