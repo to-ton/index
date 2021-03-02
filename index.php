@@ -580,7 +580,6 @@ $(document).ready(function(){
 	$("#myModal").modal('show');
   var greeting;
   var time = new Date().getHours();
-  alert(time);
   if (time < 10) {
     greeting = "Good morning, boss. <br>Want me to play a music while you are on it?";
   } else if (time < 12) {
