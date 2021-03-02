@@ -669,7 +669,7 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
 <img width="320" height="180" src="chika.jpg"></img>
 
   <br><br>
-  <code style="color:lightgray">from Knowledge sea power."</code>
+  <code style="color:lightgray">"from Knowledge, sea power."</code>
   <br>
   <br>
   <div class="container h-100">
