@@ -594,7 +594,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 </script>
 <center>
   <br>
-  <h1 style="color:white">Welcome to Project #NeO</h1>
+  <h1 style="color:lime">Welcome to Project NEO</h1>
   <br>
   <u><code style="color:gray;cursor: crosshair;" onclick="history();">target uri history</code></u> 
   <br>
