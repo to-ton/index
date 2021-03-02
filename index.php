@@ -583,7 +583,7 @@ $(document).ready(function(){
   if (time < 10) {
     greeting = "Good morning, boss. <br>Can I play you some FatRat playlist?";
   } else if (time < 20) {
-    greeting = "Good afternoon, boss. <br> Want me to shuffle a FatRat playlist?";
+    greeting = "Good afternoon, boss. <br> Want me to play a FatRat playlist?";
   } else {
     greeting = "Good evening, boss. <br>Want some good FatRat playlist?";
   }
@@ -592,7 +592,7 @@ $(document).ready(function(){
 
 	});
 
-  var playlist = Array("music1.mp3","music2.mp3","music3.mp3","music4.mp3","music5.mp3","music6.mp3",);
+  var playlist = Array("music1.mp3","music2.mp3","music3.mp3","music4.mp3","music5.mp3");
 var randomSong = playlist[Math.floor(Math.random()*playlist.length)];
           document.getElementById("playthis").src = randomSong;
           x.load();
