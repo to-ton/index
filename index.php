@@ -554,6 +554,58 @@ return array(
     </style>
   </head>
   <body>
+    <audio id="myAudio">
+
+<source type="audio/mpeg" id="playthis" src="">
+</audio>
+
+
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" id="myModal" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+    <div class="modal-header">
+    <p id=greet>Hi boss, play FatRat playlist?</p>
+    </div>
+    <div class="modal-footer">
+    <button type="button" id="cclose" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="Submit" class="btn btn-primary" style="background-color:black; border-color:white;color:white;" onclick=playAudio() data-dismiss="modal">Play</button>
+        </div>
+    </div>
+  </div>
+</div>
+<script>
+var x = document.getElementById("myAudio"); 
+
+$(document).ready(function(){
+		$("#myModal").modal('show');
+    var greeting;
+  var time = new Date().getHours();
+  if (time < 10) {
+    greeting = "Good morning, boss. <br>Can I play you some FatRat playlist?";
+  } else if (time < 20) {
+    greeting = "Good afternoon, boss. <br> Want me to shuffle a FatRat playlist?";
+  } else {
+    greeting = "Good evening, boss. <br>Want some good FatRat playlist?";
+  }
+
+  document.getElementById("greet").innerHTML = greeting;
+
+	});
+
+  var playlist = Array("music1.mp3","music2.mp3","music3.mp3","music4.mp3","music5.mp3","music6.mp3",);
+var randomSong = playlist[Math.floor(Math.random()*playlist.length)];
+          document.getElementById("playthis").src = randomSong;
+          x.load();
+
+function playAudio() { 
+  x.play(); 
+  document.getElementById('error-message').style.color = "white";
+        document.getElementById('error-message').innerHTML = "Playing Music..";
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+}</script>
 
 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -615,7 +667,7 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
 <img width="320" height="180" src="chika.jpg"></img>
 
   <br><br>
-  <code style="color:lightgray">"from Knowledge, sea power."</code>
+  <code style="color:lightgray">from Knowledge sea power."</code>
   <br>
   <br>
   <div class="container h-100">
@@ -666,6 +718,8 @@ function empp(){
   
 
 function Pota(){
+  document.getElementById("aa").click();
+
   x = document.getElementById('url').value;
    try{
       
@@ -802,11 +856,14 @@ function Pota(){
    }
   }
   
+  function music(){
+    getElementById('msic').load();
+  }
 
 </script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  </body>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>  </body>
+
 </html>
