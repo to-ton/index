@@ -582,7 +582,7 @@ $(document).ready(function(){
   var time = new Date().getHours();
   if (time < 10) {
     greeting = "Good morning boss, <br>Want me to turn on my stereo music while you are on it?";
-  } else if (time < 20) {
+  } else if (time < 18) {
     greeting = "Good afternoon, boss. <br>Want me to turn on my stereo music while you are on it?";
   } else {
     greeting = "Good evening, boss. <br>Want me to turn on my stereo music while you are on it?";
