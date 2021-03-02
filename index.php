@@ -612,7 +612,7 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
   </code>
   <p id=hist_m><br>click to copy/paste.</p></div>
 <br>
-<iframe width="320" height="280" src="https://www.youtube.com/embed/-rokG9XS37w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="320" height="280" src="https://youtu.be/ZyhrYis509A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
 
   <br>
   <code>"from Knowledge sea power."</code>
