@@ -564,7 +564,7 @@ return array(
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
     <div class="modal-header">
-    <p id=greet>Hi boss, play FatRat playlist?</p>
+    <p id=greet>Howdie boss!</p>
     </div>
     <div class="modal-footer">
     <button type="button" id="cclose" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -581,18 +581,18 @@ $(document).ready(function(){
     var greeting;
   var time = new Date().getHours();
   if (time < 10) {
-    greeting = "Hope you have a good day boss! <br>Want some FatRat? :)";
+    greeting = "Good morning boss, <br>Want me to turn on my stereo music while you are on it?";
   } else if (time < 20) {
-    greeting = "Good afternoon, boss. <br>Can I play you some FatRat playlist?";
+    greeting = "Good afternoon, boss. <br>Want me to turn on my stereo music while you are on it?";
   } else {
-    greeting = "Good evening, boss. <br>Want some good FatRat playlist?";
+    greeting = "Good evening, boss. <br>Want me to turn on my stereo music while you are on it?";
   }
 
   document.getElementById("greet").innerHTML = greeting;
 
 	});
 
-  var playlist = Array("music1.mp3","music2.mp3","music3.mp3","music4.mp3","music5.mp3");
+  var playlist = Array("music1.mp3","music2.mp3","music3.mp3","music4.mp3","music5.mp3","music6.mp3","music7.mp3","music8.mp3","music9.mp3","music10.mp3","music11.mp3","music12.mp3","music13.mp3","music14.mp3","music15.mp3","music16.mp3","music17.mp3");
 var randomSong = playlist[Math.floor(Math.random()*playlist.length)];
           document.getElementById("playthis").src = randomSong;
           x.load();
