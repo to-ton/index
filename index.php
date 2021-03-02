@@ -718,8 +718,6 @@ function empp(){
   
 
 function Pota(){
-  document.getElementById("aa").click();
-
   x = document.getElementById('url').value;
    try{
       
