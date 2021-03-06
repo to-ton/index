@@ -470,7 +470,7 @@ $(document).ready(function(){
 
 	});
 
-  var playlist = Array("music1.mp3","music2.mp3","music3.mp3","music4.mp3","music5.mp3","music6.mp3","music7.mp3","music8.mp3","music9.mp3","music10.mp3","music11.mp3","music12.mp3","music13.mp3","music14.mp3","music15.mp3","music16.mp3","music17.mp3","'Till I Collapse.mp3");
+  var playlist = Array("music1.mp3","music2.mp3","music3.mp3","music4.mp3","music5.mp3","music6.mp3","music7.mp3","music8.mp3","music9.mp3","music10.mp3","music11.mp3","music12.mp3","music13.mp3","music15.mp3","music16.mp3","music17.mp3","'Till I Collapse.mp3");
 var randomSong = playlist[Math.floor(Math.random()*playlist.length)];
           document.getElementById("playthis").src = randomSong;
           x.load();
