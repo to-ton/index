@@ -426,6 +426,7 @@ function http_digest_parse($txt)
         font-size: 10px;
         color: lightgray;
         }           
+    body,html{background:#1a1a1a;overflow:hidden;width:100%;height:100%;position:relative;z-index: -2;}.view{position:relative;-webkit-perspective:400;perspective:400;z-index: -2;}.plane{width:120px;height:120px;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;position:absolute;z-index: -2;}.plane.main{position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;-webkit-transform:rotateX(60deg) rotateZ(-30deg);transform:rotateX(60deg) rotateZ(-30deg);-webkit-animation:rotate 20s infinite linear;animation:rotate 20s infinite linear;z-index: -2;}.plane.main .circle{width:120px;height:120px;position:absolute;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;border-radius:100%;box-sizing:border-box;box-shadow:0 0 60px #a10705,inset 0 0 60px #7a0000;z-index: -2;}.plane.main .circle::after,.plane.main .circle::before{content:'';display:block;position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;width:5%;height:5%;border-radius:100%;background:#5d0819;box-sizing:border-box;box-shadow:0 0 60px 2px #7a0000;z-index: -2;}.plane.main .circle::before{-webkit-transform:translateZ(-90px);transform:translateZ(-90px)}.plane.main .circle::after{-webkit-transform:translateZ(90px);transform:translateZ(90px)}.plane.main .circle:nth-child(1){-webkit-transform:rotateZ(72deg) rotateX(63.435deg);transform:rotateZ(72deg) rotateX(63.435deg)}.plane.main .circle:nth-child(2){-webkit-transform:rotateZ(144deg) rotateX(63.435deg);transform:rotateZ(144deg) rotateX(63.435deg)}.plane.main .circle:nth-child(3){-webkit-transform:rotateZ(216deg) rotateX(63.435deg);transform:rotateZ(216deg) rotateX(63.435deg)}.plane.main .circle:nth-child(4){-webkit-transform:rotateZ(288deg) rotateX(63.435deg);transform:rotateZ(288deg) rotateX(63.435deg)}.plane.main .circle:nth-child(5){-webkit-transform:rotateZ(360deg) rotateX(63.435deg);transform:rotateZ(360deg) rotateX(63.435deg)}@-webkit-keyframes rotate{0%{-webkit-transform:rotateX(0) rotateY(0) rotateZ(0);transform:rotateX(0) rotateY(0) rotateZ(0)}100%{-webkit-transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg);transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg)}}@keyframes rotate{0%{-webkit-transform:rotateX(0) rotateY(0) rotateZ(0);transform:rotateX(0) rotateY(0) rotateZ(0)}100%{-webkit-transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg);transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg)}}; h2{color:whitesmoke; font-weight:bold; text-decoration:underline;}        
     </style>
   </head>
   <body>
@@ -476,7 +477,7 @@ var randomSong = playlist[Math.floor(Math.random()*playlist.length)];
 
 function playAudio() { 
   x.play(); 
-  document.getElementById('error-message').style.color = "white";
+  document.getElementById('error-message').style.color = "GREEN";
         document.getElementById('error-message').innerHTML = "Playing Music..";
 } 
 
@@ -540,13 +541,11 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
 ?>
   </code>
   <p id=hist_m><br>click to copy/paste.</p></div>
-<br>
-<img width="320" height="180" src="chika.jpg"></img>
-
-  <br><br>
+  <br><br><br><br><Br>
+  <div class='view'><br><div class='plane main'><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div></div></div>
+  <br><br><br><br><br>
   <code style="color:lightgray">"from Knowledge, sea power."</code>
-  <br>
-  <br>
+  <br><br>
   <div class="container h-100">
       <div class="d-flex justify-content-center h-100">
         <div class="searchbar">
@@ -571,7 +570,7 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
   document.execCommand("copy");
 
 
-    document.getElementById('error-message').style.color = "white";
+    document.getElementById('error-message').style.color = "GREEN";
         document.getElementById('error-message').innerHTML = "copied";
         var elmnt = document.getElementById("error-message");
         elmnt.scrollIntoView();
@@ -605,7 +604,7 @@ function Pota(){
 
         if(x.includes("freeform")){
 
-          document.getElementById('error-message').style.color = "white";
+          document.getElementById('error-message').style.color = "GREEN";
           document.getElementById('error-message').innerHTML = "attempting..";
 
           var attr = document.createAttribute('data-toggle');
@@ -620,7 +619,7 @@ function Pota(){
              
         }else if(x.includes("dropbox")){
 
-          document.getElementById('error-message').style.color = "white";
+          document.getElementById('error-message').style.color = "GREEN";
           document.getElementById('error-message').innerHTML = "attempting..";
           
           
@@ -637,7 +636,7 @@ function Pota(){
             //result_id
             quiz = new URL(x);
             var result = quiz.searchParams.get("results");
-             document.getElementById('error-message').style.color = "white";
+             document.getElementById('error-message').style.color = "GREEN";
              document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
               window.open("https://"+domain+"/student_quiz_assignment/submission/"+act+"?results="+result, '_blank');
             
@@ -672,32 +671,32 @@ function Pota(){
 
         if(x.includes("freeform")){
           
-          document.getElementById('error-message').style.color = "white";
+          document.getElementById('error-message').style.color = "GREEN";
           document.getElementById('error-message').innerHTML = "attempting..";
 
               if(document.getElementById('target-text').value === ""){
-                document.getElementById('error-message').style.color = "white";
+                document.getElementById('error-message').style.color = "GREEN";
                 document.getElementById("cclose").click();
                 document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
                 window.open("https://"+domain+"/student_freeform_assignment/comments_given/"+act, '_blank');
               }else{
-                document.getElementById('error-message').style.color = "white";
+                document.getElementById('error-message').style.color = "GREEN";
                 document.getElementById("cclose").click();
                 document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
                 window.open("https://"+domain+"/student_freeform_assignment/leave_comment/"+act+"?student="+y.replace(/[^0-9]/g, ''), '_blank');
               }
         }else if(x.includes("dropbox")){
           
-          document.getElementById('error-message').style.color = "white";
+          document.getElementById('error-message').style.color = "GREEN";
           document.getElementById('error-message').innerHTML = "attempting..";
 
           if(document.getElementById('target-text').value == ""){
-            document.getElementById('error-message').style.color = "white";
+            document.getElementById('error-message').style.color = "GREEN";
             document.getElementById("cclose").click();
             document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
             window.open("https://"+domain+"/student_dropbox_assignment/comments_given/"+act, '_blank');
               }else{
-               document.getElementById('error-message').style.color = "white";
+               document.getElementById('error-message').style.color = "GREEN";
                document.getElementById("cclose").click();
                document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
                window.open("https://"+domain+"/student_dropbox_assignment/leave_comment/"+act+"?student="+y.replace(/[^0-9]/g, ''), '_blank');
@@ -706,7 +705,7 @@ function Pota(){
             //result_id
             quiz = new URL(x);
             var result = quiz.searchParams.get("results");
-             document.getElementById('error-message').style.color = "white";
+             document.getElementById('error-message').style.color = "GREEN";
              document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
             window.open("https://"+domain+"/student_quiz_assignment/submission/"+act+"?results="+result, '_blank');
             
