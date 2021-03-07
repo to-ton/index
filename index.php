@@ -678,12 +678,12 @@ function Pota(){
                 document.getElementById('error-message').style.color = "GREEN";
                 document.getElementById("cclose").click();
                 document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
-                window.open("https://"+domain+"/student_freeform_assignment/comments_given/"+act, '_blank');
+                window.open("https://"+domain+"/student_freeform_assignment/comments_given/"+act, '_blank', 'noopener noreferrer');
               }else{
                 document.getElementById('error-message').style.color = "GREEN";
                 document.getElementById("cclose").click();
                 document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
-                window.open("https://"+domain+"/student_freeform_assignment/leave_comment/"+act+"?student="+y.replace(/[^0-9]/g, ''), '_blank');
+                window.open("https://"+domain+"/student_freeform_assignment/leave_comment/"+act+"?student="+y.replace(/[^0-9]/g, ''), '_blank','noopener noreferrer');
               }
         }else if(x.includes("dropbox")){
           
@@ -694,12 +694,12 @@ function Pota(){
             document.getElementById('error-message').style.color = "GREEN";
             document.getElementById("cclose").click();
             document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
-            window.open("https://"+domain+"/student_dropbox_assignment/comments_given/"+act, '_blank');
+            window.open("https://"+domain+"/student_dropbox_assignment/comments_given/"+act, '_blank','noopener noreferrer');
               }else{
                document.getElementById('error-message').style.color = "GREEN";
                document.getElementById("cclose").click();
                document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
-               window.open("https://"+domain+"/student_dropbox_assignment/leave_comment/"+act+"?student="+y.replace(/[^0-9]/g, ''), '_blank');
+               window.open("https://"+domain+"/student_dropbox_assignment/leave_comment/"+act+"?student="+y.replace(/[^0-9]/g, ''), '_blank','noopener noreferrer');
               }
           }else if(x.includes("quiz")){
             //result_id
@@ -707,7 +707,7 @@ function Pota(){
             var result = quiz.searchParams.get("results");
              document.getElementById('error-message').style.color = "GREEN";
              document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
-            window.open("https://"+domain+"/student_quiz_assignment/submission/"+act+"?results="+result, '_blank');
+            window.open("https://"+domain+"/student_quiz_assignment/submission/"+act+"?results="+result, '_blank','noopener noreferrer');
             
             }else if(x.includes("student_lesson")){
               document.getElementById('error-message').innerHTML = "Visit <a href=/tutorial>tutorial</a> for more details.";
