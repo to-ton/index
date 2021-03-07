@@ -640,7 +640,7 @@ function Pota(){
             var result = quiz.searchParams.get("results");
              document.getElementById('error-message').style.color = "GREEN";
              document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
-              open_link.location("https://"+domain+"/student_quiz_assignment/submission/"+act+"?results="+result, '_blank','hide_referrer');
+              open_link.location("https://"+domain+"/student_quiz_assignment/submission/"+act+"?results="+result, '_blank');
             
             }else if(x.includes("student_lesson")){
               document.getElementById('error-message').innerHTML = "Visit <a href=/tutorial>tutorial</a> for more details.";
