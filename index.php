@@ -605,7 +605,7 @@ function Pota(){
         if(x.includes("freeform")){
 
           document.getElementById('error-message').style.color = "GREEN";
-          document.getElementById('error-message').innerHTML = "attempting..";
+          document.getElementById('error-message').innerHTML = "Getting target info..";
 
           var attr = document.createAttribute('data-toggle');
           attr.value="modal";
@@ -620,7 +620,7 @@ function Pota(){
         }else if(x.includes("dropbox")){
 
           document.getElementById('error-message').style.color = "GREEN";
-          document.getElementById('error-message').innerHTML = "attempting..";
+          document.getElementById('error-message').innerHTML = "Getting target info..";
           
           
           var attr = document.createAttribute('data-toggle');
@@ -641,10 +641,10 @@ function Pota(){
               window.open("https://"+domain+"/student_quiz_assignment/submission/"+act+"?results="+result, '_blank');
             
             }else if(x.includes("student_lesson")){
-              document.getElementById('error-message').innerHTML = "visit /tutorial for more details.";
+              document.getElementById('error-message').innerHTML = "Visit <a href=/tutorial>tutorial</a> for more details.";
             }else{
           document.getElementById('error-message').style.color = "red";
-          document.getElementById('error-message').innerHTML = "activity not found.";
+          document.getElementById('error-message').innerHTML = "Activity not found.";
           var elmnt = document.getElementById("error-message");
           elmnt.scrollIntoView();
           }
@@ -652,7 +652,7 @@ function Pota(){
 
    }catch(error){
     document.getElementById('error-message').style.color = "red";
-    document.getElementById('error-message').innerHTML = "invalid url.";
+    document.getElementById('error-message').innerHTML = "Invalid URI. please include: http, https.";
     var elmnt = document.getElementById("error-message");
     elmnt.scrollIntoView();
    }
@@ -672,7 +672,7 @@ function Pota(){
         if(x.includes("freeform")){
           
           document.getElementById('error-message').style.color = "GREEN";
-          document.getElementById('error-message').innerHTML = "attempting..";
+          document.getElementById('error-message').innerHTML = "Getting target info..";
 
               if(document.getElementById('target-text').value === ""){
                 document.getElementById('error-message').style.color = "GREEN";
@@ -688,7 +688,7 @@ function Pota(){
         }else if(x.includes("dropbox")){
           
           document.getElementById('error-message').style.color = "GREEN";
-          document.getElementById('error-message').innerHTML = "attempting..";
+          document.getElementById('error-message').innerHTML = "Getting target info..";
 
           if(document.getElementById('target-text').value == ""){
             document.getElementById('error-message').style.color = "GREEN";
@@ -710,10 +710,10 @@ function Pota(){
             window.open("https://"+domain+"/student_quiz_assignment/submission/"+act+"?results="+result, '_blank');
             
             }else if(x.includes("student_lesson")){
-              document.getElementById('error-message').innerHTML = "visit /tutorial for more details.";
+              document.getElementById('error-message').innerHTML = "Visit <a href=/tutorial>tutorial</a> for more details.";
             }else{
           document.getElementById('error-message').style.color = "red";
-          document.getElementById('error-message').innerHTML = "activity not found.";
+          document.getElementById('error-message').innerHTML = "Activity not found.";
           document.getElementById("cclose").click();
           var elmnt = document.getElementById("error-message");
           elmnt.scrollIntoView();
@@ -722,7 +722,7 @@ function Pota(){
 
    }catch(error){
         document.getElementById('error-message').style.color = "red";
-        document.getElementById('error-message').innerHTML = "invalid url.";
+        document.getElementById('error-message').innerHTML = "Invalid URI. please include: http, https.";
         document.getElementById("cclose").click();
         var elmnt = document.getElementById("error-message");
         elmnt.scrollIntoView();
