@@ -9,7 +9,7 @@ if (empty($_SERVER['PHP_AUTH_DIGEST'])) {
     header('WWW-Authenticate: Digest realm="'.$realm.
            '",qop="auth",nonce="'.uniqid().'",opaque="'.md5($realm).'"');
 
-    die('This is a restricted file. Authorized pips only!');
+    die('<code>HTTP 401. Please try again. </code>');
 }
 
 
