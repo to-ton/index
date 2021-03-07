@@ -444,7 +444,7 @@ function http_digest_parse($txt)
     <p id=greet>Howdie boss!</p>
     </div>
     <div class="modal-footer">
-    <button type="button" id="cclose" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="Submit" class="btn btn-primary" style="background-color:black; border-color:white;color:white;" onclick=playAudio() data-dismiss="modal">Play</button>
         </div>
     </div>
