@@ -543,7 +543,7 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
   <p id=hist_m><br>click to copy/paste.</p></div>
   <br><br><br><br><Br>
   <div class='view'><br><div class='plane main'><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div></div></div>
-  <br><br><br><br><br>
+  <br><br><br><br>
   <code style="color:lightgray">"from Knowledge, sea power."</code>
   <br><br>
   <div class="container h-100">
