@@ -390,7 +390,7 @@ function http_digest_parse($txt)
 
     .searchbar:hover > .search_input{
     padding: 0 10px;
-    width: 200px;
+    width: 250px;
     caret-color:red;
     transition: width 0.2s linear;
     }
