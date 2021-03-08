@@ -385,14 +385,14 @@ function http_digest_parse($txt)
     width: 0;
     caret-color:transparent;
     line-height: 40px;
-    transition: width 0.1s linear;
+    transition: width 0.2s linear;
     }
 
     .searchbar:hover > .search_input{
     padding: 0 10px;
-    width: 250px;
+    width: 200px;
     caret-color:red;
-    transition: width 0.1s linear;
+    transition: width 0.2s linear;
     }
 
     .searchbar:hover > .search_icon{
