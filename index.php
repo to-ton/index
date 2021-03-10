@@ -385,14 +385,14 @@ function http_digest_parse($txt)
     width: 0;
     caret-color:transparent;
     line-height: 40px;
-    transition: width 0.3s linear;
+    transition: width 0.2s linear;
     }
 
     .searchbar:hover > .search_input{
     padding: 0 10px;
-    width: 250px;
+    width: 200px;
     caret-color:red;
-    transition: width 0.3s linear;
+    transition: width 0.2s linear;
     }
 
     .searchbar:hover > .search_icon{
@@ -541,9 +541,9 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
 ?>
   </code>
   <p id=hist_m><br>click to copy/paste.</p></div>
-  <br><br><br><br><Br>
-  <div class='view'><br><div class='plane main'><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div><div class='circle'></div></div></div>
-  <br><br><br><br>
+  <br>
+  <img src="demonpower1.gif">
+    <br><br><br>
   <code style="color:lightgray">"from Knowledge, sea power."</code>
   <br><br>
   <div class="container h-100">
