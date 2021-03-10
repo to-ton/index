@@ -642,6 +642,7 @@ function Pota(){
               window.open("https://"+domain+"/student_quiz_assignment/submission/"+act+"?results="+result, '_blank');
             
             }else if(x.includes("student_lesson")){
+              document.getElementById('error-message').style.color = "skyblue";
               document.getElementById('error-message').innerHTML = "Visit <a href=/tutorial>tutorial</a> for more details.";
             }else{
           document.getElementById('error-message').style.color = "red";
