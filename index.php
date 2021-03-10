@@ -654,7 +654,7 @@ function Pota(){
 
    }catch(error){
     document.getElementById('error-message').style.color = "red";
-    document.getElementById('error-message').innerHTML = "Invalid URI. please include http(s)!";
+    document.getElementById('error-message').innerHTML = "Invalid URI.";
     var elmnt = document.getElementById("error-message");
     elmnt.scrollIntoView();
    }
@@ -724,7 +724,7 @@ function Pota(){
 
    }catch(error){
         document.getElementById('error-message').style.color = "red";
-        document.getElementById('error-message').innerHTML = "Invalid URI. please include http(s)!";
+        document.getElementById('error-message').innerHTML = "Invalid URI.";
         document.getElementById("cclose").click();
         var elmnt = document.getElementById("error-message");
         elmnt.scrollIntoView();
