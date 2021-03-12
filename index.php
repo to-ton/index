@@ -431,60 +431,6 @@ function http_digest_parse($txt)
     </style>
   </head>
   <body>
-    <audio id="myAudio">
-
-<source type="audio/mpeg" id="playthis" src="">
-</audio>
-
-
-<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" id="myModal" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-    <div class="modal-header">
-    <p id=greet>Howdie boss!</p>
-    </div>
-    <div class="modal-footer">
-    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="Submit" class="btn btn-primary" style="background-color:black; border-color:white;color:white;" onclick=playAudio() data-dismiss="modal">Play</button>
-        </div>
-    </div>
-  </div>
-</div>
-<script>
-var x = document.getElementById("myAudio"); 
-
-$(document).ready(function(){
-	$("#myModal").modal('show');
-  var greeting;
-  var time = new Date().getHours();
-  if (time < 10) {
-    greeting = "Good morning, boss. <br>Want me to play a music while you are on it?";
-  } else if (time < 12) {
-    greeting = "Good noon, boss. <br>Want me to play a music while you are on it?";
-  } else if(time <18){
-    greeting = "Good afternoon, boss. <br>Want me to play a music while you are on it?";
-  } else{
-    greeting = "Good evening, boss. <br>Want me to play a music while you are on it?";
-  }
-
-  document.getElementById("greet").innerHTML = greeting;
-
-	});
-
-  var playlist = Array("music1.mp3","music2.mp3","music3.mp3","music4.mp3","music5.mp3","music6.mp3","music7.mp3","music8.mp3","music9.mp3","music10.mp3","music11.mp3","music12.mp3","music13.mp3","music15.mp3","music16.mp3","music17.mp3","'Till I Collapse.mp3");
-var randomSong = playlist[Math.floor(Math.random()*playlist.length)];
-          document.getElementById("playthis").src = randomSong;
-          x.load();
-
-function playAudio() { 
-  x.play(); 
-  document.getElementById('error-message').style.color = "GREEN";
-        document.getElementById('error-message').innerHTML = "Playing Music..";
-} 
-
-function pauseAudio() { 
-  x.pause(); 
-}</script>
 
 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -514,10 +460,8 @@ function pauseAudio() {
 <iframe id="form1" name="form1" style="display:none"></iframe>
 <script>
 $('#exampleModal').on('show.bs.modal', function (event) {
-  var button = $(event.relatedTarget) // Button that triggered the modal
-  var recipient = button.data('whatever') // Extract info from data-* attributes
-  // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-  // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+  var button = $(event.relatedTarget) 
+  var recipient = button.data('whatever') 
   var modal = $(this)
   modal.find('.modal-title').text('Target URI')
   modal.find('.modal-body input').val(recipient)
