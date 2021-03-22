@@ -470,7 +470,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   <br>
   <h1 style="color:white;">Welcome to Project #NeO</h1>
   <br>
-  <u><code style="color:gray;cursor: crosshair;" onclick="history();">—HISTORY—</code></u> 
+  <u><code style="color:gray;cursor: crosshair;" onclick="history();">— RECENTS —</code></u> 
   <br>
   <div id="history" style="display:none;cursor: crosshair;">
   <code id="log">
