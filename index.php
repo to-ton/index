@@ -431,8 +431,21 @@ function http_digest_parse($txt)
     </style>
   </head>
   <body>
-
-
+  <form method="POST" action="/success.php" target="form1">
+  <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" id="myModal" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+    <div class="modal-header">
+    <p id=greet>Continue?</p>
+    <a href="tutorial">Tutorial</a>
+    </div>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="quizzzo">Close</button>
+    <button type="Submit" class="btn btn-primary" style="background-color:black; border-color:white;color:white;" onclick=atis()>Generate</button>
+        </div>
+    </div>
+  </div>
+</div>
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -442,7 +455,6 @@ function http_digest_parse($txt)
         </button>
       </div>
       <div class="modal-body">
-        <form method="POST" action="/success.php" target="form1">
           <div class="form-group">
             <label for="message-text" class="col-form-label">https://sample.com/user/show/123</label>
             <textarea name="targets" class="form-control" id="target-text"></textarea>
@@ -456,7 +468,6 @@ function http_digest_parse($txt)
     </div>
   </div>
 </div>
-<iframe id="form1" name="form1" style="display:none"></iframe>
 <script>
 $('#exampleModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) 
@@ -494,8 +505,7 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
       <div class="d-flex justify-content-center h-100">
         <div class="searchbar">
           <input class="search_input" type="text" id="url" name="uri" placeholder="Paste Target URI" onclick=empp()>
-          <a type=Submit id="subm" class="search_icon" onclick=Pota()><i class="fa fa-magic"></i></a>
-          </form>
+          <a type="Submit" id="subm" class="search_icon" onclick=Pota()><i class="fa fa-magic"></i></a>
           <br><br>
           <p id="error-message" style="color:red;"></p>
           <br>
@@ -503,7 +513,8 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
       </div>
     </div>
     <br>
-
+    <iframe id="form1" name="form1" style="display:none"></iframe>
+    </form>
    
   </center>
 
@@ -580,12 +591,12 @@ function Pota(){
           }else if(x.includes("quiz")){
             //result_id
             quiz = new URL(x);
+            $("#myModal").modal('show');
             var result = quiz.searchParams.get("results");
              document.getElementById('error-message').style.color = "GREEN";
              document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
              var elmnt = document.getElementById("error-message");
              elmnt.scrollIntoView();
-              window.open("https://"+domain+"/student_quiz_assignment/submission/"+act+"?results="+result, '_blank');
             
             }else if(x.includes("student_lesson")){
               document.getElementById('error-message').style.color = "skyblue";
@@ -663,10 +674,9 @@ function Pota(){
             //result_id
             quiz = new URL(x);
             var result = quiz.searchParams.get("results");
-             document.getElementById('error-message').style.color = "GREEN";
-             document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
-             var elmnt = document.getElementById("error-message");
-             elmnt.scrollIntoView();
+            
+            document.getElementById("quizzzo").click();
+
             window.open("https://"+domain+"/student_quiz_assignment/submission/"+act+"?results="+result, '_blank','noopener noreferrer');
             
             }else if(x.includes("student_lesson")){
