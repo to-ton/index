@@ -495,7 +495,7 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
 }
 ?>
   </code>
-  <p id=hist_m><br>click link to copy/paste or <a href="#" onclick="location.reload()">refresh.</a></p></div>
+  <p id=hist_m><br>click link to copy/paste or <a href="neo.danicfonte.cf">refresh.</a></p></div>
   <br>
   <img src="wip.webp" class="img-fluid">
     <br><br><br>
