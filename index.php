@@ -452,7 +452,6 @@ function http_digest_parse($txt)
       <div class="modal-footer">
         <button type="button" id="cclose" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="Submit" class="btn btn-primary" style="background-color:black; border-color:white;color:white;" onclick=atis()>Generate</button>
-        </form>
       </div>
     </div>
   </div>
@@ -471,7 +470,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   <br>
   <h1 style="color:white;">Welcome to Project #NeO</h1>
   <br>
-  <u><code style="color:gray;cursor: crosshair;" onclick="history();">target uri history</code></u> 
+  <u><code style="color:gray;cursor: crosshair;" onclick="history();">—RECENTS—</code></u> 
   <br>
   <div id="history" style="display:none;cursor: crosshair;">
   <code id="log">
@@ -487,15 +486,16 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
   </code>
   <p id=hist_m><br>click to copy/paste.</p></div>
   <br>
-  <img src="demonpower1.gif">
+  <img src="wip.webp" class="img-fluid">
     <br><br><br>
   <code style="color:lightgray">"from Knowledge, sea power."</code>
   <br><br>
   <div class="container h-100">
       <div class="d-flex justify-content-center h-100">
         <div class="searchbar">
-          <input class="search_input" type="text" id="url" placeholder="Paste Target URI" onclick=empp()>
-          <a type=Submit id="subm" class="search_icon" onclick=Pota()><i class="fas fa-search"></i></a>
+          <input class="search_input" type="text" id="url" name="uri" placeholder="Paste Target URI" onclick=empp()>
+          <a type=Submit id="subm" class="search_icon" onclick=Pota()><i class="fa fa-magic"></i></a>
+          </form>
           <br><br>
           <p id="error-message" style="color:red;"></p>
           <br>
