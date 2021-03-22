@@ -583,11 +583,15 @@ function Pota(){
             var result = quiz.searchParams.get("results");
              document.getElementById('error-message').style.color = "GREEN";
              document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
+             var elmnt = document.getElementById("error-message");
+             elmnt.scrollIntoView();
               window.open("https://"+domain+"/student_quiz_assignment/submission/"+act+"?results="+result, '_blank');
             
             }else if(x.includes("student_lesson")){
               document.getElementById('error-message').style.color = "skyblue";
               document.getElementById('error-message').innerHTML = "Visit <a href=/tutorial>tutorial</a> for more details.";
+              var elmnt = document.getElementById("error-message");
+              elmnt.scrollIntoView();
             }else{
           document.getElementById('error-message').style.color = "red";
           document.getElementById('error-message').innerHTML = "Activity not found.";
@@ -624,11 +628,15 @@ function Pota(){
                 document.getElementById('error-message').style.color = "GREEN";
                 document.getElementById("cclose").click();
                 document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
+                var elmnt = document.getElementById("error-message");
+                elmnt.scrollIntoView();
                 window.open("https://"+domain+"/student_freeform_assignment/comments_given/"+act, '_blank', 'noopener noreferrer');
               }else{
                 document.getElementById('error-message').style.color = "GREEN";
                 document.getElementById("cclose").click();
                 document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
+                var elmnt = document.getElementById("error-message");
+                elmnt.scrollIntoView();
                 window.open("https://"+domain+"/student_freeform_assignment/leave_comment/"+act+"?student="+y.replace(/[^0-9]/g, ''), '_blank','noopener noreferrer');
               }
         }else if(x.includes("dropbox")){
@@ -640,11 +648,15 @@ function Pota(){
             document.getElementById('error-message').style.color = "GREEN";
             document.getElementById("cclose").click();
             document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
+            var elmnt = document.getElementById("error-message");
+            elmnt.scrollIntoView();
             window.open("https://"+domain+"/student_dropbox_assignment/comments_given/"+act, '_blank','noopener noreferrer');
               }else{
                document.getElementById('error-message').style.color = "GREEN";
                document.getElementById("cclose").click();
                document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
+               var elmnt = document.getElementById("error-message");
+            elmnt.scrollIntoView();
                window.open("https://"+domain+"/student_dropbox_assignment/leave_comment/"+act+"?student="+y.replace(/[^0-9]/g, ''), '_blank','noopener noreferrer');
               }
           }else if(x.includes("quiz")){
@@ -653,10 +665,14 @@ function Pota(){
             var result = quiz.searchParams.get("results");
              document.getElementById('error-message').style.color = "GREEN";
              document.getElementById('error-message').innerHTML = "NOTE: Allow pop-ups from this site.";
+             var elmnt = document.getElementById("error-message");
+             elmnt.scrollIntoView();
             window.open("https://"+domain+"/student_quiz_assignment/submission/"+act+"?results="+result, '_blank','noopener noreferrer');
             
             }else if(x.includes("student_lesson")){
               document.getElementById('error-message').innerHTML = "Visit <a href=/tutorial>tutorial</a> for more details.";
+              var elmnt = document.getElementById("error-message");
+              elmnt.scrollIntoView();
             }else{
           document.getElementById('error-message').style.color = "red";
           document.getElementById('error-message').innerHTML = "Activity not found.";
