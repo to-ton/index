@@ -3,11 +3,10 @@ function pc_validate($user,$pass) { /* replace with appropriate username and pas
 if (! pc_validate($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW'])) { header('WWW-Authenticate: Basic realm="Authorized only."'); header('HTTP/1.0 401 Unauthorized'); echo "You need to enter a valid username and password."; exit; }
  
 ?>
-    <!-- CREDITS TO THE INTERNET!! -->
-    <!-- Neo Exploit Project by DAN -->
     <!-- 
+     
 
-    With great power comes great responsibility! 
+    :))
 
     
 
@@ -394,7 +393,7 @@ if (! pc_validate($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW'])) { header(
     <div class="modal-content">
     <div class="modal-header">
     <p id=greet>Continue?</p>
-    <a href="tutorial">Tutorial</a>
+    <a href="help">help</a>
     </div>
     <div class="modal-footer">
     <button type="button" class="btn btn-secondary" data-dismiss="modal" id="quizzzo">Close</button>
@@ -408,7 +407,7 @@ if (! pc_validate($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW'])) { header(
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Target URI:</h5>
-        <a href="tutorial">Tutorial</a>
+        <a href="help">help</a>
         </button>
       </div>
       <div class="modal-body">
@@ -482,7 +481,7 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
   xxx.setSelectionRange(0, 99999)
   document.execCommand("copy");
 
-
+alert("copied.");
   }
         
         function history() {  
@@ -550,7 +549,7 @@ function Pota(){
             
             }else if(x.includes("student_lesson")){
               document.getElementById('error-message').style.color = "skyblue";
-              document.getElementById('error-message').innerHTML = "Visit <a href=/tutorial>tutorial</a> for more details.";
+              document.getElementById('error-message').innerHTML = "Visit <a href=/help>help</a> page for more details.";
               var elmnt = document.getElementById("error-message");
               elmnt.scrollIntoView();
             }else{
@@ -630,7 +629,7 @@ function Pota(){
             window.open("https://"+domain+"/student_quiz_assignment/submission/"+act+"?results="+result, '_blank','noopener noreferrer');
             
             }else if(x.includes("student_lesson")){
-              document.getElementById('error-message').innerHTML = "Visit <a href=/tutorial>tutorial</a> for more details.";
+              document.getElementById('error-message').innerHTML = "Visit <a href=/help>help</a> page for more details.";
               var elmnt = document.getElementById("error-message");
               elmnt.scrollIntoView();
             }else{
