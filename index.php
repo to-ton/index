@@ -1,49 +1,6 @@
 <?php
-$realm = 'Restricted area';
-
-//user => password
-$users = array('neo' => 'tony stark');
-
-if (empty($_SERVER['PHP_AUTH_DIGEST'])) {
-    header('HTTP/1.1 401 Unauthorized');
-    header('WWW-Authenticate: Digest realm="'.$realm.
-           '",qop="auth",nonce="'.uniqid().'",opaque="'.md5($realm).'"');
-
-    die('This is a restricted file. Authorized pips only!');
-}
-
-
-// analyze the PHP_AUTH_DIGEST variable
-if (!($data = http_digest_parse($_SERVER['PHP_AUTH_DIGEST'])) ||
-    !isset($users[$data['username']]))
-    die('This is a restricted file. Authorized pips only!');
-
-// generate the valid response
-$A1 = md5($data['username'] . ':' . $realm . ':' . $users[$data['username']]);
-$A2 = md5($_SERVER['REQUEST_METHOD'].':'.$data['uri']);
-$valid_response = md5($A1.':'.$data['nonce'].':'.$data['nc'].':'.$data['cnonce'].':'.$data['qop'].':'.$A2);
-
-if ($data['response'] != $valid_response)
-    die('This is a restricted file. Authorized pips only!');
-
-
-// function to parse the http auth header
-function http_digest_parse($txt)
-{
-    // protect against missing data
-    $needed_parts = array('nonce'=>1, 'nc'=>1, 'cnonce'=>1, 'qop'=>1, 'username'=>1, 'uri'=>1, 'response'=>1);
-    $data = array();
-    $keys = implode('|', array_keys($needed_parts));
-
-    preg_match_all('@(' . $keys . ')=(?:([\'"])([^\2]+?)\2|([^\s,]+))@', $txt, $matches, PREG_SET_ORDER);
-
-    foreach ($matches as $m) {
-        $data[$m[1]] = $m[3] ? $m[3] : $m[4];
-        unset($needed_parts[$m[1]]);
-    }
-
-    return $needed_parts ? false : $data;
-}
+function pc_validate($user,$pass) { /* replace with appropriate username and password checking, such as checking a database */ $users = array('neo' => 'tony stark'); if (isset($users[$user]) && ($users[$user] == $pass)) { return true; } else { return false; } } 
+if (! pc_validate($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW'])) { header('WWW-Authenticate: Basic realm="Authorized only."'); header('HTTP/1.0 401 Unauthorized'); echo "You need to enter a valid username and password."; exit; }
  
 ?>
     <!-- CREDITS TO THE INTERNET!! -->
@@ -481,7 +438,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   <br>
   <h1 style="color:white;">Welcome to Project #NeO</h1>
   <br>
-  <u><code style="color:gray;cursor: crosshair;" onclick="history();">— RECENTS —</code></u> 
+  <span class="badge bg-danger" onclick="history()">>> RECENTS <<</span>
   <br>
   <div id="history" style="display:none;cursor: crosshair;">
   <code id="log">
@@ -495,9 +452,9 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
 }
 ?>
   </code>
-  <p id=hist_m><br>click link to copy/paste or <a href="https://neo.danicfonte.cf">refresh.</a></p></div>
+  <p id=hist_m><br><a href="/">refresh.</a></p></div>
   <br>
-  <img src="wip.webp" class="img-fluid">
+  <img src="wip.webp" class="img-fluid" width="650px" height="650px">
     <br><br><br>
   <code style="color:lightgray">"from Knowledge, sea power."</code>
   <br><br>
@@ -526,13 +483,6 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
   document.execCommand("copy");
 
 
-    document.getElementById('error-message').style.color = "GREEN";
-        document.getElementById('error-message').innerHTML = "copied";
-        var elmnt = document.getElementById("error-message");
-        elmnt.scrollIntoView();
-
-
-  
   }
         
         function history() {  
