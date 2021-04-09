@@ -451,7 +451,7 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
 }
 ?>
   </code>
-  <p id=hist_m><br><a href="/">refresh.</a></p></div>
+  <p id=hist_m><br><a href="/">refresh to view your recents.</a></p></div>
   <br>
   <img src="wip.webp" class="img-fluid" width="650px" height="650px">
     <br><br><br>
