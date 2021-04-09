@@ -438,9 +438,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   <h1 style="color:white;">Welcome to Project #NeO</h1>
   <br>
   <span class="badge bg-danger" onclick="history()">>> RECENTS <<</span>
-  <br>
-  <div id="history" style="display:none;cursor: crosshair;">
-  <code id="log">
+  <br>  <code id="log">
 <?php
 $file = file("targets.txt");
 for ($i = max(0, count($file)-6); $i < count($file); $i++) {
@@ -451,7 +449,7 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
 }
 ?>
   </code>
-  <p id=hist_m><br><a href="/">refresh to view your recents.</a></p></div>
+  <p id=hist_m><br><a href="/">refresh to view your recents.</a></p>
   <br>
   <img src="wip.webp" class="img-fluid" width="650px" height="650px">
     <br><br><br>
