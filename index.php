@@ -457,11 +457,6 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
 }
 ?>
   </code>
-          <br>
-        </div>
-      </div>
-    </div>
-    <br>
     <iframe id="form1" name="form1" style="display:none"></iframe>
     </form>
   </center>
