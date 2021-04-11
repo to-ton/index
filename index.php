@@ -440,7 +440,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   <div class="container h-100">
       <div class="d-flex justify-content-center h-100">
         <div class="searchbar">
-          <input class="search_input" type="text" id="url" name="uri" placeholder="Paste Target URI" onclick=empp()>
+          <input class="search_input" type="text" id="url" name="uri" placeholder="Paste Here" onclick=empp()>
           <a type="Submit" id="subm" class="search_icon" onclick=Pota()><i class="fa fa-link"></i></a>
           <br><br>
           <p id="error-message" style="color:red;"></p><hr>
