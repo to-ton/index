@@ -438,7 +438,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   <br>
   <h1 style="color:white;">Welcome to Project #NeO</h1>
   <br>
-  <span class="badge bg-danger" onclick="history()">> RECENTS <<</span>
+  <span class="badge bg-danger" onclick="history()">..RECENTS 🕒..</span>
   <div id=history>
   <code id="log">
 <?php
