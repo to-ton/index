@@ -300,7 +300,7 @@ if (! pc_validate($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW'])) { header(
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   	<meta name="referrer" content="no-referrer">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Unauthorized Access</title>
+    <title>v.2.0</title>
 
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
