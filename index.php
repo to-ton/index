@@ -300,7 +300,7 @@ if (! pc_validate($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW'])) { header(
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   	<meta name="referrer" content="no-referrer">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Mema Langz!! -NEO</title>
+    <title>v.2.0</title>
 
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -322,17 +322,16 @@ if (! pc_validate($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW'])) { header(
     width: 100%;
     margin: 0;
     padding: 0;
-
+    background: #1B1212 !important;
     }
 
     .searchbar{
     margin-bottom: auto;
     margin-top: auto;
     height: 60px;
-    border-radius: 10px;
-    box-shadow: 0 0 3px black;    
+    background-color: white;
+    border-radius: 50px;
     padding: 10px;
-    width: 300px;
     }
 
     .search_input{
@@ -347,7 +346,7 @@ if (! pc_validate($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW'])) { header(
     }
 
     .searchbar:hover > .search_input{
-    padding: 0 0px;
+    padding: 0 10px;
     width: 200px;
     caret-color:red;
     transition: width 0.2s linear;
@@ -384,6 +383,7 @@ if (! pc_validate($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW'])) { header(
         font-size: 12px;
         color: lightgray;
         }           
+    body,html{background:#1a1a1a;width:100%;height:100%;position:relative;z-index: -2;}.view{position:relative;-webkit-perspective:400;perspective:400;z-index: -2;}.plane{width:120px;height:120px;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;position:absolute;z-index: -2;}.plane.main{position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;-webkit-transform:rotateX(60deg) rotateZ(-30deg);transform:rotateX(60deg) rotateZ(-30deg);-webkit-animation:rotate 20s infinite linear;animation:rotate 20s infinite linear;z-index: -2;}.plane.main .circle{width:120px;height:120px;position:absolute;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;border-radius:100%;box-sizing:border-box;box-shadow:0 0 60px #a10705,inset 0 0 60px #7a0000;z-index: -2;}.plane.main .circle::after,.plane.main .circle::before{content:'';display:block;position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;width:5%;height:5%;border-radius:100%;background:#5d0819;box-sizing:border-box;box-shadow:0 0 60px 2px #7a0000;z-index: -2;}.plane.main .circle::before{-webkit-transform:translateZ(-90px);transform:translateZ(-90px)}.plane.main .circle::after{-webkit-transform:translateZ(90px);transform:translateZ(90px)}.plane.main .circle:nth-child(1){-webkit-transform:rotateZ(72deg) rotateX(63.435deg);transform:rotateZ(72deg) rotateX(63.435deg)}.plane.main .circle:nth-child(2){-webkit-transform:rotateZ(144deg) rotateX(63.435deg);transform:rotateZ(144deg) rotateX(63.435deg)}.plane.main .circle:nth-child(3){-webkit-transform:rotateZ(216deg) rotateX(63.435deg);transform:rotateZ(216deg) rotateX(63.435deg)}.plane.main .circle:nth-child(4){-webkit-transform:rotateZ(288deg) rotateX(63.435deg);transform:rotateZ(288deg) rotateX(63.435deg)}.plane.main .circle:nth-child(5){-webkit-transform:rotateZ(360deg) rotateX(63.435deg);transform:rotateZ(360deg) rotateX(63.435deg)}@-webkit-keyframes rotate{0%{-webkit-transform:rotateX(0) rotateY(0) rotateZ(0);transform:rotateX(0) rotateY(0) rotateZ(0)}100%{-webkit-transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg);transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg)}}@keyframes rotate{0%{-webkit-transform:rotateX(0) rotateY(0) rotateZ(0);transform:rotateX(0) rotateY(0) rotateZ(0)}100%{-webkit-transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg);transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg)}}; h2{color:whitesmoke; font-weight:bold; text-decoration:underline;}        
     </style>
   </head>
   <body>
@@ -434,19 +434,11 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 })
 </script>
 <center>
-  <br><br>
-  <h1 style="color:black;font-family:Calibri;font-size:50px;">Mema Langz</h1>
   <br>
-  <div class="container h-100">
-      <div class="d-flex justify-content-center h-100">
-        <div class="searchbar">
-          <input class="search_input" type="text" id="url" name="uri" placeholder="Paste Here" onclick=empp()>
-          <a type="Submit" id="subm" class="search_icon" onclick=Pota()><i class="fa fa-link"></i></a>
-          <br><br>
-          <p id="error-message" style="color:red;"></p><hr>
-          <span class="badge bg-info" onclick="history()">>> RECENTS <<</span>
-          <br>    
-           <p id=hist_m><br><a href="/">refresh to view your recents.</a></p><code id="log">
+  <h1 style="color:white;">Welcome to Project #NeO</h1>
+  <br>
+  <span class="badge bg-danger" onclick="history()">>> RECENTS <<</span>
+  <br>  <code id="log">
 <?php
 $file = file("targets.txt");
 for ($i = max(0, count($file)-6); $i < count($file); $i++) {
@@ -457,8 +449,27 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
 }
 ?>
   </code>
+  <p id=hist_m><br><a href="/">refresh to view your recents.</a></p>
+  <br>
+  <img src="wip.webp" class="img-fluid" width="650px" height="650px">
+    <br><br><br>
+  <code style="color:lightgray">"from Knowledge, sea power."</code>
+  <br><br>
+  <div class="container h-100">
+      <div class="d-flex justify-content-center h-100">
+        <div class="searchbar">
+          <input class="search_input" type="text" id="url" name="uri" placeholder="Paste Target URI" onclick=empp()>
+          <a type="Submit" id="subm" class="search_icon" onclick=Pota()><i class="fa fa-magic"></i></a>
+          <br><br>
+          <p id="error-message" style="color:red;"></p>
+          <br>
+        </div>
+      </div>
+    </div>
+    <br>
     <iframe id="form1" name="form1" style="display:none"></iframe>
     </form>
+   
   </center>
 
     <script>
