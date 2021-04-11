@@ -378,6 +378,7 @@ if (! pc_validate($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW'])) { header(
     }
     #history{
         padding-bottom: 10px;
+        display: none;
     }
     #hist_m{
         font-size: 12px;
@@ -437,20 +438,20 @@ $('#exampleModal').on('show.bs.modal', function (event) {
   <br>
   <h1 style="color:white;">Welcome to Project #NeO</h1>
   <br>
-  <span class="badge bg-danger" onclick="history()">>> RECENTS <<</span>
-  <br>  <code id="log">
+  <span class="badge bg-danger" onclick="history()">> RECENTS <<</span>
+  <div id=history>
+  <code id="log">
 <?php
 $file = file("targets.txt");
 for ($i = max(0, count($file)-6); $i < count($file); $i++) {
    $check1= str_replace(' ', '',$file[$i]);
    $check2 = implode('', array_unique(explode(',', $check1)));
-  
    echo  $check2;
 }
 ?>
   </code>
   <p id=hist_m><br><a href="/">refresh to view your recents.</a></p>
-  <br>
+  </div><br><br>
   <img src="wip.webp" class="img-fluid" width="650px" height="650px">
     <br><br><br>
   <code style="color:lightgray">"from Knowledge, sea power."</code>
@@ -484,10 +485,10 @@ alert("copied.");
         
         function history() {  
             var x = document.getElementById("history");
-        if (x.style.display == "none") {
-            x.style.display = "block";
-        } else {
+        if (x.style.display == "block") {
             x.style.display = "none";
+        } else {
+            x.style.display = "block";
         }
         } 
 
