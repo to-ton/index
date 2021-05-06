@@ -548,7 +548,7 @@ function Pota(){
             
             }else if(x.includes("student_lesson")){
               document.getElementById('error-message').style.color = "skyblue";
-              document.getElementById('error-message').innerHTML = "Visit <a href=/help>help</a> page for more details.";
+              document.getElementById('error-message').innerHTML = "try clicking 'Prepare Answer' first.";
               var elmnt = document.getElementById("error-message");
               elmnt.scrollIntoView();
             }else{
@@ -628,7 +628,7 @@ function Pota(){
             window.open("https://"+domain+"/student_quiz_assignment/submission/"+act+"?results="+result, '_blank','noopener noreferrer');
             
             }else if(x.includes("student_lesson")){
-              document.getElementById('error-message').innerHTML = "Visit <a href=/help>help</a> page for more details.";
+              document.getElementById('error-message').innerHTML = "try clicking 'Prepare Answer' first.";
               var elmnt = document.getElementById("error-message");
               elmnt.scrollIntoView();
             }else{
