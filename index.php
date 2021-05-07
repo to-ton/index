@@ -1,6 +1,6 @@
 <?php
-function pc_validate($user,$pass) { /* replace with appropriate username and password checking, such as checking a database */ $users = array('neo' => 'tony stark'); if (isset($users[$user]) && ($users[$user] == $pass)) { return true; } else { return false; } } 
-if (! pc_validate($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW'])) { header('WWW-Authenticate: Basic realm="Authorized only."'); header('HTTP/1.0 401 Unauthorized'); echo "You need to enter a valid username and password."; exit; }
+function pc_validate($user,$pass) { /* replace with appropriate username and password checking, such as checking a database */ $users = array('open' => 'sesame'); if (isset($users[$user]) && ($users[$user] == $pass)) { return true; } else { return false; } } 
+if (! pc_validate($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW'])) { header('WWW-Authenticate: Basic realm="You have reached the Portal of Gandalf."'); header('HTTP/1.0 401 Unauthorized'); echo "enchant o!. You've got the wrong spell."; exit; }
  
 ?>
     <!-- 
@@ -436,7 +436,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
 </script>
 <center>
   <br>
-  <h1 style="color:white;">Welcome to Project #NeO</h1>
+  <h1 style="color:white;">Portal of Gandalf o-o</h1>
   <br>
   <span class="badge bg-danger" onclick="history()">..RECENTS 🕒..</span>
   <div id=history>
@@ -454,7 +454,7 @@ for ($i = max(0, count($file)-6); $i < count($file); $i++) {
   </div><br><br>
   <img src="wip.webp" class="img-fluid" width="650px" height="650px">
     <br><br><br>
-  <code style="color:lightgray">"from Knowledge, sea power."</code>
+  <code style="color:lightgray; font-family:Arial;">" from Knowledge, sea power. "</code>
   <br><br>
   <div class="container h-100">
       <div class="d-flex justify-content-center h-100">
