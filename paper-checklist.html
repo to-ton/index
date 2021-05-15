@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/paper-checklist.css">
+    <title>Paper</title>
+</head>
+<body>
+    <div class="container" id="container">
+		<div class="form-container log-in-container">
+            <h3>Select the waste to be thrown:</h3>
+			<form action="#">
+                    <input type="checkbox" name="waste" id="option-1" value="1"> <label for="option-1">Writing Paper</label><br>
+                    <input type="checkbox" name="waste" id="option-2" value="2"> <label for="option-2">Paper cups</label><br>
+                    <input type="checkbox" name="waste" id="option-3" value="3"> <label for="option-3">Paper plates</label><br>
+                    <input type="checkbox" name="waste" id="option-4" value="4"> <label for="option-4">Boxes</label><br>
+                    <input type="checkbox" name="waste" id="option-5" value="5"> <label for="option-5">Newspaper</label><br>
+                    <input type="checkbox" name="waste" id="option-6" value="6"> <label for="option-6">Magazines</label><br>
+                    <input type="checkbox" name="waste" id="option-7" value="7"> <label for="option-7">Illustration board/Card board</label><br>
+                    <input type="checkbox" name="waste" id="option-8" value="8"> <label for="option-8">Carton</label><br>
+                    <input type="checkbox" name="waste" id="option-9" value="9"> <label for="option-9">Wrapping Paper</label><br>
+                    <input type="checkbox" name="waste" id="option-10" value="10"> <label for="option-10">Paper bags</label><br>
+                    <input type="checkbox" name="waste" id="option-11" value="11"> <label for="option-11">Tissue</label><br>
+                    <br>
+                    <label for="quantity">Total: </label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="1000000" required>
+
+                    <button class="confirm-btn" class="fa fa-home">Confirm</button>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-right">
+					<div class="bg">
+                        <img src="assets/images/paper-bg.png" onclick="" class="bg-image">
+                      </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
