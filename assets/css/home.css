@@ -1,0 +1,104 @@
+body
+{
+  background-color:#ffffff;
+  font-family: 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow: scroll;
+}
+
+*
+{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h5
+{
+  margin:0px;
+  font-size:1.4em;
+  font-weight:700;
+}
+
+p
+{
+  font-size:12px;
+}
+#center{
+  justify-content: center;
+}
+#heading {
+	text-align: center;
+	font-family: Arial;
+	font-weight: bold;
+	margin-top: 70px;
+	margin-bottom: 70px;
+	font-size: 100px;
+	color: rgba(93,175,115,1);
+}
+
+#heading_desc {
+	margin: auto;
+	max-width: 630px;
+	display: flex;
+	text-align: center;
+	position: relative;
+    color: #939393;
+    margin-bottom: 0px; 
+}
+
+
+
+.flexbox{
+  justify-content: center;
+  padding-top: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Create four equal columns that floats next to eachother */
+.card {
+  float:inherit;
+}
+
+.card-image{
+  cursor: pointer;
+  border-radius: 15px;
+  width: 70%;
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  .flexbox {
+    flex-direction: row;
+  }
+}
+.card-image:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+
+.btn-maps{
+  justify-content: center;
+  display: flex;
+}
+.btn{
+  cursor: pointer;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  margin-top: 70px;
+  position: fixed;
+  padding: 10px 200px;
+  background-color: #3BC760; ;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.btn:hover{
+  border: 1px solid #3BC760;
+      background-color: #fff;
+      color: #3BC760; 
+}

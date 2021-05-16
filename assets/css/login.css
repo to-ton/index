@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200&display=swap');
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #fff;
+  min-height: 100vh; }
+
+.Login-wrapper {
+  padding-top: 7px;
+  padding-bottom: 8px; }
+
+.login-section-wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  padding: 68px 100px;
+  background-color: #fff; }
+  @media (max-width: 991px) {
+    .login-section-wrapper {
+      padding-left: 50px;
+      padding-right: 50px; } }
+  @media (max-width: 575px) {
+    .login-section-wrapper {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      min-height: 80vh; } }
+
+.login-wrapper {
+  width: 400px;
+  max-width: 100%;
+  padding-top: 24px;
+  padding-bottom: 24px; }
+  @media (max-width: 575px) {
+    .login-wrapper {
+      width: 100%; } }
+  .login-wrapper label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #b0adad; }
+  .login-wrapper .form-control {
+    margin-bottom: 30px;
+    border-style: solid;
+    border-bottom: 1px solid #e7e7e7;
+    border-radius: 0;
+    padding: 9px 5px;
+    min-height: 40px;
+    font-size: 18px;
+    font-weight: normal; }
+  .login-wrapper .login-btn {
+    margin-top: 100px;
+    padding: 10px 20px;
+    background-color: #5BED82;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 22px; }
+    .login-wrapper .login-btn:hover {
+      border: 1px solid #5BED82;
+      background-color: #fff;
+      color: #5BED82; }
+  .login-wrapper-footer-text {
+    text-align: center;
+    font-size: 14px;
+    color: #5D5D5D;
+    margin-bottom: 0px; }
+
+.login-title {
+  font-size: 100px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 25px; }
+
+  .p1-count{
+    font-weight: bold;
+
+    color: white;
+    font-size: 110px;
+    position: absolute;
+    top: 9%;
+    left: 40%;
+  }
+
+  .p1-count-1{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    top: 60%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  .p2-count{
+    font-weight: bold;
+    font-family: 'Tajawal', sans-serif;
+    color: white;
+    font-size: 200px;
+    position: absolute;
+    top: 40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .p2-count-1{
+    font-family: 'arial', sans-serif;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    top: 52%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+  }
+  hr{
+    top: 30%;
+    position: absolute;
+  }
+
+.login-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left; }
+
+
+
+/*# sourceMappingURL=login.css.map */

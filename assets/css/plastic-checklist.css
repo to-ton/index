@@ -1,0 +1,142 @@
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #D8D8D8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Arial', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+}
+
+h3 {
+    padding-left: 45px;
+    padding-top: 35px;
+    padding-bottom: 25px;
+	font-weight: bold;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+
+span {
+	font-size: 12px;
+}
+
+a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+
+button {
+    margin: auto;
+    display: flex;
+    background-color: #3BC760; ;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-top:50px;
+	border-radius: 20px;
+    padding: 10px 100px;
+	letter-spacing: 1px;
+	transition: transform 80ms ease-in;
+}
+.confirm-btn:hover{
+    border: 1px solid #3BC760;
+        background-color: #fff;
+        color: #3BC760; 
+  }
+
+form {
+	background-color: #FFFFFF;
+	align-items: left;
+	justify-content: center;
+	padding: 0 40px;
+	height: 100%;
+	text-align: left;
+}
+
+
+.container {
+	background-color: #ffffff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 950px;
+	max-width: 100%;
+	min-height: 600px;
+}
+
+
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	overflow:auto;
+}
+
+.log-in-container {
+	line-height: 30px;
+    background-color: #FFFFFF;
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+}
+
+
+.overlay {
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 0;
+	color: #FFFFFF;
+	position: relative;
+	left: -100%;
+	height: 100%;
+	width: 200%;
+}
+
+.overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 50%;
+}
+
+
+.overlay-right {
+	right: 0;
+}
+
+
+
