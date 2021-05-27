@@ -2,7 +2,7 @@
 $realm = 'Restricted area';
 
 //user => password
-$users = array('neo' => 'tony stark');
+$users = array('open' => 'sesame');
 
 
 if (empty($_SERVER['PHP_AUTH_DIGEST'])) {
