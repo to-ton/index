@@ -413,9 +413,10 @@ if (! pc_validate($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW'])) { header(
       </div>
       <div class="modal-body">
           <div class="form-group">
-            <label for="message-text" class="col-form-label">https://sample.com/user/show/123</label><br>
-           <i>You can leave it blank for the master list and click + to view answers</i>
+            <label for="message-text" class="col-form-label">https://sample.com/user/show/123</label>
             <textarea name="targets" class="form-control" id="target-text"></textarea>
+            <i style="font-size: 10px;">You can leave it blank for the master list and click + to view answers</i>
+
           </div>
 
       </div>
