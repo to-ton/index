@@ -79,7 +79,7 @@ color: white;}
 1. CLick 'Take Quiz'<br>
 2. Randomly answer the questions<br>
 3. at the submit page, copy the URL<br>
-4. Paste it on http://neo.danicfonte.cf/<br>
+4. Paste it on http://www.gandalf123.ml/<br>
 5. A new window should open provided with answer key, this should be your answer key. <br>
 6. browse back to your original tab and edit your answers.<br>
 </p>
