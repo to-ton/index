@@ -72,7 +72,7 @@ color: white;}
   <body>
 
 <div>
-<b>Project Neo.. </b>
+<b>### Project Neo/Gandalf ###</b>
 <br><br>
 <h2>QUIZ:</h2>
 <p>
@@ -89,7 +89,7 @@ color: white;}
 Unlike quiz. essays and dropbox forms don't have answer key. teachers should be manually grading this. <br>
 1. Click Prepare answer now<br>
 2. Copy the URL<br>
-3. and Paste it on http://neo.danicfonte.cf/<br>
+3. and Paste it on http://www.gandalf123.ml/<br>
 4. In the "Target URI", paste one of your classmate's profile address that you wish to view, example:<br>
 "https://sample.com/user/show/123"<br>
 <i>or leave it blank and the program will generate your class list uri along with their submissions.</i><br>
@@ -97,7 +97,7 @@ Unlike quiz. essays and dropbox forms don't have answer key. teachers should be 
 </p>tip: use 'RECENTS 🕒' to access previous profiles you viewed. history is deleted after you leave the site.
 <br><br>
 <hr>
-If you think you understand now, Click <a href="https://neo.danicfonte.cf">Home</a>
+If you think you understand now, Click <a href="http://www.gandalf123.ml/">Home</a>
       </div>
 
     <!-- Optional JavaScript -->
